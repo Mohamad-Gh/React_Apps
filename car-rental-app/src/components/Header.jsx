@@ -26,7 +26,7 @@ function Header() {
                 <a href="">Our Team</a>
               </li>
               <li>
-                <Link to="/about">About</Link>
+                <Link to="/About">About</Link>
                 {/* <a href="">About</a> */}
               </li>
             </ul>
