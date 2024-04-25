@@ -1,7 +1,12 @@
-// import Header from "./Header";
-// import Footer from "./Footer";
+import Header from "./Header";
+import Footer from "./Footer";
 
 function About() {
-  return <h1>Hello</h1>;
+  return (
+    <>
+      <Header />
+      <Footer />
+    </>
+  );
 }
 export default About;
