@@ -1,4 +1,7 @@
 import logo from "../Assets/images/logo.png";
+import { Route, Routes, Link } from "react-router-dom";
+import About from "./About";
+import App from "./App";
 
 function Header() {
   return (
@@ -9,7 +12,9 @@ function Header() {
           <nav>
             <ul class="navigator">
               <li>
-                <a href="">Home</a>
+                {/* <a href="">Home</a> */}
+                {/* <Route path="/" element={<HomePage}> */}
+                <Link to="/">Home</Link>
               </li>
               <li>
                 <a href="">Vehicle Model</a>
@@ -21,7 +26,8 @@ function Header() {
                 <a href="">Our Team</a>
               </li>
               <li>
-                <a href="./public/About/about.html">About</a>
+                <Link to="/about">About</Link>
+                {/* <a href="">About</a> */}
               </li>
             </ul>
           </nav>
