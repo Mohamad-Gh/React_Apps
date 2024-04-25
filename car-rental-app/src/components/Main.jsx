@@ -6,6 +6,7 @@ import appStore from "../Assets/images/App_store.png";
 
 import BlackDivider from "./BlackDivider";
 import HeroSection from "./HeroSection";
+import ContentCard from "./ContentCard";
 
 function Main() {
   return (
@@ -15,14 +16,14 @@ function Main() {
           <div className="container">
             <div className="content-card">
               <div className="content">
-                <h2>Plan your trip now</h2>
-                <h1>
-                  Save <span>big</span> with our car rental
-                </h1>
-                <p>
-                  Rent the car of your dreams. Unbeatable prices, unlimited
-                  miles, flexible pick-up options and much more.
-                </p>
+                <ContentCard
+                  h2="Plan your trip now"
+                  h1="Save"
+                  span="big"
+                  h1More="with our car rental"
+                  text="                  Rent the car of your dreams. Unbeatable prices, unlimited
+                  miles, flexible pick-up options and much more."
+                />
                 <div className="buttons">
                   <button className="btn btn-book">
                     Book Ride &nbsp;
@@ -233,7 +234,7 @@ function Main() {
           </div>
         </div>
       </section>
-      <HeroSection />
+      <HeroSection h3="Plan your trip now" h2="Quick & easy car rental" />
       <section className="car-album">
         <div className="full-container">
           <div className="container-album">

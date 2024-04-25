@@ -4,14 +4,14 @@ import carCard from "../Assets/images/car-card.png";
 import personCard from "../Assets/images/person-card.png";
 import travelCard from "../Assets/images/travel-card.png";
 
-function HeroSection() {
+function HeroSection(props) {
   return (
     <section className="hero-section">
       <div className="full-container">
         <div className="container">
           <div className="title-header">
-            <h3>Plan your trip now</h3>
-            <h2>Quick & easy car rental</h2>
+            <h3>{props.h3}</h3>
+            <h2>{props.h2}</h2>
           </div>
           <div className="card-container">
             <Card
