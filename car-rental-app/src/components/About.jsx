@@ -3,6 +3,11 @@ import Footer from "./Footer";
 import BlackDivider from "./BlackDivider";
 import HeroSection from "./HeroSection";
 import ContentCard from "./ContentCard";
+import LogoText from "./LogoText";
+
+import carLogo from "../Assets/images/car-logo.png";
+import garageLogo from "../Assets/images/garage-logo.png";
+import carGarageLogo from "../Assets/images/car-garage-logo.png";
 
 function About() {
   return (
@@ -11,16 +16,25 @@ function About() {
       <section className="first">
         <div className="full-container">
           <div className="container">
-            <div className="content-card">
+            <div className="center-card">
+              <div>
+                <img src="https://car-rental-ten.vercel.app/static/media/about-main.ed0137841dc67d61ec95.jpg" />
+              </div>
               <div className="content">
                 <ContentCard
-                  h2="Plan your trip now"
-                  h1="Save"
-                  span="big"
-                  h1More="with our car rental"
-                  text="Rent the car of your dreams. Unbeatable prices, unlimited
-                  miles, flexible pick-up options and much more."
+                  h2="About Company"
+                  h1="You start the engine and your adventure begins"
+                  text="Certain but she but shyness why cottage. Guy the put instrument sir entreaties affronting. Pretended exquisite see cordially the you. Weeks quiet do vexed or whose. Motionless if no to affronting imprudence no precaution. My indulged as disposal strongly attended."
                 />
+                <div>
+                  <LogoText img={carLogo} num={20} text="Car Types" />
+                  <LogoText
+                    img={carGarageLogo}
+                    num={85}
+                    text="Rental Outlets"
+                  />
+                  <LogoText img={garageLogo} num={75} text="Repair Shop" />
+                </div>
               </div>
             </div>
           </div>
