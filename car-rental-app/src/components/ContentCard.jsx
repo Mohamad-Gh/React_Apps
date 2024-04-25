@@ -9,6 +9,9 @@ function ContentCard(props) {
         <span> {props.span}</span> {props.h1More}
       </h1>
       <p>{props.text}</p>
+      <p>{props.tel}</p>
+      <p>{props.email}</p>
+      <p>{props.address}</p>
     </>
   );
 }
