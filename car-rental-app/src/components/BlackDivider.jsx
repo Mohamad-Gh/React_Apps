@@ -6,7 +6,7 @@ function BlackDivider(props) {
           <h2>{props.title}</h2>
           <h3>
             {props.text}
-            <span>{props.span}</span> {props.text2}.
+            <span> {props.span}</span> {props.text2}
           </h3>
         </div>
       </section>

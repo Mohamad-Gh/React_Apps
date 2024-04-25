@@ -1,13 +1,11 @@
 import carHeroImage from "../Assets/images/Audi-front-page.png";
 import backGroundDesign from "../Assets/images/background_desing.png";
-import carCard from "../Assets/images/car-card.png";
-import personCard from "../Assets/images/person-card.png";
-import travelCard from "../Assets/images/travel-card.png";
 import hyundai from "../Assets/images/Hyundai.png";
 import googlePlay from "../Assets/images/google_play.png";
 import appStore from "../Assets/images/App_store.png";
-import Card from "./Card";
+
 import BlackDivider from "./BlackDivider";
+import HeroSection from "./HeroSection";
 
 function Main() {
   return (
@@ -235,38 +233,7 @@ function Main() {
           </div>
         </div>
       </section>
-      <section className="hero-section">
-        <div className="full-container">
-          <div className="container">
-            <div className="title-header">
-              <h3>Plan your trip now</h3>
-              <h2>Quick & easy car rental</h2>
-            </div>
-            <div className="card-container">
-              <Card
-                img={carCard}
-                title="Select Car"
-                text="
-                  We offers a big range of vehicles for all your driving needs.
-                  We have the perfect car to meet your needs"
-              />
-              <Card
-                img={personCard}
-                title="Contact Operator"
-                text="                  Our knowledgeable and friendly operators are always ready to
-                  help with any questions or concerns
-"
-              />
-              <Card
-                img={travelCard}
-                title="Let's Drive"
-                text="Whether you're hitting the open road, we've got you covered
-                  with our wide range of cars"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+      <HeroSection />
       <section className="car-album">
         <div className="full-container">
           <div className="container-album">
@@ -350,7 +317,7 @@ function Main() {
         title="Save big with our cheap car rental!"
         text="Top Airports. Local Suppliers."
         span="24/7"
-        text2="Support"
+        text2="Support."
       />
       <section className="testimonials">
         <div className="full-container">

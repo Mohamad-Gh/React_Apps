@@ -1,6 +1,7 @@
 import Header from "./Header";
 import Footer from "./Footer";
 import Card from "./Card";
+import BlackDivider from "./BlackDivider";
 
 import carCard from "../Assets/images/car-card.png";
 import personCard from "../Assets/images/person-card.png";
@@ -32,6 +33,10 @@ function About() {
                   with our wide range of cars"
         />
       </div>
+      <BlackDivider
+        text="Book a car by getting in touch with us"
+        span="(123) 456-7869"
+      />
       <Footer />
     </>
   );
