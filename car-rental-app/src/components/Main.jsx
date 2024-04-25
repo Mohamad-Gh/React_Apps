@@ -7,6 +7,7 @@ import hyundai from "../Assets/images/Hyundai.png";
 import googlePlay from "../Assets/images/google_play.png";
 import appStore from "../Assets/images/App_store.png";
 import Card from "./Card";
+import BlackDivider from "./BlackDivider";
 
 function Main() {
   return (
@@ -345,14 +346,12 @@ function Main() {
           </div>
         </div>
       </section>
-      <section className="divider">
-        <div className="title-divider">
-          <h2>Save big with our cheap car rental!</h2>
-          <h3>
-            Top Airports. Local Suppliers. <span>24/7</span> Support.
-          </h3>
-        </div>
-      </section>
+      <BlackDivider
+        title="Save big with our cheap car rental!"
+        text="Top Airports. Local Suppliers."
+        span="24/7"
+        text2="Support"
+      />
       <section className="testimonials">
         <div className="full-container">
           <div className="container-testimonials">
