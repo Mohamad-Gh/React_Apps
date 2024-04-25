@@ -20,13 +20,13 @@ function About() {
               <div>
                 <img src="https://car-rental-ten.vercel.app/static/media/about-main.ed0137841dc67d61ec95.jpg" />
               </div>
-              <div className="content">
+              <div className="contentHero">
                 <ContentCard
                   h2="About Company"
                   h1="You start the engine and your adventure begins"
                   text="Certain but she but shyness why cottage. Guy the put instrument sir entreaties affronting. Pretended exquisite see cordially the you. Weeks quiet do vexed or whose. Motionless if no to affronting imprudence no precaution. My indulged as disposal strongly attended."
                 />
-                <div>
+                <div className="app-box">
                   <LogoText img={carLogo} num={20} text="Car Types" />
                   <LogoText
                     img={carGarageLogo}
