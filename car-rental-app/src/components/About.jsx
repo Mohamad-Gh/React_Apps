@@ -45,6 +45,24 @@ function About() {
         text="Book a car by getting in touch with us"
         span="(123) 456-7869"
       />
+      <div className="center-card">
+        <div className="contentHero">
+          <ContentCard
+            h1="Need additional information?"
+            text="A multifaceted professional skilled in multiple fields of research, development as well as a learning specialist. Over 15 years of experience."
+            tel="(123) 456-7899"
+            email="carrental@carmai.com"
+            address="Kelowna, BC"
+          />
+        </div>
+        <div>
+          <form>
+            <input />
+            <input />
+            <input />
+          </form>
+        </div>
+      </div>
       <Footer />
     </>
   );

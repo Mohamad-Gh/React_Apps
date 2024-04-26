@@ -10,7 +10,9 @@ function ContentCard(props) {
       </h1>
       <p>{props.text}</p>
       <p>{props.tel}</p>
-      <p>{props.email}</p>
+      <a href="">
+        <p>{props.email}</p>
+      </a>
       <p>{props.address}</p>
     </>
   );
