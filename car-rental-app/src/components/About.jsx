@@ -5,6 +5,7 @@ import HeroSection from "./HeroSection";
 import ContentCard from "./ContentCard";
 import LogoText from "./LogoText";
 import Form from "./Form";
+import ContactDetails from "./ContactDetails";
 
 import carLogo from "../Assets/images/car-logo.png";
 import garageLogo from "../Assets/images/garage-logo.png";
@@ -48,8 +49,8 @@ function About() {
       />
       <div className="center-card">
         <div className="contentHero">
-          <ContentCard
-            h1="Need additional information?"
+          <ContactDetails
+            h2="Need additional information?"
             text="A multifaceted professional skilled in multiple fields of research, development as well as a learning specialist. Over 15 years of experience."
             tel="(123) 456-7899"
             email="carrental@carmai.com"
