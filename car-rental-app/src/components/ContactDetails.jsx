@@ -10,10 +10,12 @@ function ContactDetails(props) {
         <p>{props.email}</p>
       </a>
       <p>{props.address}</p>
-      <div className="socialMedia">
-        <i></i>
-        <i></i>
-        <i></i>
+      <div className="socialMedias">
+        <i>Icon 1{props.telegram}</i>
+        <i>Instagram {props.instagram}</i>
+        <i>Twitter {props.twitter}</i>
+        <i>Icon 4 {props.icon4}</i>
+        <i>Whatsapp {props.whatsapp}</i>
       </div>
     </div>
   );

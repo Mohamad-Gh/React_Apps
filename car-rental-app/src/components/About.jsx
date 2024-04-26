@@ -29,7 +29,7 @@ function About() {
                   h1="You start the engine and your adventure begins"
                   text="Certain but she but shyness why cottage. Guy the put instrument sir entreaties affronting. Pretended exquisite see cordially the you. Weeks quiet do vexed or whose. Motionless if no to affronting imprudence no precaution. My indulged as disposal strongly attended."
                 />
-                <div className="app-box">
+                <div className="content-logo-box">
                   <LogoText img={carLogo} num={20} text="Car Types" />
                   <LogoText
                     img={carGarageLogo}
@@ -57,9 +57,9 @@ function About() {
             email="carrental@carmai.com"
             address="Car Rentals 1234 Dream Drive, Kelowna, BC, Canada V1X 5T5"
           />
-          <Form />
+          <GoogleMap />
         </div>
-        <GoogleMap />
+        <Form />
       </div>
       <Footer />
     </>
