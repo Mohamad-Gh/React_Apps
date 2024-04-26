@@ -10,12 +10,13 @@ import ContactDetails from "./ContactDetails";
 import carLogo from "../Assets/images/car-logo.png";
 import garageLogo from "../Assets/images/garage-logo.png";
 import carGarageLogo from "../Assets/images/car-garage-logo.png";
+import GoogleMap from "./GoogleMap";
 
 function About() {
   return (
     <>
       <Header />
-      <section className="first">
+      <section>
         <div className="full-container">
           <div className="container">
             <div className="center-card">
@@ -47,19 +48,18 @@ function About() {
         text="Book a car by getting in touch with us"
         span="(123) 456-7869"
       />
-      <div className="center-card">
-        <div className="contentHero">
+      <div className="container-detail-form">
+        <div className="center-card">
           <ContactDetails
             h2="Need additional information?"
-            text="A multifaceted professional skilled in multiple fields of research, development as well as a learning specialist. Over 15 years of experience."
+            text="A mult ifaceted professional skilled in multiple fields of research, development as well as a learning specialist. Over 15 years of experience."
             tel="(123) 456-7899"
             email="carrental@carmai.com"
-            address="Kelowna, BC"
+            address="Car Rentals 1234 Dream Drive, Kelowna, BC, Canada V1X 5T5"
           />
-        </div>
-        <div>
           <Form />
         </div>
+        <GoogleMap />
       </div>
       <Footer />
     </>
