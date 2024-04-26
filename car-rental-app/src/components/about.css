@@ -1,0 +1,116 @@
+/* About CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.center-card {
+  margin: 50px 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.center-card img {
+  object-fit: cover;
+}
+.center-card h1 {
+  font-size: 46px;
+}
+.contentHero {
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
+  gap: 30px;
+  width: 500px;
+  justify-content: space-around;
+}
+.container-detail-form {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.logo-text-container img {
+  object-fit: contain;
+}
+.text-box {
+  font-size: large;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+  max-width: 500px;
+}
+.contact-details h2 {
+  font-size: 46px;
+}
+.contact-details .text {
+  color: #878585;
+}
+.formAbout {
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 20px;
+  font-weight: bold;
+  width: 650px;
+}
+
+.formAbout input {
+  height: 20px;
+}
+.formAbout input,
+.formAbout textarea {
+  background-color: #edf0f5fd;
+  border: none;
+  padding: 10px;
+}
+.formAbout .submit {
+  background-color: #ff4d30;
+  color: #ffffff;
+  height: 50px;
+}
+.formTitle {
+  font-size: 26px;
+  text-align: center;
+  margin: 10px 0;
+}
+.socialMedias {
+  display: flex;
+  justify-content: space-evenly;
+}
+.content-logo-box {
+  display: flex;
+  gap: 50px;
+}
+
+@media (max-width: 1042px) {
+  /* About CSS  */
+
+  .center-card {
+    flex-direction: column;
+    align-items: center;
+  }
+  .formAbout {
+    width: 450px;
+  }
+}
+@media (max-width: 500px) {
+  .formAbout {
+    width: 350px;
+  }
+}

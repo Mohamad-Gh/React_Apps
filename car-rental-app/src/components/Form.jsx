@@ -3,8 +3,8 @@ import React from "react";
 function Form() {
   return (
     <div>
-      <h2 className="formTitle">Contact Us</h2>
       <form action="Post" className="formAbout">
+        <h2 className="formTitle">Contact Us</h2>
         <label>
           Full Name <span>*</span>
         </label>
@@ -16,7 +16,7 @@ function Form() {
         <label>
           Tell us about it<span> *</span>
         </label>
-        <textarea rows={8} cols={10} placeholder="Here we are" required />
+        <textarea rows={8} placeholder="Here we are" required />
         <input className="submit" type="submit" />
       </form>
     </div>
