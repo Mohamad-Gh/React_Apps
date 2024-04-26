@@ -515,6 +515,9 @@ footer {
   flex-direction: column;
   gap: 30px;
   max-width: 500px;
+  width: 500px;
+  height: 80vh;
+  justify-content: space-around;
 }
 .logo-text-container {
   display: flex;
@@ -530,6 +533,9 @@ footer {
   flex-direction: row;
   align-items: center;
   gap: 30px;
+}
+.contentHero input {
+  height: 50px;
 }
 @media (max-width: 1300px) {
   .full-container {

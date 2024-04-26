@@ -4,6 +4,7 @@ import BlackDivider from "./BlackDivider";
 import HeroSection from "./HeroSection";
 import ContentCard from "./ContentCard";
 import LogoText from "./LogoText";
+import Form from "./Form";
 
 import carLogo from "../Assets/images/car-logo.png";
 import garageLogo from "../Assets/images/garage-logo.png";
@@ -56,11 +57,7 @@ function About() {
           />
         </div>
         <div>
-          <form>
-            <input />
-            <input />
-            <input />
-          </form>
+          <Form />
         </div>
       </div>
       <Footer />
