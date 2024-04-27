@@ -28,10 +28,12 @@ function ContactDetails(props) {
         {" " + props.address}
       </p>
       <div className="socialMedias">
-        <InstagramIcon />
-        <XIcon />
-        <WhatsAppIcon />
-        <TelegramIcon />
+        <a>
+          <InstagramIcon style={{ fontSize: "30px" }} />
+        </a>
+        <XIcon style={{ fontSize: "30px" }} />
+        <WhatsAppIcon style={{ fontSize: "30px" }} />
+        <TelegramIcon style={{ fontSize: "30px" }} />
       </div>
     </div>
   );

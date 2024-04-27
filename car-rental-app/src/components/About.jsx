@@ -52,8 +52,8 @@ function About() {
       <div className="container-detail-form">
         <div className="center-card">
           <ContactDetails
-            h2="Need additional information?"
-            text="A mult ifaceted professional skilled in multiple fields of research, development as well as a learning specialist. Over 15 years of experience."
+            h2="Need To Know Where We Are Located?"
+            text="A multifaceted professional skilled in multiple fields of research, development as well as a learning specialist. Over 15 years of experience."
             tel="(123) 456-7899"
             email="carrental@carmai.com"
             address="Car Rentals 1234 Dream Drive, Kelowna, BC, Canada V1X 5T5"

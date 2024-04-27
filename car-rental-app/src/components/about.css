@@ -4,8 +4,11 @@
   padding: 0;
   box-sizing: border-box;
 }
-.location {
+.userLocation {
   color: #ff4d30;
+}
+.branches {
+  color: #0f0f0f;
 }
 .center-card {
   margin: 50px 0;
@@ -102,6 +105,10 @@
   justify-content: flex-start;
   gap: 30px;
   color: #ff4d30;
+}
+.socialMedias > *:hover {
+  color: #0f0f0f;
+  cursor: pointer;
 }
 .content-logo-box {
   display: flex;
