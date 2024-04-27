@@ -1,21 +1,37 @@
 import React from "react";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import XIcon from "@mui/icons-material/X";
+import EmailIcon from "@mui/icons-material/Email";
+import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
+import TelegramIcon from "@mui/icons-material/Telegram";
 
 function ContactDetails(props) {
   return (
     <div className="contact-details">
       <h2>{props.h2}</h2>
       <p className="text">{props.text}</p>
-      <p>{props.tel}</p>
+      <p>
+        <LocalPhoneIcon className="socialMedias" />
+        {" " + props.tel}
+      </p>
       <a href="">
-        <p>{props.email}</p>
+        <p>
+          <EmailIcon className="socialMedias" />
+          {" " + props.email}
+        </p>
       </a>
-      <p>{props.address}</p>
+      <p>
+        {" "}
+        <LocationOnIcon className="socialMedias" />
+        {" " + props.address}
+      </p>
       <div className="socialMedias">
-        <i>Icon 1{props.telegram}</i>
-        <i>Instagram {props.instagram}</i>
-        <i>Twitter {props.twitter}</i>
-        <i>Icon 4 {props.icon4}</i>
-        <i>Whatsapp {props.whatsapp}</i>
+        <InstagramIcon />
+        <XIcon />
+        <WhatsAppIcon />
+        <TelegramIcon />
       </div>
     </div>
   );

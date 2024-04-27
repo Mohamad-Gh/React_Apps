@@ -57,6 +57,11 @@
 .contact-details h2 {
   font-size: 46px;
 }
+.contact-details p {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
 .contact-details .text {
   color: #878585;
 }
@@ -91,7 +96,9 @@
 }
 .socialMedias {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
+  gap: 30px;
+  color: #ff4d30;
 }
 .content-logo-box {
   display: flex;
