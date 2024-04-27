@@ -62,7 +62,7 @@ const GoogleMap = () => {
       {userLocation && (
         <GoogleMapReact
           bootstrapURLKeys={{
-            key: "",
+            key: apiKey,
             ...getLanguageAndRegion(userLocation.countryCode),
           }}
           defaultCenter={userLocation}
