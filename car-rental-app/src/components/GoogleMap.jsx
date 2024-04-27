@@ -3,7 +3,7 @@ import GoogleMapReact from "google-map-react";
 import LocationOnSharpIcon from "@mui/icons-material/LocationOnSharp";
 import location from "../Assets/location.json";
 
-const apiKey = "AIzaSyBHKKQ0A4ixBNnyNc0qxEoWCXABhmpu2hU";
+const apiKey = "";
 
 const GoogleMap = () => {
   const [userLocation, setUserLocation] = useState(null);
@@ -63,7 +63,7 @@ const GoogleMap = () => {
       {userLocation && (
         <GoogleMapReact
           bootstrapURLKeys={{
-            key: "AIzaSyBHKKQ0A4ixBNnyNc0qxEoWCXABhmpu2hU",
+            key: apiKey,
             ...getLanguageAndRegion(userLocation.countryCode),
           }}
           defaultCenter={userLocation}
