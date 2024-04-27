@@ -1,0 +1,34 @@
+{
+  "locations": [
+    {
+      "city": "Vancouver",
+      "latitude": 49.2827,
+      "longitude": -123.1207
+    },
+    {
+      "city": "Victoria",
+      "latitude": 48.4284,
+      "longitude": -123.3656
+    },
+    {
+      "city": "Kelowna",
+      "latitude": 49.8879,
+      "longitude": -119.496
+    },
+    {
+      "city": "Kamloops",
+      "latitude": 50.6761,
+      "longitude": -120.3408
+    },
+    {
+      "city": "Prince George",
+      "latitude": 53.9166,
+      "longitude": -122.753
+    },
+    {
+      "city": "Nanaimo",
+      "latitude": 49.1659,
+      "longitude": -123.9401
+    }
+  ]
+}

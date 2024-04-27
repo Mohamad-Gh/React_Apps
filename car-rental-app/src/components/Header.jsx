@@ -33,8 +33,8 @@ function Header() {
           </nav>
           <div class="sign-in">
             <div>
-              <button class="btn">Sign in</button>
-              <button class="btn btn-nav">Register</button>
+              <button class="btn">Sign in </button>
+              <button class="btn btn-nav"> Register</button>
             </div>
           </div>
           <div class="mobile-hamb">

@@ -4,6 +4,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+.location {
+  color: #ff4d30;
+}
 .center-card {
   margin: 50px 0;
   display: flex;
