@@ -3,7 +3,8 @@ import GoogleMapReact from "google-map-react";
 import LocationOnSharpIcon from "@mui/icons-material/LocationOnSharp";
 import location from "../Assets/location.json";
 
-const apiKey = { key: "AIzaSyBHKKQ0A4ixBNnyNc0qxEoWCXABhmpu2hU" };
+const apiKey = "AIzaSyBHKKQ0A4ixBNnyNc0qxEoWCXABhmpu2hU";
+
 const GoogleMap = () => {
   const [userLocation, setUserLocation] = useState(null);
 
@@ -62,13 +63,13 @@ const GoogleMap = () => {
       {userLocation && (
         <GoogleMapReact
           bootstrapURLKeys={{
-            key: apiKey,
+            key: "AIzaSyBHKKQ0A4ixBNnyNc0qxEoWCXABhmpu2hU",
             ...getLanguageAndRegion(userLocation.countryCode),
           }}
           defaultCenter={userLocation}
           defaultZoom={11}
           yesIWantToUseGoogleMapApiInternals={true}
-          hoverDistance={20}
+          // hoverDistance={20}
         >
           <LocationOnSharpIcon
             // onMouseEnter={hoverSetter}
