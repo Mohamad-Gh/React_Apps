@@ -7,6 +7,10 @@
 .userLocation {
   color: #ff4d30;
 }
+.userLocation:hover,
+.branches:hover {
+  scale: 1.5;
+}
 .branches {
   color: #0f0f0f;
 }
@@ -82,7 +86,7 @@
 }
 
 .formAbout input {
-  height: 20px;
+  height: 50px;
 }
 .formAbout input,
 .formAbout textarea {
@@ -106,7 +110,7 @@
   gap: 30px;
   color: #ff4d30;
 }
-.socialMedias > *:hover {
+.socialMedias > a:hover {
   color: #0f0f0f;
   cursor: pointer;
 }

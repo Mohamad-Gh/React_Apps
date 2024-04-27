@@ -4,7 +4,7 @@ import LocationOnSharpIcon from "@mui/icons-material/LocationOnSharp";
 import location from "../Assets/location.json";
 
 const apiKey = { key: "AIzaSyBHKKQ0A4ixBNnyNc0qxEoWCXABhmpu2hU" };
-const GoogleMap = (zoomLevel) => {
+const GoogleMap = () => {
   const [userLocation, setUserLocation] = useState(null);
 
   useEffect(() => {
@@ -50,18 +50,28 @@ const GoogleMap = (zoomLevel) => {
     return { language, region };
   };
 
+  // const [hover, hoverSet] = useState(false);
+
+  // set the hovering effect by React
+  // function hoverSetter() {
+  //   hoverSet(true);
+  // }
+
   return (
     <div style={{ height: "400px", width: "400px" }}>
       {userLocation && (
         <GoogleMapReact
           bootstrapURLKeys={{
-            key: "AIzaSyBHKKQ0A4ixBNnyNc0qxEoWCXABhmpu2hU",
+            key: "",
             ...getLanguageAndRegion(userLocation.countryCode),
           }}
           defaultCenter={userLocation}
-          defaultZoom={5}
+          defaultZoom={11}
+          yesIWantToUseGoogleMapApiInternals={true}
+          hoverDistance={20}
         >
           <LocationOnSharpIcon
+            // onMouseEnter={hoverSetter}
             className="userLocation"
             key={0}
             lat={userLocation.lat}
