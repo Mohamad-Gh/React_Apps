@@ -2,34 +2,24 @@ import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import BlackDivider from "./BlackDivider";
-import TestimonialBox from "./TestimonialBOX";
+import TestimonialSection from "./TestimonialSection";
 
 function TestimonialsPage() {
   return (
     <div>
       <Header />
+      <TestimonialSection
+        h3="Reviewed by Celebrities"
+        h2="Client's Testimonials"
+        text="Discover the positive impact we've made on the our clients by
+              reading through their testimonials. Our clients have experienced
+              our service and results, and they're eager to share their positive
+              experiences with you."
+      />
       <BlackDivider
         text="Book a car by getting in touch with us"
         span="(123) 456-7869"
       />
-      <div className="testimonials-album">
-        <TestimonialBox
-          comment='"We rented a car from this website and had an amazing
-                  experience! The booking was easy and the rental rates were
-                  very affordable. "'
-          img="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*kuRZa261wcEzQXpTQhnkqQ.jpeg"
-          name="Lance Stroll"
-          city="Montreal"
-        />
-        <TestimonialBox
-          comment='"The car was in great condition and made our trip even better.
-                  Rental rates were awesome. Highly recommend for this car
-                  rental website!"'
-          img="https://pbs.twimg.com/media/FgK1YH4XwAIoIob?format=jpg&name=large"
-          name="Nicholas Latifi"
-          city="Montreal"
-        />
-      </div>
       <Footer />
     </div>
   );

@@ -7,7 +7,10 @@ function OurTeam() {
   return (
     <div>
       <Header />
-      <BlackDivider />
+      <BlackDivider
+        text="Book a car by getting in touch with us"
+        span="(123) 456-7869"
+      />
       <Footer />
     </div>
   );

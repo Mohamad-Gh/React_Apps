@@ -1,6 +1,6 @@
 import React from "react";
 
-function TestimonialBox(props) {
+function TestimonialCard(props) {
   return (
     <div className="testimonials-box">
       <p>{props.comment}</p>
@@ -32,4 +32,4 @@ function TestimonialBox(props) {
   );
 }
 
-export default TestimonialBox;
+export default TestimonialCard;
