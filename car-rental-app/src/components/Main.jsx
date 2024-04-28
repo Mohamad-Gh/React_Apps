@@ -9,7 +9,6 @@ import HeroSection from "./HeroSection";
 import ContentCard from "./ContentCard";
 import Booking from "./Booking";
 import TestimonialCard from "./TestimonialCard";
-import TestimonialSection from "./TestimonialSection";
 
 function Main() {
   return (
@@ -162,14 +161,40 @@ function Main() {
         span="24/7"
         text2="Support."
       />
-      <TestimonialSection
-        h3="Reviewed by Celebrities"
-        h2="Client's Testimonials"
-        text="Discover the positive impact we've made on the our clients by
-              reading through their testimonials. Our clients have experienced
-              our service and results, and they're eager to share their positive
-              experiences with you."
-      />
+      <section className="testimonials">
+        <div className="full-container">
+          <div className="container-testimonials">
+            <div className="testimonials-title">
+              <h3>Reviewed by Celebrities</h3>
+              <h2>Client's Testimonials</h2>
+              <p>
+                Discover the positive impact we've made on the our clients by
+                reading through their testimonials. Our clients have experienced
+                our service and results, and they're eager to share their
+                positive experiences with you.
+              </p>
+            </div>
+            <div className="testimonials-album">
+              <TestimonialCard
+                comment='"We rented a car from this website and had an amazing
+                  experience! The booking was easy and the rental rates were
+                  very affordable. "'
+                img="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*kuRZa261wcEzQXpTQhnkqQ.jpeg"
+                name="Lance Stroll"
+                city="Montreal"
+              />
+              <TestimonialCard
+                comment='"The car was in great condition and made our trip even better.
+                  Rental rates were awesome. Highly recommend for this car
+                  rental website!"'
+                img="https://pbs.twimg.com/media/FgK1YH4XwAIoIob?format=jpg&name=large"
+                name="Nicholas Latifi"
+                city="Montreal"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
       <section className="faq">
         <div className="container-faq">
           <div className="faq-title">

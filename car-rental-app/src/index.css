@@ -354,9 +354,10 @@ label span {
   margin-bottom: 50px;
 }
 .testimonials-album {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  column-gap: 50px;
+  row-gap: 50px;
 }
 .testimonials-box {
   background-color: #fff;
