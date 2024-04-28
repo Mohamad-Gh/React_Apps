@@ -19,6 +19,7 @@ function TestimonialSection(props) {
                 img={client.image_url}
                 name={client.name}
                 city={client.city}
+                rate={Array.from({ length: client.rating })}
               />
             ))}
           </div>

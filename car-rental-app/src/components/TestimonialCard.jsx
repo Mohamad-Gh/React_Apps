@@ -1,4 +1,5 @@
 import React from "react";
+import GradeIcon from "@mui/icons-material/Grade";
 
 function TestimonialCard(props) {
   return (
@@ -28,6 +29,9 @@ function TestimonialCard(props) {
           </svg>
         </div>
       </div>
+      {props.rate.map((elemnt, indx) => (
+        <GradeIcon key={indx} />
+      ))}
     </div>
   );
 }
