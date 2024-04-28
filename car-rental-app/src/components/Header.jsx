@@ -1,7 +1,5 @@
 import logo from "../Assets/images/logo.png";
-import { Route, Routes, Link } from "react-router-dom";
-import About from "./About";
-import App from "./App";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -17,13 +15,16 @@ function Header() {
                 <Link to="/">Home</Link>
               </li>
               <li>
-                <a href="">Vehicle Model</a>
+                {/* <a href=""></a> */}
+                <Link to="/Vehicle Model">Vehicle Model</Link>
               </li>
               <li>
-                <a href="">Testimonials</a>
+                {/* <a href="">Testimonials</a> */}
+                <Link to="/Testimonials">Testimonials</Link>
               </li>
               <li>
-                <a href="">Our Team</a>
+                <Link to="/Our Team">Our Team</Link>
+                {/* <a href="">Our Team</a> */}
               </li>
               <li>
                 <Link to="/About">About</Link>
@@ -34,7 +35,9 @@ function Header() {
           <div class="sign-in">
             <div>
               <button class="btn">Sign in </button>
-              <button class="btn btn-nav"> Register</button>
+              <button class="btn btn-nav">
+                <Link to="/Register">Register</Link>
+              </button>
             </div>
           </div>
           <div class="mobile-hamb">
