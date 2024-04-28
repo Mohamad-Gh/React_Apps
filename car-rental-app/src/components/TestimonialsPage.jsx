@@ -4,11 +4,14 @@ import Footer from "./Footer";
 import BlackDivider from "./BlackDivider";
 import TestimonialBox from "./TestimonialBOX";
 
-function Testimonials() {
+function TestimonialsPage() {
   return (
     <div>
       <Header />
-      <BlackDivider />
+      <BlackDivider
+        text="Book a car by getting in touch with us"
+        span="(123) 456-7869"
+      />
       <div className="testimonials-album">
         <TestimonialBox
           comment='"We rented a car from this website and had an amazing
@@ -32,4 +35,4 @@ function Testimonials() {
   );
 }
 
-export default Testimonials;
+export default TestimonialsPage;
