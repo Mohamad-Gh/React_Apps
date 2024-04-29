@@ -31,3 +31,24 @@
   width: 200px;
   text-decoration: unset;
 }
+.BookWithUs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 75px;
+}
+.BookWithUs li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+.bookWithUsTitle {
+  margin: 20px 0;
+  font-size: 36px;
+  font-weight: bold;
+}
+.check {
+  color: #ff4d30;
+}

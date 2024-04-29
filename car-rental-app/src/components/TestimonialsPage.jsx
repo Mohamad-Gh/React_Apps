@@ -1,14 +1,20 @@
 import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
-import BlackDivider from "./BlackDivider";
 import TestimonialSection from "./TestimonialSection";
 import RentCar from "./RentCar";
+import Why from "./Why";
+import BlackDivider from "./BlackDivider";
 
 function TestimonialsPage() {
   return (
     <div>
       <Header />
+      <Why />
+      <BlackDivider
+        text="Book a car by getting in touch with us"
+        span="(123) 456-7869"
+      />
       <TestimonialSection
         h3="Join Over 11,000"
         span=" Happy"
