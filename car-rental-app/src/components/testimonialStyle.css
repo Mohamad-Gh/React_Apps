@@ -32,10 +32,11 @@
   text-decoration: unset;
 }
 .BookWithUs {
+  width: 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 65px 75px;
+  margin: 50px auto;
 }
 .BookWithUs li {
   list-style: none;
