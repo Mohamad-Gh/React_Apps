@@ -15,18 +15,18 @@
       "rating": 4
     },
     {
-      "comment": "My recent visit to Victoria was made much easier thanks to this car rental service. The car was in excellent condition, and the staff were friendly and helpful.",
-      "image_url": "https://mighty.tools/mockmind-api/content/human/6.jpg",
-      "name": "Eva Martinez",
-      "city": "Calgary",
-      "rating": 4
-    },
-    {
       "comment": "I recently traveled to Kamloops for a short stay and rented a car from this company. The process was hassle-free, and the car was clean and comfortable. Highly recommend!",
       "image_url": "https://mighty.tools/mockmind-api/content/human/5.jpg",
       "name": "David Brown",
       "city": "Edmonton",
       "rating": 5
+    },
+    {
+      "comment": "My recent visit to Victoria was made much easier thanks to this car rental service. The car was in excellent condition, and the staff were friendly and helpful.",
+      "image_url": "https://mighty.tools/mockmind-api/content/human/6.jpg",
+      "name": "Eva Martinez",
+      "city": "Calgary",
+      "rating": 4
     },
     {
       "comment": "During my visit to Prince George, I rented a car from this company, and I must say, it was a fantastic experience. The car was in great condition, and the service was top-notch.",

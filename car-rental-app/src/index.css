@@ -48,7 +48,12 @@ header {
   text-decoration: none;
   color: black;
 }
+.link {
+  text-decoration: none;
+  color: unset;
+}
 .btn {
+  text-decoration: none;
   font-size: 14px;
   font-weight: 900;
   background-color: transparent;
