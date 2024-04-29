@@ -1,22 +1,28 @@
 import React from "react";
-import "CarCard.css";
+import LocalGasStationIcon from "@mui/icons-material/LocalGasStation";
+import "./CarCard.css";
 
 function CarCard(props) {
   return (
-    <div class="mini-wrap flex-wrap">
-      <div class="flexcol top">
-        <h2 itemprop="name">Compact</h2>
-        <p class="fuel" itemprop="fuelConsumption">
-          <strong>City:</strong> 7.8l/100km<strong>Highway:</strong> 6l/100km
-        </p>
+    <div className="flex-carCards">
+      <div className="model-Card">
+        <h2 itemprop="catagory">Compact</h2>
+        <div className="model-Card-p">
+          <p>
+            <strong>City:</strong> 7.8l/100km
+            <br></br>
+            <strong>Highway:</strong> 6l/100km
+          </p>
+          <LocalGasStationIcon />
+        </div>
       </div>
-      <div class="middle">
+      <div className="middle-Card">
         <img
           width="400"
           height="270"
           src="https://www.globecar.com/wp-content/uploads/2017/09/ccar-400x270.png"
           data-src="https://www.globecar.com/wp-content/uploads/2017/09/ccar-400x270.png"
-          class="attachment-medium size-medium wp-post-image lazy loaded"
+          className="attachment-medium size-medium wp-post-image lazy loaded"
           alt="ccar"
           itemprop="image"
           decoding="async"
@@ -28,40 +34,40 @@ function CarCard(props) {
           data-was-processed="true"
         />
       </div>
-      <div class="bottom">
-        <div class="flexcol">
-          <div class="description">
+      <div className="bottom-Card">
+        <div className="">
+          <div className="">
             <h3 itemprop="model">Hyundai Accent or similar</h3>
             <p>Starting at $27.95/day</p>
-            <ul class="car-features">
-              <li class="luggages" itemprop="cargoVolume">
+            <ul className="car-features">
+              <li className="luggages" itemprop="cargoVolume">
                 2
               </li>
-              <li class="passengers" itemprop="seatingCapacity">
+              <li className="passengers" itemprop="seatingCapacity">
                 4
               </li>
-              <li class="transmission" itemprop="vehicleTransmission">
+              <li className="transmission" itemprop="vehicleTransmission">
                 automatic
               </li>
-              <li class="ac" itemprop="additionalProperty">
+              <li className="ac" itemprop="additionalProperty">
                 air conditioning
               </li>
-              <li class="road">Roadside Assistance</li>
-              <li class="smokefree">Smoke Free Vehicle</li>
-              <li class="gps">Free GPS</li>
-              <li class="age">20 years +</li>
+              <li className="road">Roadside Assistance</li>
+              <li className="smokefree">Smoke Free Vehicle</li>
+              <li className="gps">Free GPS</li>
+              <li className="age">20 years +</li>
             </ul>
           </div>
-          <div class="actions">
+          <div className="actions">
             <a
-              class="button"
+              className="button"
               itemprop="url"
               href="https://www.globecar.com/en/vehicles/compact/"
             >
               More
             </a>
             <a
-              class="button full"
+              className="button full"
               itemprop="url"
               href="https://reserve.globecar.com/en/rent-a-car"
             >

@@ -1,0 +1,34 @@
+.flex-carCards {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 450px;
+}
+.model-Card {
+  display: flex;
+  justify-content: space-between;
+}
+.model-Card-p {
+  color: grey;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.middle-Card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.middle-Card img {
+  object-fit: scale-down;
+  overflow: hidden;
+}
+.bottom-Card {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.car-features {
+  display: flex;
+}
