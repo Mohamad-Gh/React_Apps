@@ -5,42 +5,42 @@
       "image_url": "https://mighty.tools/mockmind-api/content/human/9.jpg",
       "name": "Alice Smith",
       "city": "Toronto",
-      "rating": 9
+      "rating": 4
     },
     {
       "comment": "I had a business meeting in Kelowna last week and decided to rent a car from this company. The process was smooth, and the car exceeded my expectations. Highly recommended!",
       "image_url": "https://mighty.tools/mockmind-api/content/human/42.jpg",
       "name": "Bob Johnson",
       "city": "Montreal",
-      "rating": 8
+      "rating": 4
     },
     {
       "comment": "My recent visit to Victoria was made much easier thanks to this car rental service. The car was in excellent condition, and the staff were friendly and helpful.",
       "image_url": "https://mighty.tools/mockmind-api/content/human/6.jpg",
       "name": "Eva Martinez",
       "city": "Calgary",
-      "rating": 7
+      "rating": 4
     },
     {
       "comment": "I recently traveled to Kamloops for a short stay and rented a car from this company. The process was hassle-free, and the car was clean and comfortable. Highly recommend!",
       "image_url": "https://mighty.tools/mockmind-api/content/human/5.jpg",
       "name": "David Brown",
       "city": "Edmonton",
-      "rating": 9
+      "rating": 5
     },
     {
       "comment": "During my visit to Prince George, I rented a car from this company, and I must say, it was a fantastic experience. The car was in great condition, and the service was top-notch.",
       "image_url": "https://mighty.tools/mockmind-api/content/human/26.jpg",
       "name": "Sophia Wilson",
       "city": "Ottawa",
-      "rating": 8
+      "rating": 5
     },
     {
       "comment": "I had the pleasure of visiting Abbotsford last month and used this car rental service. The staff were friendly, the process was easy, and the car was perfect for exploring the city.",
       "image_url": "https://mighty.tools/mockmind-api/content/human/4.jpg",
       "name": "Michael Taylor",
       "city": "Toronto",
-      "rating": 7
+      "rating": 4
     }
   ]
 }

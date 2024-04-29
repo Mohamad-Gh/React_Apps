@@ -8,7 +8,11 @@ function TestimonialSection(props) {
       <div className="full-container">
         <div className="container-testimonials">
           <div className="testimonials-title">
-            <h3>{props.h3}</h3>
+            <h3>
+              {props.h3}
+              <span>{props.span}</span>
+              {props.h3More}
+            </h3>
             <h2>{props.h2}</h2>
             <p>{props.text}</p>
           </div>

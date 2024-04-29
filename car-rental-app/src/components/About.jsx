@@ -7,7 +7,7 @@ import LogoText from "./LogoText";
 import Form from "./Form";
 import ContactDetails from "./ContactDetails";
 
-import about from "./about.css";
+import "./about.css";
 import carLogo from "../Assets/images/car-logo.png";
 import garageLogo from "../Assets/images/garage-logo.png";
 import carGarageLogo from "../Assets/images/car-garage-logo.png";
