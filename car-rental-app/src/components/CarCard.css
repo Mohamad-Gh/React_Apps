@@ -34,6 +34,7 @@
   flex-direction: column;
 }
 .featureDetails {
+  margin-top: 10px;
   display: flex;
   flex-direction: column;
   list-style: none;
