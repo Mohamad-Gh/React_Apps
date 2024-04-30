@@ -84,18 +84,10 @@ function CarCard(props) {
             </ul>
           </div>
           <div className="actions">
-            <a
-              className="moreButton"
-              itemprop="url"
-              href="https://www.globecar.com/en/vehicles/compact/"
-            >
+            <a className="moreButton" itemprop="url" href="">
               More
             </a>
-            <a
-              className="bookButton"
-              itemprop="url"
-              href="https://reserve.globecar.com/en/rent-a-car"
-            >
+            <a className="bookButton" itemprop="url" href="">
               Book now
             </a>
           </div>
