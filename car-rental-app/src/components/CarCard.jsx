@@ -15,12 +15,12 @@ function CarCard(props) {
   return (
     <div className="flexCarCards">
       <div className="modelCard">
-        <h2 itemprop="catagory">{Compact}</h2>
+        <h2 itemprop="catagory">{props.model}</h2>
         <div className="modelCard-p">
           <p>
-            <strong>City:</strong> 7.8l/100km
+            <strong>City:</strong> {props.city}
             <br></br>
-            <strong>Highway:</strong> 6l/100km
+            <strong>Highway:</strong> {props.highway}
           </p>
           <LocalGasStationIcon />
         </div>
@@ -29,54 +29,53 @@ function CarCard(props) {
         <img
           width="400"
           height="270"
-          src="https://www.globecar.com/wp-content/uploads/2017/09/ccar-400x270.png"
-          data-src="https://www.globecar.com/wp-content/uploads/2017/09/ccar-400x270.png"
+          src={props.img}
           className="attachment-medium size-medium wp-post-image lazy loaded"
           alt="ccar"
           itemprop="image"
           decoding="async"
           fetchpriority="high"
-          data-srcset="https://www.globecar.com/wp-content/uploads/2017/09/ccar-200x135@2x.png 400w, https://www.globecar.com/wp-content/uploads/2017/09/ccar-150x101.png 150w, https://www.globecar.com/wp-content/uploads/2017/09/ccar-68x46.png 68w, https://www.globecar.com/wp-content/uploads/2017/09/ccar-200x135.png 200w, https://www.globecar.com/wp-content/uploads/2017/09/ccar-150x101@2x.png 300w, https://www.globecar.com/wp-content/uploads/2017/09/ccar-68x46@2x.png 136w"
           data-sizes="(max-width: 400px) 100vw, 400px"
           sizes="(max-width: 400px) 100vw, 400px"
-          srcset="https://www.globecar.com/wp-content/uploads/2017/09/ccar-200x135@2x.png 400w, https://www.globecar.com/wp-content/uploads/2017/09/ccar-150x101.png 150w, https://www.globecar.com/wp-content/uploads/2017/09/ccar-68x46.png 68w, https://www.globecar.com/wp-content/uploads/2017/09/ccar-200x135.png 200w, https://www.globecar.com/wp-content/uploads/2017/09/ccar-150x101@2x.png 300w, https://www.globecar.com/wp-content/uploads/2017/09/ccar-68x46@2x.png 136w"
           data-was-processed="true"
         />
       </div>
       <div className="bottomCard">
         <div className="carFeatures">
           <div className="carModel">
-            <h3 itemprop="model">Hyundai Accent or similar</h3>
-            <p>Starting at $27.95/day</p>
+            <h3 itemprop="model">{props.description}</h3>
+            <p>Starting at {props.price}</p>
             <ul className="featureDetails">
               <li>
                 <ul className="capacity">
                   <li className="luggages" itemprop="cargoVolume">
-                    <LuggageIcon />2
+                    <LuggageIcon />
+                    {props.luggage}
                   </li>
                   <li className="passengers" itemprop="seatingCapacity">
-                    <PeopleIcon />4
+                    <PeopleIcon />
+                    {props.passenger}
                   </li>
                 </ul>
               </li>
               <li className="transmission" itemprop="vehicleTransmission">
-                <MemoryIcon /> automatic
+                <MemoryIcon /> {props.transmission}
               </li>
               <li className="ac" itemprop="additionalProperty">
                 <AcUnitIcon />
-                Air conditioning
+                {props.AC}
               </li>
               <li className="road">
                 <SupportIcon />
-                Roadside Assistance
+                Road Assistant: {props.RA}
               </li>
               <li className="smokefree">
                 <SmokeFreeIcon />
-                Smoke Free Vehicle
+                Smoke Free Vehicle:{props.smoke}
               </li>
               <li className="gps">
                 <GpsFixedIcon />
-                Free GPS
+                Free GPS: {props.gps}
               </li>
               <li className="age">
                 <CreditCardIcon />
