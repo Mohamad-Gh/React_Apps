@@ -47,7 +47,13 @@
   gap: 20px;
 }
 .luggages,
-.passengers {
+.passengers,
+.smokefree,
+.road,
+.ac,
+.transmission,
+.gps,
+.age {
   display: flex;
   align-items: center;
   gap: 10px;

@@ -67,7 +67,6 @@ function CarCard(props) {
                 Air conditioning
               </li>
               <li className="road">
-                {" "}
                 <SupportIcon />
                 Roadside Assistance
               </li>
