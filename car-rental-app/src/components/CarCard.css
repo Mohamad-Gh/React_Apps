@@ -3,6 +3,7 @@
   flex-direction: column;
   padding: 20px;
   width: 450px;
+  background-color: bisque;
 }
 .modelCard {
   display: flex;
