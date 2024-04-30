@@ -2,6 +2,13 @@ import React from "react";
 import LocalGasStationIcon from "@mui/icons-material/LocalGasStation";
 import LuggageIcon from "@mui/icons-material/Luggage";
 import PeopleIcon from "@mui/icons-material/People";
+import MemoryIcon from "@mui/icons-material/Memory";
+import AcUnitIcon from "@mui/icons-material/AcUnit";
+import SupportIcon from "@mui/icons-material/Support";
+import GpsFixedIcon from "@mui/icons-material/GpsFixed";
+import CreditCardIcon from "@mui/icons-material/CreditCard";
+import SmokeFreeIcon from "@mui/icons-material/SmokeFree";
+
 import "./CarCard.css";
 
 function CarCard(props) {
@@ -53,15 +60,29 @@ function CarCard(props) {
                 </ul>
               </li>
               <li className="transmission" itemprop="vehicleTransmission">
-                automatic
+                <MemoryIcon /> automatic
               </li>
               <li className="ac" itemprop="additionalProperty">
-                air conditioning
+                <AcUnitIcon />
+                Air conditioning
               </li>
-              <li className="road">Roadside Assistance</li>
-              <li className="smokefree">Smoke Free Vehicle</li>
-              <li className="gps">Free GPS</li>
-              <li className="age">20 years +</li>
+              <li className="road">
+                {" "}
+                <SupportIcon />
+                Roadside Assistance
+              </li>
+              <li className="smokefree">
+                <SmokeFreeIcon />
+                Smoke Free Vehicle
+              </li>
+              <li className="gps">
+                <GpsFixedIcon />
+                Free GPS
+              </li>
+              <li className="age">
+                <CreditCardIcon />
+                20 years +
+              </li>
             </ul>
           </div>
           <div className="actions">
