@@ -1,34 +1,65 @@
-.flex-carCards {
+.flexCarCards {
   display: flex;
   flex-direction: column;
   padding: 20px;
   width: 450px;
 }
-.model-Card {
+.modelCard {
   display: flex;
   justify-content: space-between;
 }
-.model-Card-p {
+.modelCard-p {
   color: grey;
   display: flex;
   align-items: center;
   gap: 5px;
 }
 
-.middle-Card {
+.middleCard {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.middle-Card img {
+.middleCard img {
   object-fit: scale-down;
   overflow: hidden;
 }
-.bottom-Card {
+
+.carFeatures {
+  display: flex;
+}
+.carModel {
+  flex-basis: 59%;
   display: flex;
   flex-direction: column;
-  gap: 5px;
 }
-.car-features {
+.featureDetails {
   display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 10px;
+}
+.capacity {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.actions {
+  flex-basis: 39%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 50px;
+  align-items: center;
+}
+.moreButton,
+.bookButton {
+  padding: 10px;
+  font-size: 22px;
+  width: 90%;
+  text-align: center;
+  color: #ffffff;
+  background-color: tomato;
+  text-decoration: none;
 }

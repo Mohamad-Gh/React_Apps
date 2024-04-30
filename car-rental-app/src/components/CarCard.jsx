@@ -4,10 +4,10 @@ import "./CarCard.css";
 
 function CarCard(props) {
   return (
-    <div className="flex-carCards">
-      <div className="model-Card">
+    <div className="flexCarCards">
+      <div className="modelCard">
         <h2 itemprop="catagory">Compact</h2>
-        <div className="model-Card-p">
+        <div className="modelCard-p">
           <p>
             <strong>City:</strong> 7.8l/100km
             <br></br>
@@ -16,7 +16,7 @@ function CarCard(props) {
           <LocalGasStationIcon />
         </div>
       </div>
-      <div className="middle-Card">
+      <div className="middleCard">
         <img
           width="400"
           height="270"
@@ -34,17 +34,21 @@ function CarCard(props) {
           data-was-processed="true"
         />
       </div>
-      <div className="bottom-Card">
-        <div className="">
-          <div className="">
+      <div className="bottomCard">
+        <div className="carFeatures">
+          <div className="carModel">
             <h3 itemprop="model">Hyundai Accent or similar</h3>
             <p>Starting at $27.95/day</p>
-            <ul className="car-features">
-              <li className="luggages" itemprop="cargoVolume">
-                2
-              </li>
-              <li className="passengers" itemprop="seatingCapacity">
-                4
+            <ul className="featureDetails">
+              <li>
+                <ul className="capacity">
+                  <li className="luggages" itemprop="cargoVolume">
+                    2
+                  </li>
+                  <li className="passengers" itemprop="seatingCapacity">
+                    4
+                  </li>
+                </ul>
               </li>
               <li className="transmission" itemprop="vehicleTransmission">
                 automatic
@@ -60,14 +64,14 @@ function CarCard(props) {
           </div>
           <div className="actions">
             <a
-              className="button"
+              className="moreButton"
               itemprop="url"
               href="https://www.globecar.com/en/vehicles/compact/"
             >
               More
             </a>
             <a
-              className="button full"
+              className="bookButton"
               itemprop="url"
               href="https://reserve.globecar.com/en/rent-a-car"
             >
