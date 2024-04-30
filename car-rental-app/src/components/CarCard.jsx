@@ -15,7 +15,7 @@ function CarCard(props) {
   return (
     <div className="flexCarCards">
       <div className="modelCard">
-        <h2 itemprop="catagory">Compact</h2>
+        <h2 itemprop="catagory">{Compact}</h2>
         <div className="modelCard-p">
           <p>
             <strong>City:</strong> 7.8l/100km

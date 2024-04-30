@@ -1,0 +1,384 @@
+{
+  "cars": [
+    {
+      "id": 1,
+      "car_model": "Toyota Corolla",
+      "car_description": "Compact sedan perfect for city driving",
+      "fuel_efficiency": {
+        "city": "29 MPG",
+        "highway": "37 MPG"
+      },
+      "starting_price": "$35 per day",
+      "passenger_capacity": 5,
+      "luggage_capacity": 2,
+      "features": {
+        "transmission": "Automatic",
+        "AC": "yes",
+        "road_assistant": "no",
+        "smoke_free": "yes",
+        "gps": "yes"
+      },
+      "image_url": "https://www.globecar.com/wp-content/uploads/2022/02/toyota-corolla.jpg"
+    },
+    {
+      "id": 2,
+      "car_model": "Ford Fusion",
+      "car_description": "Mid-size sedan with comfortable interior",
+      "fuel_efficiency": {
+        "city": "23 MPG",
+        "highway": "34 MPG"
+      },
+      "starting_price": "$40 per day",
+      "passenger_capacity": 5,
+      "luggage_capacity": 3,
+      "features": {
+        "transmission": "Automatic",
+        "AC": "yes",
+        "road_assistant": "yes",
+        "smoke_free": "yes",
+        "gps": "yes"
+      },
+      "image_url": "https://www.globecar.com/wp-content/uploads/2022/02/ford-fusion.jpg"
+    },
+    {
+      "id": 3,
+      "car_model": "Honda Civic",
+      "car_description": "Compact sedan known for reliability",
+      "fuel_efficiency": {
+        "city": "32 MPG",
+        "highway": "42 MPG"
+      },
+      "starting_price": "$38 per day",
+      "passenger_capacity": 5,
+      "luggage_capacity": 2,
+      "features": {
+        "transmission": "Automatic",
+        "AC": "yes",
+        "road_assistant": "no",
+        "smoke_free": "yes",
+        "gps": "yes"
+      },
+      "image_url": "https://www.globecar.com/wp-content/uploads/2022/02/honda-civic.jpg"
+    },
+    {
+      "id": 4,
+      "car_model": "Chevrolet Cruze",
+      "car_description": "Compact sedan with modern styling",
+      "fuel_efficiency": {
+        "city": "28 MPG",
+        "highway": "38 MPG"
+      },
+      "starting_price": "$36 per day",
+      "passenger_capacity": 5,
+      "luggage_capacity": 2,
+      "features": {
+        "transmission": "Automatic",
+        "AC": "yes",
+        "road_assistant": "yes",
+        "smoke_free": "yes",
+        "gps": "yes"
+      },
+      "image_url": "https://www.globecar.com/wp-content/uploads/2022/02/chevrolet-cruze.jpg"
+    },
+    {
+      "id": 5,
+      "car_model": "Nissan Altima",
+      "car_description": "Mid-size sedan with spacious interior",
+      "fuel_efficiency": {
+        "city": "27 MPG",
+        "highway": "37 MPG"
+      },
+      "starting_price": "$42 per day",
+      "passenger_capacity": 5,
+      "luggage_capacity": 3,
+      "features": {
+        "transmission": "Automatic",
+        "AC": "yes",
+        "road_assistant": "yes",
+        "smoke_free": "yes",
+        "gps": "yes"
+      },
+      "image_url": "https://www.globecar.com/wp-content/uploads/2022/02/nissan-altima.jpg"
+    },
+    {
+      "id": 6,
+      "car_model": "Hyundai Elantra",
+      "car_description": "Compact sedan with excellent fuel efficiency",
+      "fuel_efficiency": {
+        "city": "30 MPG",
+        "highway": "40 MPG"
+      },
+      "starting_price": "$34 per day",
+      "passenger_capacity": 5,
+      "luggage_capacity": 2,
+      "features": {
+        "transmission": "Automatic",
+        "AC": "yes",
+        "road_assistant": "no",
+        "smoke_free": "yes",
+        "gps": "yes"
+      },
+      "image_url": "https://www.globecar.com/wp-content/uploads/2022/02/hyundai-elantra.jpg"
+    },
+    {
+      "id": 7,
+      "car_model": "Volkswagen Jetta",
+      "car_description": "Compact sedan with a refined interior",
+      "fuel_efficiency": {
+        "city": "27 MPG",
+        "highway": "37 MPG"
+      },
+      "starting_price": "$37 per day",
+      "passenger_capacity": 5,
+      "luggage_capacity": 3,
+      "features": {
+        "transmission": "Automatic",
+        "AC": "yes",
+        "road_assistant": "no",
+        "smoke_free": "yes",
+        "gps": "yes"
+      },
+      "image_url": "https://www.globecar.com/wp-content/uploads/2022/02/volkswagen-jetta.jpg"
+    },
+    {
+      "id": 8,
+      "car_model": "Subaru Impreza",
+      "car_description": "Versatile compact sedan with all-wheel drive",
+      "fuel_efficiency": {
+        "city": "28 MPG",
+        "highway": "36 MPG"
+      },
+      "starting_price": "$42 per day",
+      "passenger_capacity": 5,
+      "luggage_capacity": 3,
+      "features": {
+        "transmission": "Automatic",
+        "AC": "yes",
+        "road_assistant": "yes",
+        "smoke_free": "yes",
+        "gps": "yes"
+      },
+      "image_url": "https://www.globecar.com/wp-content/uploads/2022/02/subaru-impreza.jpg"
+    },
+    {
+      "id": 9,
+      "car_model": "Audi A4",
+      "car_description": "Luxurious mid-size sedan with premium features",
+      "fuel_efficiency": {
+        "city": "24 MPG",
+        "highway": "34 MPG"
+      },
+      "starting_price": "$55 per day",
+      "passenger_capacity": 5,
+      "luggage_capacity": 3,
+      "features": {
+        "transmission": "Automatic",
+        "AC": "yes",
+        "road_assistant": "yes",
+        "smoke_free": "yes",
+        "gps": "yes"
+      },
+      "image_url": "https://www.globecar.com/wp-content/uploads/2022/02/audi-a4.jpg"
+    },
+    {
+      "id": 10,
+      "car_model": "BMW 3 Series",
+      "car_description": "Iconic luxury sedan with sporty performance",
+      "fuel_efficiency": {
+        "city": "26 MPG",
+        "highway": "36 MPG"
+      },
+      "starting_price": "$60 per day",
+      "passenger_capacity": 5,
+      "luggage_capacity": 3,
+      "features": {
+        "transmission": "Automatic",
+        "AC": "yes",
+        "road_assistant": "yes",
+        "smoke_free": "yes",
+        "gps": "yes"
+      },
+      "image_url": "https://www.globecar.com/wp-content/uploads/2022/02/bmw-3-series.jpg"
+    },
+    {
+      "id": 11,
+      "car_model": "Mercedes-Benz C-Class",
+      "car_description": "Elegant and refined luxury sedan",
+      "fuel_efficiency": {
+        "city": "25 MPG",
+        "highway": "35 MPG"
+      },
+      "starting_price": "$65 per day",
+      "passenger_capacity": 5,
+      "luggage_capacity": 3,
+      "features": {
+        "transmission": "Automatic",
+        "AC": "yes",
+        "road_assistant": "yes",
+        "smoke_free": "yes",
+        "gps": "yes"
+      },
+      "image_url": "https://www.globecar.com/wp-content/uploads/2022/02/mercedes-benz-c-class.jpg"
+    },
+    {
+      "id": 12,
+      "car_model": "Lexus ES",
+      "car_description": "Luxury sedan with a spacious and comfortable interior",
+      "fuel_efficiency": {
+        "city": "22 MPG",
+        "highway": "33 MPG"
+      },
+      "starting_price": "$70 per day",
+      "passenger_capacity": 5,
+      "luggage_capacity": 3,
+      "features": {
+        "transmission": "Automatic",
+        "AC": "yes",
+        "road_assistant": "yes",
+        "smoke_free": "yes",
+        "gps": "yes"
+      },
+      "image_url": "https://www.globecar.com/wp-content/uploads/2022/02/lexus-es.jpg"
+    },
+    {
+      "id": 13,
+      "car_model": "Volvo S60",
+      "car_description": "Premium sedan with advanced safety features",
+      "fuel_efficiency": {
+        "city": "24 MPG",
+        "highway": "34 MPG"
+      },
+      "starting_price": "$55 per day",
+      "passenger_capacity": 5,
+      "luggage_capacity": 3,
+      "features": {
+        "transmission": "Automatic",
+        "AC": "yes",
+        "road_assistant": "yes",
+        "smoke_free": "yes",
+        "gps": "yes"
+      },
+      "image_url": "https://www.globecar.com/wp-content/uploads/2022/02/volvo-s60.jpg"
+    },
+    {
+      "id": 14,
+      "car_model": "Tesla Model 3",
+      "car_description": "Electric sedan with cutting-edge technology and performance",
+      "fuel_efficiency": {
+        "city": "126 MPGe",
+        "highway": "116 MPGe"
+      },
+      "starting_price": "$80 per day",
+      "passenger_capacity": 5,
+      "luggage_capacity": 2,
+      "features": {
+        "transmission": "Automatic",
+        "AC": "yes",
+        "road_assistant": "yes",
+        "smoke_free": "yes",
+        "gps": "yes"
+      },
+      "image_url": "https://www.globecar.com/wp-content/uploads/2022/02/tesla-model-3.jpg"
+    },
+    {
+      "id": 15,
+      "car_model": "Porsche Panamera",
+      "car_description": "Luxury sports sedan with exhilarating performance",
+      "fuel_efficiency": {
+        "city": "21 MPG",
+        "highway": "28 MPG"
+      },
+      "starting_price": "$150 per day",
+      "passenger_capacity": 4,
+      "luggage_capacity": 2,
+      "features": {
+        "transmission": "Automatic",
+        "AC": "yes",
+        "road_assistant": "yes",
+        "smoke_free": "yes",
+        "gps": "yes"
+      },
+      "image_url": "https://www.globecar.com/wp-content/uploads/2022/02/porsche-panamera.jpg"
+    },
+    {
+      "id": 16,
+      "car_model": "Ferrari Roma",
+      "car_description": "Exotic luxury sports coupe with stunning design and performance",
+      "fuel_efficiency": {
+        "city": "15 MPG",
+        "highway": "19 MPG"
+      },
+      "starting_price": "$2000 per day",
+      "passenger_capacity": 2,
+      "luggage_capacity": 1,
+      "features": {
+        "transmission": "Automatic",
+        "AC": "yes",
+        "road_assistant": "yes",
+        "smoke_free": "yes",
+        "gps": "yes"
+      },
+      "image_url": "https://www.globecar.com/wp-content/uploads/2022/02/ferrari-roma.jpg"
+    },
+    {
+      "id": 17,
+      "car_model": "Aston Martin DB11",
+      "car_description": "Luxurious grand tourer with a powerful engine",
+      "fuel_efficiency": {
+        "city": "18 MPG",
+        "highway": "24 MPG"
+      },
+      "starting_price": "$800 per day",
+      "passenger_capacity": 4,
+      "luggage_capacity": 2,
+      "features": {
+        "transmission": "Automatic",
+        "AC": "yes",
+        "road_assistant": "yes",
+        "smoke_free": "yes",
+        "gps": "yes"
+      },
+      "image_url": "https://cdn.pixabay.com/photo/2017/09/24/22/49/aston-2778254_960_720.jpg"
+    },
+    {
+      "id": 18,
+      "car_model": "Rolls-Royce Ghost",
+      "car_description": "Ultra-luxurious sedan with handcrafted interior",
+      "fuel_efficiency": {
+        "city": "12 MPG",
+        "highway": "18 MPG"
+      },
+      "starting_price": "$1500 per day",
+      "passenger_capacity": 5,
+      "luggage_capacity": 2,
+      "features": {
+        "transmission": "Automatic",
+        "AC": "yes",
+        "road_assistant": "yes",
+        "smoke_free": "yes",
+        "gps": "yes"
+      },
+      "image_url": "https://cdn.pixabay.com/photo/2017/06/04/20/08/rolls-royce-2379503_960_720.jpg"
+    },
+    {
+      "id": 19,
+      "car_model": "Bentley Continental GT",
+      "car_description": "Luxurious grand tourer with a blend of performance and comfort",
+      "fuel_efficiency": {
+        "city": "15 MPG",
+        "highway": "25 MPG"
+      },
+      "starting_price": "$1200 per day",
+      "passenger_capacity": 4,
+      "luggage_capacity": 2,
+      "features": {
+        "transmission": "Automatic",
+        "AC": "yes",
+        "road_assistant": "yes",
+        "smoke_free": "yes",
+        "gps": "yes"
+      },
+      "image_url": "https://cdn.pixabay.com/photo/2018/01/28/17/15/bentley-3119731_960_720.jpg"
+    }
+  ]
+}

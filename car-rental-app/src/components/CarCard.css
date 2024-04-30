@@ -57,6 +57,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  color: grey;
 }
 .actions {
   flex-basis: 39%;
