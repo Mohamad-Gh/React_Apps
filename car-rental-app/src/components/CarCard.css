@@ -45,6 +45,12 @@
   flex-direction: row;
   gap: 20px;
 }
+.luggages,
+.passengers {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 .actions {
   flex-basis: 39%;
   display: flex;

@@ -1,5 +1,7 @@
 import React from "react";
 import LocalGasStationIcon from "@mui/icons-material/LocalGasStation";
+import LuggageIcon from "@mui/icons-material/Luggage";
+import PeopleIcon from "@mui/icons-material/People";
 import "./CarCard.css";
 
 function CarCard(props) {
@@ -43,10 +45,10 @@ function CarCard(props) {
               <li>
                 <ul className="capacity">
                   <li className="luggages" itemprop="cargoVolume">
-                    2
+                    <LuggageIcon />2
                   </li>
                   <li className="passengers" itemprop="seatingCapacity">
-                    4
+                    <PeopleIcon />4
                   </li>
                 </ul>
               </li>
