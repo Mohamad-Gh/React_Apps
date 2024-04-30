@@ -19,7 +19,7 @@ function VehicleModel() {
             model={car.car_model}
             city={car.fuel_efficiency.city}
             highway={car.fuel_efficiency.highway}
-            description={car.car_description}
+            // description={car.car_description}
             price={car.starting_price}
             luggage={car.luggage_capacity}
             passenger={car.passenger_capacity}

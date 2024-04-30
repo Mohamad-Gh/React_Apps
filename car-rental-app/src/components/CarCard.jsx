@@ -22,7 +22,7 @@ function CarCard(props) {
             <br></br>
             <strong>Highway:</strong> {props.highway}
           </p>
-          <LocalGasStationIcon />
+          <LocalGasStationIcon className="gas" />
         </div>
       </div>
       <div className="middleCard">
@@ -43,8 +43,10 @@ function CarCard(props) {
       <div className="bottomCard">
         <div className="carFeatures">
           <div className="carModel">
-            <h3 itemprop="model">{props.description}</h3>
-            <p>Starting at {props.price}</p>
+            {/* <h3 itemprop="model">{props.description}</h3> */}
+            <p>
+              Starting at <strong>{props.price}</strong>
+            </p>
             <ul className="featureDetails">
               <li>
                 <ul className="capacity">
