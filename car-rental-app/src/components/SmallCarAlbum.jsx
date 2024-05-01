@@ -1,6 +1,12 @@
 import React, { useState } from "react";
+
 import hyundai from "../Assets/images/Hyundai.png";
 import chevrolet from "../Assets/images/chevrolet.png";
+import kia from "../Assets/images/Kia.png";
+import audiA6 from "../Assets/images/Audi_A6.png";
+import audiAll from "../Assets/images/Audi_All.png";
+import bmw from "../Assets/images/BMW.png";
+
 import samples from "../Assets/sampleCars.json";
 
 function SmallCarAlbum() {
@@ -19,10 +25,10 @@ function SmallCarAlbum() {
   function handleClick(event) {
     console.log(event.target.id);
     switch (event.target.id) {
-      case "kia":
+      case "Kia":
         setCar({
-          price: samples.kia.price,
-          img: samples.KiaEV6.img,
+          price: samples.KiaEV6.price,
+          img: kia,
           model: samples.KiaEV6.model,
           mark: samples.KiaEV6.mark,
           year: samples.KiaEV6.year,
@@ -61,7 +67,7 @@ function SmallCarAlbum() {
       case "Audi_A6":
         setCar({
           price: samples.AudiA6.price,
-          img: samples.AudiA6.img,
+          img: audiA6,
           model: samples.AudiA6.model,
           mark: samples.AudiA6.mark,
           year: samples.AudiA6.year,
@@ -74,7 +80,7 @@ function SmallCarAlbum() {
       case "Audi_All":
         setCar({
           price: samples.AudiA6Allroad.price,
-          img: samples.AudiA6Allroad.img,
+          img: audiAll,
           model: samples.AudiA6Allroad.model,
           mark: samples.AudiA6Allroad.mark,
           year: samples.AudiA6Allroad.year,
@@ -87,7 +93,7 @@ function SmallCarAlbum() {
       case "BMW":
         setCar({
           price: samples.BMWM4CSL.price,
-          img: samples.BMWM4CSL.img,
+          img: bmw,
           model: samples.BMWM4CSL.model,
           mark: samples.BMWM4CSL.mark,
           year: samples.BMWM4CSL.year,
