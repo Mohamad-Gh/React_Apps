@@ -11,6 +11,7 @@ import samples from "../Assets/sampleCars.json";
 
 function SmallCarAlbum() {
   const [car, setCar] = useState({
+    isActive: "HyundaiIoniq6",
     price: samples.HyundaiIoniq6.price,
     img: HyundaiIoniq6,
     model: samples.HyundaiIoniq6.model,
@@ -21,6 +22,7 @@ function SmallCarAlbum() {
     transmission: samples.HyundaiIoniq6.transmission,
     fuel: samples.HyundaiIoniq6.fuel,
   });
+  const [isActive, setActive] = useState("HyundaiIoniq6");
 
   function handleClick(event) {
     let image = null;
@@ -58,6 +60,7 @@ function SmallCarAlbum() {
       transmission: samples[event.target.id].transmission,
       fuel: samples[event.target.id].fuel,
     });
+    setActive(event.target.id);
   }
   return (
     <section className="car-album">
@@ -73,14 +76,36 @@ function SmallCarAlbum() {
           </div>
           <div className="album">
             <div onClick={handleClick} className="cars">
-              <div id="HyundaiIoniq6" className="selected">
+              <div
+                id="HyundaiIoniq6"
+                className={isActive == "HyundaiIoniq6" && "selected"}
+              >
                 Hyundai Ioniq 6
               </div>
-              <div id="ChevroletCorvetteZ06">Chevrolet Corvette Z06</div>
-              <div id="KiaEV6">Kia EV6</div>
-              <div id="AudiA6">Audi A6</div>
-              <div id="AudiA6Allroad">Audi A6 Allroad</div>
-              <div id="BMWM4CSL">BMW M4 CSL</div>
+              <div
+                id="ChevroletCorvetteZ06"
+                className={isActive == "ChevroletCorvetteZ06" && "selected"}
+              >
+                Chevrolet Corvette Z06
+              </div>
+              <div id="KiaEV6" className={isActive == "KiaEV6" && "selected"}>
+                Kia EV6
+              </div>
+              <div id="AudiA6" className={isActive == "AudiA6" && "selected"}>
+                Audi A6
+              </div>
+              <div
+                id="AudiA6Allroad"
+                className={isActive == "AudiA6Allroad" && "selected"}
+              >
+                Audi A6 Allroad
+              </div>
+              <div
+                id="BMWM4CSL"
+                className={isActive == "BMWM4CSL" && "selected"}
+              >
+                BMW M4 CSL
+              </div>
             </div>
             <div className="car-img">
               <img src={car.img} />
