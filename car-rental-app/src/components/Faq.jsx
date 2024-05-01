@@ -1,7 +1,11 @@
 import React, { useState } from "react";
 
 function Faq() {
-  const [activeId, setActive] = useState();
+  const [activeId, setActive] = useState("");
+
+  function handleClick(id) {
+    setActive(id);
+  }
 
   return (
     <section className="faq">
@@ -15,14 +19,20 @@ function Faq() {
           </p>
         </div>
         <div className="faq-qeustions-container">
-          <div className="QA-box">
-            <div className="questions selected">
-              <div id="1">
-                What is special about comparing rental car deals?
-              </div>
+          <div
+            onClick={() => {
+              handleClick("1");
+            }}
+            className="QA-box"
+          >
+            <div
+              id="1"
+              className={`questions ${activeId === "1" && "selected"}`}
+            >
+              <div>What is special about comparing rental car deals?</div>
               <i className="fa-solid fa-chevron-down"></i>
             </div>
-            <p className="responses selected">
+            <p className={`responses ${activeId === "1" && "selected"}`}>
               Comparing rental car deals is important as it helps find the best
               deal that fits your budget and requirements, ensuring you get the
               most value for your money. By comparing various options, you can
@@ -31,12 +41,17 @@ function Faq() {
               and comparing prices from different rental companies.
             </p>
           </div>
-          <div className="QA-box">
-            <div className="questions">
+          <div
+            onClick={() => {
+              handleClick("2");
+            }}
+            className="QA-box"
+          >
+            <div className={`questions ${activeId === "2" && "selected"}`}>
               <div id="2">How do I find the car rental deals?</div>
               <i className="fa-solid fa-chevron-down"></i>
             </div>
-            <p className="responses">
+            <p className={`responses ${activeId === "2" && "selected"}`}>
               You can find car rental deals by researching online and comparing
               prices from different rental companies. Websites such as Expedia,
               Kayak, and Travelocity allow you to compare prices and view
@@ -45,12 +60,17 @@ function Faq() {
               to be informed of any special deals or promotions.
             </p>
           </div>
-          <div className="QA-box">
-            <div className="questions">
+          <div
+            onClick={() => {
+              handleClick("3");
+            }}
+            className="QA-box"
+          >
+            <div className={`questions ${activeId === "3" && "selected"}`}>
               <div id="3">How do I find such low rental car prices?</div>
               <i className="fa-solid fa-chevron-down"></i>
             </div>
-            <p className="responses">
+            <p className={`responses ${activeId === "3" && "selected"}`}>
               Book in advance: Booking your rental car ahead of time can often
               result in lower prices. Compare prices from multiple companies:
               Use websites like Kayak, Expedia, or Travelocity to compare prices
