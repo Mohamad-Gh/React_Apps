@@ -1,7 +1,7 @@
 {
   "HyundaiIoniq6": {
     "price": "45",
-    "img": "./images/Hyundai.png",
+    "img": "../Assets/images/Hyundai.png",
     "model": "A1",
     "mark": "Audi",
     "year": "2019",
@@ -12,7 +12,7 @@
   },
   "ChevroletCorvetteZ06": {
     "price": "80",
-    "img": "chevrolet",
+    "img": "../Assets/images/chevrolet.png",
     "model": "Corvette Z06",
     "mark": "Chevrolet",
     "year": "2014",
@@ -23,7 +23,7 @@
   },
   "KiaEV6": {
     "price": "35",
-    "img": "kia",
+    "img": "../Assets/images/Kia.png",
     "model": "Kia EV6",
     "mark": "Kia",
     "year": "2018",
@@ -34,7 +34,7 @@
   },
   "AudiA6": {
     "price": "50",
-    "img": "audi",
+    "img": "../Assets/images/Audi_A6.png",
     "model": "A6",
     "mark": "Audi",
     "year": "2016",
@@ -45,7 +45,7 @@
   },
   "AudiA6Allroad": {
     "price": "65",
-    "img": "audi",
+    "img": "../Assets/images/Audi_All.png",
     "model": "A6 Allroad",
     "mark": "Audi",
     "year": "2020",
@@ -56,7 +56,7 @@
   },
   "BMWM4CSL": {
     "price": "85",
-    "img": "bmw",
+    "img": "../Assets/images/BMW.png",
     "model": "M4 CSL",
     "mark": "BMW",
     "year": "2015",
