@@ -112,13 +112,11 @@ function SmallCarAlbum() {
             </p>
           </div>
           <div className="album">
-            <div className="cars">
+            <div onClick={handleClick} className="cars">
               <div id="Hyundai" className="selected">
                 Hyundai Ioniq 6
               </div>
-              <div onClick={handleClick} id="chevrolet">
-                Chevrolet Corvette Z06
-              </div>
+              <div id="chevrolet">Chevrolet Corvette Z06</div>
               <div id="Kia">Kia EV6</div>
               <div id="Audi_A6">Audi A6</div>
               <div id="Audi_All">Audi A6 Allroad</div>
