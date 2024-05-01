@@ -10,13 +10,14 @@
   row-gap: 20px;
 }
 .flexCarCards {
+  font-size: 12px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   padding: 20px;
   width: 450px;
   background-color: rgb(244, 242, 242);
-  border: 2px solid tomato;
+  border: 2px solid #ff4d30;
   border-radius: 5%;
 }
 .modelCard {
@@ -50,6 +51,7 @@
   flex-basis: 59%;
   display: flex;
   flex-direction: column;
+  font-size: 14px;
 }
 .featureDetails {
   margin-top: 10px;
@@ -92,6 +94,6 @@
   width: 90%;
   text-align: center;
   color: #ffffff;
-  background-color: tomato;
+  background-color: #ff4d30;
   text-decoration: none;
 }

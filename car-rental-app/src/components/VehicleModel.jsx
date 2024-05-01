@@ -32,7 +32,6 @@ function VehicleModel() {
           />
         ))}
       </div>
-
       <BlackDivider
         text="Book a car by getting in touch with us"
         span="(123) 456-7869"
