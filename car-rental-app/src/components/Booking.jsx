@@ -157,7 +157,7 @@ function Booking() {
               <input className="Date" type="date" />
             </div>
             <div className="form-grid-item">
-              <label></label>
+              <label className="label"></label>
               <input className="submit" type="submit" value="Search" />
             </div>
           </form>
