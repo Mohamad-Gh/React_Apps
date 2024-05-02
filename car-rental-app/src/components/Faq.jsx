@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 function Faq() {
-  const [activeId, setActive] = useState("");
+  const [activeId, setActive] = useState("1");
 
   function handleClick(id) {
     setActive(id);
