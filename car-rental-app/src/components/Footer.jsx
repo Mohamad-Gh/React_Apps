@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Footer() {
   return (
     <footer>
@@ -13,10 +15,14 @@ function Footer() {
           </di>
           <div>
             <i class="fa-regular fa-envelope"></i>
-            <a href=""> carrental@gmail.com</a>
+            <a href=""> ghalebizadem@gmail.com</a>
           </div>
           <div>
-            Design by <span>MGH</span> 2024
+            Design by
+            <a href="https://www.linkedin.com/in/mohamad-ghalebizade-210581156">
+              <span> Mohamad Gh </span>
+            </a>
+            2024
           </div>
         </div>
         <div class="footer-box">
