@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
 function Faq() {
   const [activeId, setActive] = useState("1");
@@ -30,7 +31,7 @@ function Faq() {
               className={`questions ${activeId === "1" && "selected"}`}
             >
               <div>What is special about comparing rental car deals?</div>
-              <i className="fa-solid fa-chevron-down"></i>
+              <KeyboardArrowDownIcon />
             </div>
             <p className={`responses ${activeId === "1" && "selected"}`}>
               Comparing rental car deals is important as it helps find the best
@@ -49,7 +50,7 @@ function Faq() {
           >
             <div className={`questions ${activeId === "2" && "selected"}`}>
               <div id="2">How do I find the car rental deals?</div>
-              <i className="fa-solid fa-chevron-down"></i>
+              <KeyboardArrowDownIcon />{" "}
             </div>
             <p className={`responses ${activeId === "2" && "selected"}`}>
               You can find car rental deals by researching online and comparing
@@ -68,7 +69,7 @@ function Faq() {
           >
             <div className={`questions ${activeId === "3" && "selected"}`}>
               <div id="3">How do I find such low rental car prices?</div>
-              <i className="fa-solid fa-chevron-down"></i>
+              <KeyboardArrowDownIcon />{" "}
             </div>
             <p className={`responses ${activeId === "3" && "selected"}`}>
               Book in advance: Booking your rental car ahead of time can often
