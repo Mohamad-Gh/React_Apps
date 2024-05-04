@@ -37,7 +37,7 @@ function Header() {
             <div>
               <button class="btn">Sign in </button>
               <button class="btn btn-nav">
-                <Link className="link" to="/Registeratoin">
+                <Link className="link" to="/Registration">
                   Register
                 </Link>
               </button>

@@ -4,7 +4,7 @@ import HomePage from "./HomePage";
 import VehicleModel from "./VehicleModel";
 import OurTeam from "./OurTeam";
 import About from "./About";
-import Register from "./Register";
+import Registration from "./Registration";
 import TestimonialsPage from "./TestimonialsPage";
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
         <Route path="/Testimonials" element={<TestimonialsPage />} />
         <Route path="/Our Team" element={<OurTeam />} />
         <Route path="/About" element={<About />} />
-        <Route path="/Register" element={<Register />} />
+        <Route path="/Registration" element={<Registration />} />
       </Routes>
     </>
   );
