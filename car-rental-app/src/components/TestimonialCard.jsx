@@ -35,7 +35,13 @@ function TestimonialCard(props) {
       {/* {props.rate.map((_, indx) => (
         <GradeIcon className="stars" key={indx} />
       ))} */}
-      <Rating name="read-only" value={props.rate} precision={0.5} readOnly />
+      <Rating
+        name="read-only"
+        value={props.rate}
+        precision={0.5}
+        size="large"
+        readOnly
+      />
     </div>
   );
 }
