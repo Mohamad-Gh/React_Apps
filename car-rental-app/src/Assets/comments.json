@@ -5,14 +5,14 @@
       "image_url": "https://mighty.tools/mockmind-api/content/human/9.jpg",
       "name": "Alice Smith",
       "city": "Toronto",
-      "rating": 4
+      "rating": 4.5
     },
     {
       "comment": "I had a business meeting in Kelowna last week and decided to rent a car from this company. The process was smooth, and the car exceeded my expectations. Highly recommended!",
       "image_url": "https://mighty.tools/mockmind-api/content/human/42.jpg",
       "name": "Bob Johnson",
       "city": "Montreal",
-      "rating": 4
+      "rating": 4.5
     },
     {
       "comment": "I recently traveled to Kamloops for a short stay and rented a car from this company. The process was hassle-free, and the car was clean and comfortable. Highly recommend!",
@@ -40,7 +40,7 @@
       "image_url": "https://mighty.tools/mockmind-api/content/human/4.jpg",
       "name": "Michael Taylor",
       "city": "Toronto",
-      "rating": 4
+      "rating": 3.5
     }
   ]
 }

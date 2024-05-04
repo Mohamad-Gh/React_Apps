@@ -1,7 +1,14 @@
 import React from "react";
 
 function Register() {
-  return <div>Register</div>;
+  return (
+    <form className="form">
+      <label>Username:</label>
+      <input type="text" placeholder="Username"></input>
+      <label>Email:</label>
+      <input type="email" placeholder="Email"></input>
+    </form>
+  );
 }
 
 export default Register;

@@ -1,5 +1,6 @@
 import React from "react";
-import GradeIcon from "@mui/icons-material/Grade";
+// import GradeIcon from "@mui/icons-material/Grade";
+import Rating from "@mui/material/Rating";
 
 import "./testimonialStyle.css";
 
@@ -31,9 +32,10 @@ function TestimonialCard(props) {
           </svg>
         </div>
       </div>
-      {props.rate.map((_, indx) => (
+      {/* {props.rate.map((_, indx) => (
         <GradeIcon className="stars" key={indx} />
-      ))}
+      ))} */}
+      <Rating name="read-only" value={props.rate} precision={0.5} readOnly />
     </div>
   );
 }
