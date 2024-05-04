@@ -37,7 +37,12 @@ function Registration() {
     <div className="overlay">
       <div className="registration-container">
         <h2>Registration Form</h2>
-        {done && <Alert />}
+        {done && (
+          <Alert variant="filled" severity="success">
+            {formData.firstName} Your Registration was successful. Your username
+            is your email.
+          </Alert>
+        )}
         <form onSubmit={handleSubmit} className="registration-form">
           <div className="form-group">
             <label htmlFor="firstName">First Name:</label>
