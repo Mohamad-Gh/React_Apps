@@ -34,65 +34,67 @@ function Registration() {
   };
 
   return (
-    <div className="registration-container">
-      <h2>Registration Form</h2>
-      {done && <Alert />}
-      <form onSubmit={handleSubmit} className="registration-form">
-        <div className="form-group">
-          <label htmlFor="firstName">First Name:</label>
-          <input
-            type="text"
-            id="firstName"
-            name="firstName"
-            placeholder="Jone"
-            value={formData.firstName}
-            onChange={handleChange}
-            required
-            className="form-control"
-          />
-        </div>
-        <div className="form-group">
-          <label htmlFor="lastName">Last Name:</label>
-          <input
-            type="text"
-            id="lastName"
-            name="lastName"
-            placeholder="Doe"
-            value={formData.lastName}
-            onChange={handleChange}
-            required
-            className="form-control"
-          />
-        </div>
-        <div className="form-group">
-          <label htmlFor="email">Email:</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Jone.Doe@something.com"
-            value={formData.email}
-            onChange={handleChange}
-            required
-            className="form-control"
-          />
-        </div>
-        <div className="form-group">
-          <label htmlFor="password">Password:</label>
-          <input
-            type="password"
-            id="password"
-            name="password"
-            value={formData.password}
-            onChange={handleChange}
-            required
-            className="form-control"
-          />
-        </div>
-        <button type="submit" className="btn-register">
-          Register
-        </button>
-      </form>
+    <div className="overlay">
+      <div className="registration-container">
+        <h2>Registration Form</h2>
+        {done && <Alert />}
+        <form onSubmit={handleSubmit} className="registration-form">
+          <div className="form-group">
+            <label htmlFor="firstName">First Name:</label>
+            <input
+              type="text"
+              id="firstName"
+              name="firstName"
+              placeholder="Jone"
+              value={formData.firstName}
+              onChange={handleChange}
+              required
+              className="form-control"
+            />
+          </div>
+          <div className="form-group">
+            <label htmlFor="lastName">Last Name:</label>
+            <input
+              type="text"
+              id="lastName"
+              name="lastName"
+              placeholder="Doe"
+              value={formData.lastName}
+              onChange={handleChange}
+              required
+              className="form-control"
+            />
+          </div>
+          <div className="form-group">
+            <label htmlFor="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Jone.Doe@something.com"
+              value={formData.email}
+              onChange={handleChange}
+              required
+              className="form-control"
+            />
+          </div>
+          <div className="form-group">
+            <label htmlFor="password">Password:</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              value={formData.password}
+              onChange={handleChange}
+              required
+              className="form-control"
+            />
+          </div>
+          <button type="submit" className="btn-register">
+            Register
+          </button>
+        </form>
+      </div>
     </div>
   );
 }
