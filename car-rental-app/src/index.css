@@ -48,6 +48,23 @@ header {
   text-decoration: none;
   color: black;
 }
+
+.navigator a:hover {
+  color: #ff4d30;
+}
+.navigator a::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #ff4d30;
+  display: block;
+  transition: 0.5s;
+  margin: auto;
+}
+.navigator a:hover::after {
+  width: 100%;
+}
+
 .link {
   text-decoration: none;
   color: unset;
