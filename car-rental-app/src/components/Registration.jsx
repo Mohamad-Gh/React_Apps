@@ -32,9 +32,9 @@ function Registration() {
       [showPassword]: !formData.showPassword,
     }));
   }
-  const handleMouseDownPassword = (event) => {
-    event.preventDefault();
-  };
+  // const handleMouseDownPassword = (event) => {
+  //   event.preventDefault();
+  // };
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -46,7 +46,9 @@ function Registration() {
       lastName: "",
       email: "",
       password: "",
+      showPassword: false,
     });
+    // to show that the process was successful.
     setDone(!done);
   };
 
@@ -104,7 +106,7 @@ function Registration() {
             <label htmlFor="password">Password:</label>
             <Input
               className="form-control"
-              type={showPassword ? "text" : "password"}
+              type={formData.showPassword ? "text" : "password"}
               id="password"
               name="password"
               minLength={8}
@@ -118,7 +120,7 @@ function Registration() {
                 <InputAdornment position="end">
                   <IconButton
                     onClick={showPassword}
-                    onMouseDown={handleMouseDownPassword}
+                    // onMouseDown={handleMouseDownPassword}
                   >
                     {formData.showPassword ? (
                       <VisibilityIcon />
