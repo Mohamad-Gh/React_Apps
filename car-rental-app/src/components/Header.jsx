@@ -5,7 +5,6 @@ import Registration from "./Registration";
 
 function Header() {
   const [popup, setPopup] = useState(false);
-
   function setRigesterPopup() {
     setPopup(!popup);
   }

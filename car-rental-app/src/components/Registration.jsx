@@ -51,13 +51,7 @@ function Registration(props) {
 
   return (
     <div>
-      <div
-        onClick={() => {
-          props.triger(true);
-          console.log("WOw");
-        }}
-        className="overlay"
-      ></div>
+      <div onClick={() => props.triger(false)} className="overlay"></div>
       <div className="registration-container">
         <h2>Registration Form</h2>
         {done && (
