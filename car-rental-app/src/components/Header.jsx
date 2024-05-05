@@ -1,7 +1,15 @@
 import logo from "../Assets/images/logo.png";
 import { Link } from "react-router-dom";
+import { useState } from "react";
+import Registration from "./Registration";
 
 function Header() {
+  const [popup, setPopup] = useState(false);
+
+  function setRigesterPopup() {
+    setPopup(!popup);
+  }
+
   return (
     <header>
       <div class="full-container">
@@ -36,10 +44,10 @@ function Header() {
           <div class="sign-in">
             <div>
               <button class="btn">Sign in </button>
-              <button class="btn btn-nav">
-                <Link className="link" to="/Registration">
-                  Register
-                </Link>
+              <button class="btn btn-nav" onClick={setRigesterPopup}>
+                {/* <Link className="link" to="/Registration"> */}
+                Register
+                {/* </Link> */}
               </button>
             </div>
           </div>
@@ -64,6 +72,7 @@ function Header() {
           </div>
         </div>
       </div>
+      {popup && <Registration triger={setPopup} />}
     </header>
   );
 }

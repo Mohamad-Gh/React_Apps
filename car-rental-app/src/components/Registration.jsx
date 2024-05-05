@@ -8,7 +8,7 @@ import Input from "@mui/material/Input";
 
 import "./registration.css"; // Importing CSS file
 
-function Registration() {
+function Registration(props) {
   const [done, setDone] = useState(false);
   const [formData, setFormData] = useState({
     firstName: "",
@@ -50,7 +50,14 @@ function Registration() {
   };
 
   return (
-    <div className="overlay">
+    <div>
+      <div
+        onClick={() => {
+          props.triger(true);
+          console.log("WOw");
+        }}
+        className="overlay"
+      ></div>
       <div className="registration-container">
         <h2>Registration Form</h2>
         {done && (
