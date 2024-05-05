@@ -9,6 +9,12 @@ function Header() {
     setPopup(!popup);
   }
 
+  if (popup) {
+    document.body.classList.add("scroll");
+  } else {
+    document.body.classList.remove("scroll");
+  }
+
   return (
     <header>
       <div class="full-container">
