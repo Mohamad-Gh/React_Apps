@@ -2,14 +2,16 @@ import logo from "../Assets/images/logo.png";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import Registration from "./Registration";
+import SignIn from "./SignIn";
 
 function Header() {
   const [popup, setPopup] = useState(false);
+  const [sign, setSign] = useState(false);
   function setRigesterPopup() {
     setPopup(!popup);
   }
 
-  if (popup) {
+  if (popup || sign) {
     document.body.classList.add("scroll");
   } else {
     document.body.classList.remove("scroll");
@@ -48,7 +50,9 @@ function Header() {
           </nav>
           <div class="sign-in">
             <div>
-              <button class="btn">Sign in </button>
+              <button class="btn" onClick={setSign}>
+                Sign in{" "}
+              </button>
               <button class="btn btn-nav" onClick={setRigesterPopup}>
                 {/* <Link className="link" to="/Registration"> */}
                 Register
@@ -78,6 +82,7 @@ function Header() {
         </div>
       </div>
       {popup && <Registration triger={setPopup} />}
+      {sign && <SignIn triger={setSign} />}
     </header>
   );
 }
