@@ -29,12 +29,9 @@ function Registration() {
   function showPassword() {
     setFormData((prevData) => ({
       ...prevData,
-      [showPassword]: !formData.showPassword,
+      ["showPassword"]: !formData.showPassword,
     }));
   }
-  // const handleMouseDownPassword = (event) => {
-  //   event.preventDefault();
-  // };
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -118,10 +115,7 @@ function Registration() {
               required
               endAdornment={
                 <InputAdornment position="end">
-                  <IconButton
-                    onClick={showPassword}
-                    // onMouseDown={handleMouseDownPassword}
-                  >
+                  <IconButton onClick={showPassword}>
                     {formData.showPassword ? (
                       <VisibilityIcon />
                     ) : (
