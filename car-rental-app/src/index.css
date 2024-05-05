@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  scrollbar-color: #ff4d30 #ffffffa0;
+}
 body {
   width: 100%;
   box-sizing: border-box;
@@ -7,11 +12,7 @@ body {
 }
 .scroll {
   overflow-y: hidden;
-}
-* {
-  margin: 0;
-  padding: 0;
-  scrollbar-color: #ff4d30 #ffffffa0;
+  padding-right: 15px;
 }
 
 header {
@@ -531,6 +532,7 @@ footer {
   font-weight: bold;
   color: #ff4d30;
 }
+
 /* About CSS
 .center-card {
   margin: 50px 0;
