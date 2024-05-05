@@ -54,7 +54,6 @@ function SignIn(props) {
               type="email"
               id="email"
               name="email"
-              placeholder="Jone.Doe@something.com"
               value={formData.email}
               onChange={handleChange}
               required
