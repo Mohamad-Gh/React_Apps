@@ -67,7 +67,7 @@ const GoogleMap = () => {
             ...getLanguageAndRegion(userLocation.countryCode),
           }}
           defaultCenter={userLocation}
-          defaultZoom={11}
+          defaultZoom={7}
           yesIWantToUseGoogleMapApiInternals={true}
           // hoverDistance={20}
         >
