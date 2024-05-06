@@ -1,13 +1,15 @@
 import React from "react";
+import InfoIcon from "@mui/icons-material/Info";
 
 function TeamCard(props) {
   return (
-    <div>
-      <img src="" alt="team-member-image" />
+    <div className="teamCardBox">
+      <img width="100%" src={props.img} alt="team-member-image" />
       <div>
         <h3>{props.name}</h3>
-        <Icon />
+        <InfoIcon className="teamCardIcon" />
       </div>
+      <p className="teamCardDescriptoin">{props.description}</p>
     </div>
   );
 }
