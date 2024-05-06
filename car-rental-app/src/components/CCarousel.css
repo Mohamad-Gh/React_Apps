@@ -48,27 +48,3 @@
   color: beige;
 }
 /* -----Style for the boxes */
-.teamCardBox {
-  width: 300px;
-  position: relative;
-}
-.teamCardBox h3 {
-  position: absolute;
-  left: 0.5rem;
-  top: 0.5rem;
-}
-.teamCardIcon {
-  position: absolute;
-  right: 0.5rem;
-  color: tomato;
-  bottom: 1rem;
-}
-.teamCardDescriptoin {
-  position: absolute;
-  left: 0rem;
-  right: 0rem;
-  top: 15rem;
-  bottom: 0rem;
-  background-color: rgb(0, 0, 0, 0.7);
-  color: gold;
-}

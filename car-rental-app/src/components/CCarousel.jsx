@@ -18,6 +18,7 @@ function CCarousel() {
   const handleClickForward = () => {
     setIndex(index == leaders.length - 1 ? 0 : index + 1);
   };
+
   return (
     <div className="flex-team">
       <ArrowBackIosNewIcon

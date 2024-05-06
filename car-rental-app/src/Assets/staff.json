@@ -1,0 +1,85 @@
+[
+  {
+    "id": 1,
+    "name": "Emily Johnson",
+    "img_url": "https://images.stockcake.com/public/7/5/8/758eb4c1-893f-4e98-b93f-f8a4c025c4fd_large/confident-professional-woman-stockcake.jpg",
+    "description": "Emily is a skilled automotive technician with a passion for ensuring that every vehicle in our fleet is in top condition.",
+    "expertise": [
+      "Automotive Maintenance",
+      "Vehicle Inspection",
+      "Mechanical Repairs"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Alex Rodriguez",
+    "img_url": "https://images.stockcake.com/public/f/e/1/fe1e3e76-8185-425d-be8a-465abc85a9f2_large/elegant-business-attire-stockcake.jpg",
+    "description": "Alex is our dedicated customer service representative, always ready to assist clients with their rental needs and inquiries.",
+    "expertise": ["Customer Service", "Client Relations", "Problem Solving"]
+  },
+  {
+    "id": 3,
+    "name": "Sophia Chang",
+    "img_url": "https://images.stockcake.com/public/0/6/b/06bf58df-8582-4305-b058-add9b63fbf3d_large/confident-business-leader-stockcake.jpg",
+    "description": "Sophia is a detail-oriented logistics coordinator who ensures that our rental vehicles are efficiently managed and distributed.",
+    "expertise": [
+      "Logistics Management",
+      "Inventory Control",
+      "Supply Chain Optimization"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Daniel Rogers",
+    "img_url": "https://images.stockcake.com/public/3/7/2/37282c29-1ee1-45a8-b6dd-b9c956ad4802_large/engaged-business-discussion-stockcake.jpg",
+    "description": "Daniel is a skilled automotive mechanic with expertise in diagnosing and repairing various vehicle issues to keep our fleet running smoothly.",
+    "expertise": ["Automotive Repair", "Diagnostic Tools", "Problem Solving"]
+  },
+  {
+    "id": 5,
+    "name": "Alicia Barnes",
+    "img_url": "https://images.stockcake.com/public/0/8/f/08f9aad3-8625-424f-9dd3-68837a226e02_large/confident-professional-woman-stockcake.jpg",
+    "description": "Alicia is our reliable fleet coordinator, responsible for scheduling maintenance, inspections, and repairs for all rental vehicles.",
+    "expertise": [
+      "Fleet Management",
+      "Maintenance Scheduling",
+      "Vehicle Inspections"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Maxwell Lee",
+    "img_url": "https://images.stockcake.com/public/4/3/b/43bd0130-90f5-4590-bcc5-64d51789df63_large/confident-business-professional-stockcake.jpg",
+    "description": "Maxwell is a skilled car detailer who ensures that every vehicle in our fleet is immaculately cleaned and maintained for our customers.",
+    "expertise": [
+      "Vehicle Detailing",
+      "Interior Cleaning",
+      "Exterior Polishing"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Olivia Smith",
+    "img_url": "https://images.stockcake.com/public/6/a/b/6abb5e86-0657-4a7f-8044-abb64d1ab3e6_large/confident-professional-pose-stockcake.jpg",
+    "description": "Olivia is our dedicated rental agent, responsible for assisting customers with vehicle selection, reservations, and rental agreements.",
+    "expertise": [
+      "Rental Procedures",
+      "Vehicle Selection",
+      "Customer Assistance"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Ethan Nguyen",
+    "img_url": "https://images.stockcake.com/public/9/e/a/9eab03d0-1498-4594-a13d-adba79e10427_large/confident-business-meeting-stockcake.jpg",
+    "description": "Ethan is a skilled automotive technician specializing in electrical systems, ensuring that our rental vehicles are safe and reliable for our customers.",
+    "expertise": ["Electrical Systems", "Diagnostic Tools", "Vehicle Safety"]
+  },
+  {
+    "id": 9,
+    "name": "Isabella Brown",
+    "img_url": "https://images.stockcake.com/public/8/4/8/848582a8-509c-4207-b913-9fe88b216bf7_large/professional-presentation-skill-stockcake.jpg",
+    "description": "Isabella is our efficient administrative assistant, handling paperwork, data entry, and office organization to keep operations running smoothly.",
+    "expertise": ["Administrative Support", "Data Entry", "Office Organization"]
+  }
+]

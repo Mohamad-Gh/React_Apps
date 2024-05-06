@@ -1,6 +1,8 @@
 import React from "react";
 import InfoIcon from "@mui/icons-material/Info";
 
+import "./teamCard.css";
+
 function TeamCard(props) {
   return (
     <div className="teamCardBox">

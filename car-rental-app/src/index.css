@@ -223,7 +223,7 @@ label span {
 }
 .title-header {
   text-align: center;
-  margin: 0;
+  /* margin: 0; */
   margin-bottom: 30px;
 }
 .title-header h3 {
