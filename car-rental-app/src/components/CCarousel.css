@@ -41,8 +41,9 @@
   color: tomato;
 }
 .icon {
-  font-size: small;
+  color: grey;
 }
+
 .icon:hover {
   color: beige;
 }

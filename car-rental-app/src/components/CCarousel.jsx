@@ -8,39 +8,44 @@ import CircleIcon from "@mui/icons-material/Circle";
 
 import "./CCarousel.css";
 import leaders from "../Assets/leadMembers.json";
-import { Button } from "@mui/material";
 
 function CCarousel() {
-  const [index, setIndex] = useState("1");
+  const [index, setIndex] = useState(1);
 
+  const handleClickBackward = () => {
+    setIndex(index == 0 ? leaders.length - 1 : index - 1);
+  };
+  const handleClickForward = () => {
+    setIndex(index == leaders.length - 1 ? 0 : index + 1);
+  };
   return (
     <div className="flex-team">
-      <ArrowBackIosNewIcon className="arrow arrow-left" />
+      <ArrowBackIosNewIcon
+        onClick={handleClickBackward}
+        className="arrow arrow-left"
+      />
       {leaders.map((leader, indx) => {
         return index == indx ? (
           <TeamCard
-            key={indx}
+            key={leader.id}
             img={leader.img}
             name={leader.name}
             description={leader.description}
           />
         ) : null;
       })}
-
-      {console.log(leaders)}
-      {/* <TeamCard
-        img="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        name="James J"
-        description="Use text here "
-      /> */}
-      {/* <TeamCard
-        img="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        name="James J"
-        description="Use text here "
-      /> */}
-      <ArrowForwardIosIcon className="arrow arrow-right" />
+      <ArrowForwardIosIcon
+        onClick={handleClickForward}
+        className="arrow arrow-right"
+      />
       <div className="icons">
-        <CircleIcon className="icon" />
+        {leaders.map((_, indx) => (
+          <CircleIcon
+            // onClick={setIndex(indx)}
+            fontSize="x-small"
+            className={index == indx ? null : "icon"}
+          />
+        ))}
       </div>
     </div>
   );
