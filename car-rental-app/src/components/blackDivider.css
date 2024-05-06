@@ -1,0 +1,17 @@
+.divider {
+  margin: 50px 0;
+  padding: 50px 0;
+  background-color: #000;
+  color: #ffffff;
+}
+.title-divider {
+  font-size: x-large;
+  text-align: center;
+  margin: auto;
+}
+.title-divider h2 {
+  font-size: 46px;
+}
+.title-divider span {
+  color: #ff4d30;
+}

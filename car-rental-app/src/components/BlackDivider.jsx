@@ -1,3 +1,5 @@
+import "./blackDivider.css";
+
 function BlackDivider(props) {
   return (
     <div>
