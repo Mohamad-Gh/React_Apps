@@ -7,7 +7,7 @@ import Booking from "./Booking";
 import CarCard from "./CarCard";
 
 import cars from "../Assets/cars.json";
-
+import "./vehicleModel.css";
 function VehicleModel() {
   return (
     <div>

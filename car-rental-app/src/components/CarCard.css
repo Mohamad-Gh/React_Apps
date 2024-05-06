@@ -3,12 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-.carAlbum {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  column-gap: 5px;
-  row-gap: 20px;
-}
+
 .flexCarCards {
   font-size: 12px;
   margin: 0 auto;

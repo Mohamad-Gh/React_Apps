@@ -13,13 +13,17 @@ function TeamMembersAlbum() {
           At DriveAway Rentals, we pride ourselves on offering a seamless and
           personalized experience to every customer.
         </p>
-        {members.map((member, indx) => {
-          <TeamCard
-            key={member.id}
-            img={member.img_url}
-            name={member.name}
-            description={member.description}
-          />;
+      </div>
+      <div className="carAlbum">
+        {members.map((member) => {
+          return (
+            <TeamCard
+              key={member.id}
+              img={member.img_url}
+              name={member.name}
+              description={member.description}
+            />
+          );
         })}
       </div>
     </div>
