@@ -17,7 +17,7 @@ function TeamCard(props) {
 
   return (
     <div className="teamCardBox">
-      <img width="100%" src={props.img} alt="team-member-image" />
+      <img src={props.img} alt="team-member-image" />
       <div>
         <h3>{props.name}</h3>
         <InfoIcon

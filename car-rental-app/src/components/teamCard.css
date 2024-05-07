@@ -1,6 +1,8 @@
 .teamCardBox {
-  width: 20rem;
   position: relative;
+}
+.teamCardBox img {
+  height: 350px;
 }
 .teamCardBox h3 {
   color: gold;
