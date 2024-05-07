@@ -3,7 +3,7 @@
     "id": 1,
     "name": "Emily Johnson",
     "img_url": "https://images.stockcake.com/public/7/5/8/758eb4c1-893f-4e98-b93f-f8a4c025c4fd_large/confident-professional-woman-stockcake.jpg",
-    "description": "Emily is a skilled automotive technician with a passion for ensuring that every vehicle in our fleet is in top condition.",
+    "description": "Emily is our dedicated customer service representative, always ready to assist clients with their rental needs and inquiries.",
     "expertise": [
       "Automotive Maintenance",
       "Vehicle Inspection",
@@ -14,7 +14,7 @@
     "id": 2,
     "name": "Alex Rodriguez",
     "img_url": "https://images.stockcake.com/public/f/e/1/fe1e3e76-8185-425d-be8a-465abc85a9f2_large/elegant-business-attire-stockcake.jpg",
-    "description": "Alex is our dedicated customer service representative, always ready to assist clients with their rental needs and inquiries.",
+    "description": "Alex  is a skilled automotive technician with a passion for ensuring that every vehicle in our fleet is in top condition in aspect of electrical and mechanical.",
     "expertise": ["Customer Service", "Client Relations", "Problem Solving"]
   },
   {

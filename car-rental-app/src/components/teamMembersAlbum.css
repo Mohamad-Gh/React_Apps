@@ -1,0 +1,11 @@
+.containeralbum {
+  display: flex;
+  flex-direction: column;
+}
+.team-Album {
+  display: grid;
+  column-gap: 50px;
+  row-gap: 50px;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  justify-items: center;
+}
