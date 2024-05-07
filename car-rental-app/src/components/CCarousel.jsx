@@ -41,7 +41,7 @@ function CCarousel() {
       <div className="icons">
         {leaders.map((_, indx) => (
           <CircleIcon
-            // onClick={setIndex(indx)}
+            onClick={() => setIndex(indx)}
             fontSize="x-small"
             className={index == indx ? null : "icon"}
           />
