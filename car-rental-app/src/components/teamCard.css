@@ -4,7 +4,7 @@
 }
 .teamCardBox h3 {
   color: gold;
-  background-color: black;
+  background-color: rgb(0, 0, 0, 0.5);
   position: absolute;
   left: 0.5rem;
   top: 0.5rem;
@@ -12,6 +12,8 @@
 .teamCardIcon {
   position: absolute;
   right: 0.5rem;
+  border-radius: 100%;
+  background-color: beige;
   color: tomato;
   bottom: 1rem;
 }
@@ -21,6 +23,6 @@
   left: 0rem;
   right: 0rem;
   bottom: 3rem;
-  background-color: rgb(0, 0, 0, 0.7);
+  background-color: rgb(0, 0, 0, 0.5);
   color: gold;
 }

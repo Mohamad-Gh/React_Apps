@@ -1,17 +1,32 @@
-import React from "react";
+import { useState } from "react";
+
 import InfoIcon from "@mui/icons-material/Info";
 
 import "./teamCard.css";
 
 function TeamCard(props) {
+  const [mouse, setMouse] = useState(false);
+
+  const handleMouseOver = () => {
+    setMouse(true);
+  };
+
+  const handleMouseOut = () => {
+    setMouse(false);
+  };
+
   return (
     <div className="teamCardBox">
       <img width="100%" src={props.img} alt="team-member-image" />
       <div>
         <h3>{props.name}</h3>
-        <InfoIcon className="teamCardIcon" />
+        <InfoIcon
+          onMouseOver={handleMouseOver}
+          onMouseOut={handleMouseOut}
+          className="teamCardIcon"
+        />
       </div>
-      <p className="teamCardDescriptoin">{props.description}</p>
+      {mouse && <p className="teamCardDescriptoin">{props.description}</p>}
     </div>
   );
 }

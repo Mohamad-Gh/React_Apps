@@ -33,7 +33,7 @@
 }
 .icons {
   position: absolute;
-  bottom: 0.5rem;
+  bottom: -1rem;
   right: 50%;
   transform: translate(50%, 0);
   display: flex;
@@ -47,4 +47,3 @@
 .icon:hover {
   color: beige;
 }
-/* -----Style for the boxes */
