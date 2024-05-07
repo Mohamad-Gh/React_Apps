@@ -1,5 +1,8 @@
 .teamCardBox {
   position: relative;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
 }
 .teamCardBox img {
   height: 350px;

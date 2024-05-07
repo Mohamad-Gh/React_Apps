@@ -4,8 +4,8 @@
 }
 .team-Album {
   display: grid;
-  column-gap: 50px;
+  /* column-gap: 10px; */
   row-gap: 50px;
-  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
   justify-items: center;
 }
