@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import GoogleMapReact from "google-map-react";
 import LocationOnSharpIcon from "@mui/icons-material/LocationOnSharp";
+
 import location from "../Assets/location.json";
 
 const apiKey = "";
@@ -47,7 +48,6 @@ const GoogleMap = () => {
         // Use default language and region
         break;
     }
-
     return { language, region };
   };
 
@@ -67,7 +67,7 @@ const GoogleMap = () => {
             ...getLanguageAndRegion(userLocation.countryCode),
           }}
           defaultCenter={userLocation}
-          defaultZoom={7}
+          defaultZoom={6}
           yesIWantToUseGoogleMapApiInternals={true}
           // hoverDistance={20}
         >
@@ -82,6 +82,7 @@ const GoogleMap = () => {
             <LocationOnSharpIcon
               className="branches"
               key={indx + 1}
+              text={loc.city}
               lat={loc.latitude}
               lng={loc.longitude}
             />
