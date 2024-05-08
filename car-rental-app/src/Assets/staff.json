@@ -81,5 +81,16 @@
     "img_url": "https://images.stockcake.com/public/8/4/8/848582a8-509c-4207-b913-9fe88b216bf7_large/professional-presentation-skill-stockcake.jpg",
     "description": "Isabella is our efficient administrative assistant, handling paperwork, data entry, and office organization to keep operations running smoothly.",
     "expertise": ["Administrative Support", "Data Entry", "Office Organization"]
+  },
+  {
+    "id": 10,
+    "name": "Luara Lawrence",
+    "img_url": "https://images.stockcake.com/public/6/b/1/6b1429fe-8a23-4bb9-acc2-154006bb7efa_large/confident-business-presentation-stockcake.jpg",
+    "description": "Luara Lawrence is a seasoned professional with a passion for delivering exceptional customer service in the car rental industry.",
+    "expertise": [
+      "Customer Service Excellence",
+      "Fleet Management",
+      "Sales and Marketing"
+    ]
   }
 ]
