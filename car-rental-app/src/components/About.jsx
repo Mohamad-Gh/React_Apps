@@ -6,12 +6,13 @@ import ContentCard from "./ContentCard";
 import LogoText from "./LogoText";
 import Form from "./Form";
 import ContactDetails from "./ContactDetails";
+// import GoogleMap from "./GoogleMap";
+import MyGoogleMap from "./MyGoogleMap";
 
 import "./about.css";
 import carLogo from "../Assets/images/car-logo.png";
 import garageLogo from "../Assets/images/garage-logo.png";
 import carGarageLogo from "../Assets/images/car-garage-logo.png";
-import GoogleMap from "./GoogleMap";
 
 function About() {
   return (
@@ -58,7 +59,8 @@ function About() {
             email="carrental@carmai.com"
             address="Car Rentals 1234 Dream Drive, Kelowna, BC, Canada V1X 5T5"
           />
-          <GoogleMap />
+          {/* <GoogleMap /> */}
+          <MyGoogleMap />
         </div>
         <Form />
       </div>
