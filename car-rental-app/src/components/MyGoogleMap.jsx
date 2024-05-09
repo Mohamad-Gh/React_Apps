@@ -1,9 +1,10 @@
-import { useState, useEffect, useCallback, memo } from "react";
+import { useState, useEffect, useCallback, memo, useMemo } from "react";
 import { GoogleMap, Marker, useJsApiLoader } from "@react-google-maps/api";
 
-import LocationOnSharpIcon from "@mui/icons-material/LocationOnSharp";
-
+// import LocationOnSharpIcon from "@mui/icons-material/LocationOnSharp";
+// import AccessibilityNewIcon from "@mui/icons-material/AccessibilityNew";
 import location from "../Assets/location.json";
+import "./myGoogleMap.css";
 
 const containerStyle = {
   width: "400px",
@@ -38,21 +39,23 @@ function MyGoogleMap() {
     googleMapsApiKey: "",
   });
 
+  const centerMap = useMemo(
+    () => ({ lat: userLocation.lat, lng: userLocation.lng }),
+    []
+  );
   return isLoaded ? (
-    <GoogleMap
-      mapContainerStyle={containerStyle}
-      center={{ lat: userLocation.lat, lng: userLocation.lng }}
-      zoom={8}
-    >
-      <Marker
-        key={0}
-        icon={LocationOnSharpIcon}
-        position={{ lat: userLocation.lat, lng: userLocation.lng }}
-      />
+    <GoogleMap mapContainerStyle={containerStyle} center={centerMap} zoom={8}>
+      <div className="userLocation">
+        <Marker
+          key={0}
+          // icon={LocationOnSharpIcon}
+          position={{ lat: userLocation.lat, lng: userLocation.lng }}
+        />
+      </div>
       {location.locations.map((loc, indx) => (
         <Marker
           key={indx + 1}
-          icon={LocationOnSharpIcon}
+          // icon={}
           position={{ lat: loc.latitude, lng: loc.longitude }}
         />
       ))}

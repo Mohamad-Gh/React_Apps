@@ -1,0 +1,10 @@
+.userLocation:hover,
+.branches:hover {
+  scale: 1.5;
+}
+.userLocation {
+  color: #0f0f0f;
+}
+.branches {
+  color: tomato;
+}

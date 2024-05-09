@@ -4,16 +4,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-.userLocation {
-  color: #ff4d30;
-}
-.userLocation:hover,
-.branches:hover {
-  scale: 1.5;
-}
-.branches {
-  color: #0f0f0f;
-}
+
 .center-card {
   margin: 50px 0;
   display: flex;
