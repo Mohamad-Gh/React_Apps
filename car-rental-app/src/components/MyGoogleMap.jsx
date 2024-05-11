@@ -1,10 +1,13 @@
-import { useState, useEffect, useCallback, memo, useMemo } from "react";
-import { GoogleMap, Marker, useJsApiLoader } from "@react-google-maps/api";
+import { useState, useEffect, useCallback, memo, useMemo, useRef } from "react";
+import {
+  DirectionsRenderer,
+  GoogleMap,
+  Marker,
+  useJsApiLoader,
+} from "@react-google-maps/api";
 
-// import LocationOnSharpIcon from "@mui/icons-material/LocationOnSharp";
-// import AccessibilityNewIcon from "@mui/icons-material/AccessibilityNew";
-import location from "../Assets/location.json";
 import "./myGoogleMap.css";
+import brancehs from "../Assets/location.json";
 
 const containerStyle = {
   width: "400px",
@@ -12,7 +15,12 @@ const containerStyle = {
 };
 
 function MyGoogleMap() {
-  const [userLocation, setUserLocation] = useState({ lat: "", lng: "" });
+  const [userLocation, setUserLocation] = useState(null);
+  const [direction, setDirectoin] = useState(null);
+  const { isLoaded } = useJsApiLoader({
+    googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY,
+  });
+  const mapRef = useRef();
 
   useEffect(() => {
     // Get user's location
@@ -23,7 +31,6 @@ function MyGoogleMap() {
             lat: position.coords.latitude,
             lng: position.coords.longitude,
           });
-          console.log(userLocation);
         },
         (error) => {
           console.error("Error getting user location:", error);
@@ -34,36 +41,49 @@ function MyGoogleMap() {
     }
   }, []);
 
-  const { isLoaded } = useJsApiLoader({
-    id: "google-map-script",
-    googleMapsApiKey: "",
-  });
+  function fetchDirection(place) {
+    const service = new window.google.maps.DirectionsService();
+    service.route(
+      {
+        origin: userLocation,
+        destination: place,
+        travelMode: window.google.maps.TravelMode.DRIVING,
+      },
+      (result, status) => {
+        if (status === "OK" && result) {
+          setDirectoin(result);
+          console.log(result.routes[0].legs[0].distance.text);
+        }
+      }
+    );
+  }
 
-  const centerMap = useMemo(
-    () => ({ lat: userLocation.lat, lng: userLocation.lng }),
-    []
-  );
+  const onLoad = useCallback((map) => {
+    mapRef.current = map;
+  }, []);
   return isLoaded ? (
-    <GoogleMap mapContainerStyle={containerStyle} center={centerMap} zoom={8}>
-      <div className="userLocation">
+    <GoogleMap
+      mapContainerStyle={containerStyle}
+      center={userLocation}
+      zoom={8}
+    >
+      {direction && <DirectionsRenderer directions={direction} />}
+
+      <Marker position={userLocation} />
+      {brancehs.locations.map((location, indx) => (
         <Marker
-          key={0}
-          // icon={LocationOnSharpIcon}
-          position={{ lat: userLocation.lat, lng: userLocation.lng }}
-        />
-      </div>
-      {location.locations.map((loc, indx) => (
-        <Marker
-          key={indx + 1}
-          // icon={}
-          position={{ lat: loc.latitude, lng: loc.longitude }}
+          key={indx}
+          position={{ lat: location.latitude, lng: location.longitude }}
+          onClick={() => {
+            fetchDirection({ lat: location.latitude, lng: location.longitude });
+          }}
+          onLoad={onLoad}
         />
       ))}
-      <></>
     </GoogleMap>
   ) : (
-    <></>
+    <h1>Loading ...</h1>
   );
 }
 
-export default memo(MyGoogleMap);
+export default MyGoogleMap;

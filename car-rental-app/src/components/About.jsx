@@ -6,7 +6,7 @@ import ContentCard from "./ContentCard";
 import LogoText from "./LogoText";
 import Form from "./Form";
 import ContactDetails from "./ContactDetails";
-import GoogleMap from "./GoogleMap";
+// import GoogleMap from "./GoogleMap";
 import MyGoogleMap from "./MyGoogleMap";
 
 import "./about.css";
@@ -59,7 +59,7 @@ function About() {
             email="carrental@carmai.com"
             address="Car Rentals 1234 Dream Drive, Kelowna, BC, Canada V1X 5T5"
           />
-          <GoogleMap />
+          {/* <GoogleMap /> */}
         </div>
         <MyGoogleMap />
         <Form />
