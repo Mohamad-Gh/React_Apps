@@ -29,7 +29,6 @@ function Header() {
     }
   });
   const showBar = () => {
-    console.log("bar ", bar);
     setBar(!bar);
   };
 
