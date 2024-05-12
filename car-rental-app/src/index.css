@@ -627,8 +627,7 @@ footer {
     position: fixed;
     flex-direction: column;
     gap: 7px;
-    opacity: 0.8;
-    z-index: 10;
+cd    z-index: 10;
     border: 2px solid black;
   }
   .navigator li {
