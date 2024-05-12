@@ -18,6 +18,7 @@ function Header() {
   } else {
     document.body.classList.remove("scroll");
   }
+
   document.addEventListener("click", (event) => {
     if (bar === true && event.target.id !== "menu-bar") {
       setBar(false);

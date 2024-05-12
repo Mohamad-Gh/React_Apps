@@ -9,7 +9,9 @@ import Input from "@mui/material/Input";
 import "./registration.css"; // Importing CSS file
 
 function Registration(props) {
+  // variable to show statue of the submition
   const [done, setDone] = useState(false);
+  // variable to store form information and password visibility
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -18,7 +20,9 @@ function Registration(props) {
     showPassword: false,
   });
 
+  // to add info to the form based on each input name
   const handleChange = (event) => {
+    // divide event to two variables
     const { name, value } = event.target;
     setFormData((prevData) => ({
       ...prevData,
@@ -54,6 +58,7 @@ function Registration(props) {
       <div onClick={() => props.triger(false)} className="overlay"></div>
       <div className="registration-container">
         <h2>Registration Form</h2>
+        {/* if submit was successful show Alert */}
         {done && (
           <Alert variant="filled" severity="success">
             {formData.firstName} Your Registration was successful. Your username
@@ -104,6 +109,7 @@ function Registration(props) {
             <label htmlFor="password">Password:</label>
             <Input
               className="form-control"
+              // password visibility based on showPassword value
               type={formData.showPassword ? "text" : "password"}
               id="password"
               name="password"
@@ -118,6 +124,7 @@ function Registration(props) {
                 <InputAdornment position="end">
                   <IconButton onClick={showPassword}>
                     {formData.showPassword ? (
+                      // changing the icon based on showPassword value
                       <VisibilityIcon />
                     ) : (
                       <VisibilityOffIcon />
