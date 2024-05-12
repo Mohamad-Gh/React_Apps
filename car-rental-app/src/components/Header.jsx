@@ -22,7 +22,9 @@ function Header() {
       <div class="full-container">
         <div class="container-header">
           {/* add Link to the Header logo */}
-          <img class="company_logo" src={logo} alt="Company Logo" />
+          <Link to="/">
+            <img class="company_logo" src={logo} alt="Company Logo" />
+          </Link>
           <nav>
             <ul class="navigator">
               <li>

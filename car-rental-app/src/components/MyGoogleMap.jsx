@@ -23,7 +23,6 @@ function MyGoogleMap() {
   const mapRef = useRef();
 
   useEffect(() => {
-    // Get user's location
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
         (position) => {
