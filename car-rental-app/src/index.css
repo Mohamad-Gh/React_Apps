@@ -629,6 +629,10 @@ footer {
     gap: 7px;
     opacity: 0.8;
     z-index: 10;
+    border: 2px solid black;
+  }
+  .navigator li {
+    border-bottom: 1px solid black;
   }
   .show-bar {
     display: flex;
