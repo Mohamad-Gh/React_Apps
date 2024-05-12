@@ -619,7 +619,7 @@ footer {
 @media (max-width: 1042px) {
   .navigator {
     display: none;
-    background-color: #ff4d30;
+    background-color: #fe6d57;
     font-size: 16px;
     right: 50px;
     left: 50px;
@@ -627,7 +627,7 @@ footer {
     position: fixed;
     flex-direction: column;
     gap: 7px;
-cd    z-index: 10;
+    z-index: 10;
     border: 2px solid black;
   }
   .navigator li {
