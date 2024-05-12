@@ -626,8 +626,9 @@ footer {
     top: 70px;
     position: fixed;
     flex-direction: column;
-    gap: 5px;
+    gap: 7px;
     opacity: 0.8;
+    z-index: 10;
   }
   .show-bar {
     display: flex;
