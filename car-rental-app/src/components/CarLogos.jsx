@@ -37,16 +37,10 @@ const CarLogos = () => {
       <div className="carousel-slide">
         <div className="sides">
           {carLogos.map((logo, index) => (
-            <div key={index} className="carousel-item">
-              <img src={logo} alt={`Car Logo ${index + 1}`} />
-            </div>
+            <img key={index} src={logo} alt={`Car Logo ${index + 1}`} />
           ))}
-        </div>
-        <div className="sides">
           {carLogos.map((logo, index) => (
-            <div key={index + 10} className="carousel-item">
-              <img src={logo} alt={`Car Logo ${index + 10}`} />
-            </div>
+            <img key={index + 10} src={logo} alt={`Car Logo ${index + 10}`} />
           ))}
         </div>
       </div>

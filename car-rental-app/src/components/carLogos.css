@@ -1,6 +1,6 @@
 .carousel-container {
   background-color: ghostwhite;
-  margin: 50px 70px;
+  margin: 50px 0;
   overflow: hidden;
 }
 .carousel-slide {
@@ -12,19 +12,16 @@
   animation: 10s slide linear infinite;
 }
 .sides {
-  margin: 0 20px;
+  /* margin: 0 20px; */
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
-  flex-wrap: nowrap;
   gap: 35px;
 }
-.carousel-item {
-  margin: 0 10px;
-}
-.carousel-item img {
+
+.sides img {
   width: 100px;
+  margin: 0 20px;
 }
 
 @keyframes slide {
@@ -32,6 +29,6 @@
     transform: translateX(0);
   }
   to {
-    transform: translateX(-100%);
+    transform: translateX(-1381.09px);
   }
 }
