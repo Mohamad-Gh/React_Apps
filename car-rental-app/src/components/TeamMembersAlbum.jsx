@@ -25,9 +25,7 @@ function TeamMembersAlbum() {
             />
           ))}
         </div>
-        //{" "}
       </div>
-      //{" "}
     </div>
   );
 }

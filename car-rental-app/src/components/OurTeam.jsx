@@ -4,6 +4,7 @@ import Footer from "./Footer";
 import BlackDivider from "./BlackDivider";
 import CCarousel from "./CCarousel";
 import TeamMembersAlbum from "./TeamMembersAlbum";
+import RentCar from "./RentCar";
 
 function OurTeam() {
   return (
@@ -27,6 +28,7 @@ function OurTeam() {
         span="(123) 456-7869"
       />
       <TeamMembersAlbum />
+      <RentCar />
       <Footer />
     </div>
   );
