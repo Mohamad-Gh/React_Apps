@@ -9,7 +9,7 @@ import HeroSection from "./HeroSection";
 import ContentCard from "./ContentCard";
 import Booking from "./Booking";
 import Faq from "./Faq";
-import CarCarousel from "./CarCarousel";
+import CarLogos from "./CarLogos";
 
 function Main() {
   return (
@@ -76,7 +76,7 @@ function Main() {
         <img className="back-img" src={backGroundDesign} />
       </section>
       <Booking />
-      <CarCarousel />
+      <CarLogos />
       <HeroSection h3="Plan your trip now" h2="Quick & easy car rental" />
       <SmallCarAlbum />
       <BlackDivider
