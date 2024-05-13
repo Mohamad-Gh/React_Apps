@@ -1,0 +1,14 @@
+.carousel-container {
+  background-color: ghostwhite;
+  margin: 50px auto;
+}
+.carousel-slide {
+  height: 180px;
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+}
+.carousel-item img {
+  width: 100px;
+}

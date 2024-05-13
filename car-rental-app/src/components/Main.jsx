@@ -9,7 +9,7 @@ import HeroSection from "./HeroSection";
 import ContentCard from "./ContentCard";
 import Booking from "./Booking";
 import Faq from "./Faq";
-import CarCarousel from "./carCarousel";
+import CarCarousel from "./CarCarousel";
 
 function Main() {
   return (
