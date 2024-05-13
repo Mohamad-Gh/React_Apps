@@ -76,7 +76,7 @@ function Main() {
         <img className="back-img" src={backGroundDesign} />
       </section>
       <Booking />
-      <CarCarousel />
+      {/* <CarCarousel /> */}
       <HeroSection h3="Plan your trip now" h2="Quick & easy car rental" />
       <SmallCarAlbum />
       <BlackDivider
