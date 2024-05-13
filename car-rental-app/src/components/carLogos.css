@@ -31,6 +31,10 @@
   gap: 100px;
 }
 
+.carousel-container:hover .carousel-slide {
+  animation-play-state: paused;
+}
+
 .sides img {
   width: 100px;
 }
