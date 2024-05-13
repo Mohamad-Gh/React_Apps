@@ -1,15 +1,28 @@
 import React, { useState, useEffect } from "react";
-import "./carCarousel.css"; // You can define your CSS styles in a separate file
 
-const Carousel = () => {
+import "./carCarousel.css"; // You can define your CSS styles in a separate file
+import Porsche from "../Assets/images/Logos/Porsche_Logo.png";
+import rolls_royce from "../Assets/images/Logos/rolls_royce_Logo.png";
+import Mercedes from "../Assets/images/Logos/Mercedes_Logo.png";
+import tesla from "../Assets/images/Logos/tesla_Logo.png";
+import Lexus from "../Assets/images/Logos/Lexus_Logo.png";
+import Chevrolet from "../Assets/images/Logos/Chevrolet_Logo.png";
+import Bentley from "../Assets/images/Logos/Bentley_Logo";
+import Ferrari from "../Assets/images/Logos/Ferrari-Logo";
+
+const CarCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const intervalTime = 3000; // 3 seconds
 
   const carLogos = [
-    "car1.jpg",
-    "car2.jpg",
-    "car3.jpg",
-    // Add more image paths as needed
+    Porsche,
+    rolls_royce,
+    Mercedes,
+    tesla,
+    Lexus,
+    Chevrolet,
+    Bentley,
+    Ferrari,
   ];
 
   useEffect(() => {
@@ -38,4 +51,4 @@ const Carousel = () => {
   );
 };
 
-export default Carousel;
+export default CarCarousel;
