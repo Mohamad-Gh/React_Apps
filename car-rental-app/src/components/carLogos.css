@@ -9,7 +9,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  animation: 5s slide linear infinite;
+  animation: 10s slide linear infinite;
 }
 .sides {
   margin: 0 20px;
