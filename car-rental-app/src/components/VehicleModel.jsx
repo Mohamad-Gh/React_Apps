@@ -56,11 +56,8 @@ function VehicleModel() {
                 (a.fuel_efficiency.city - b.fuel_efficiency.city)
             );
           })
-          .filter(
-            (elmn) =>
-              elmn.luggage_capacity >= change.luggageCapacity &&
-              elmn.passenger_capacity >= change.passengerCapacity
-          )
+          .filter((elmn) => elmn.luggage_capacity >= change.luggageCapacity)
+          .filter((elmn) => elmn.passenger_capacity >= change.passengerCapacity)
           .map((car) => (
             <CarCard
               key={car.id}

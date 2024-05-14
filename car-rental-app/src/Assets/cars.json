@@ -229,7 +229,7 @@
         "highway": 33
       },
       "starting_price": 70,
-      "passenger_capacity": 5,
+      "passenger_capacity": 2,
       "luggage_capacity": 3,
       "features": {
         "transmission": "Automatic",
@@ -329,7 +329,7 @@
         "highway": 24
       },
       "starting_price": 800,
-      "passenger_capacity": 4,
+      "passenger_capacity": 2,
       "luggage_capacity": 2,
       "features": {
         "transmission": "Automatic",

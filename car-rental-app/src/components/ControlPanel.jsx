@@ -39,7 +39,7 @@ function ControlPanel(props) {
             <option value="2">2&gt;</option>
             <option value="3">3&gt;</option>
             <option value="4">4&gt;</option>
-            <option value="4">5&gt;</option>
+            <option value="5">5&gt;</option>
           </select>
         </label>
 
