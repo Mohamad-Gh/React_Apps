@@ -1,13 +1,17 @@
 import "./controlPanel.css";
 
-function ControlPanel() {
+function ControlPanel(props) {
   return (
     <div className="container-control">
       <h2 className="title-control">Control Panel</h2>
       <fieldset>
         <label htmlFor="sortPrice">
           Price{" "}
-          <select id="sortPrice" name="sortPrice">
+          <select
+            id="sortPrice"
+            name="sortPrice"
+            onChange={(event) => props.price(event)}
+          >
             <option value="ascending" selected>
               Ascending
             </option>

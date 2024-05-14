@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import Header from "./Header";
 import Footer from "./Footer";
@@ -10,13 +10,24 @@ import cars from "../Assets/cars.json";
 import "./vehicleModel.css";
 import ControlPanel from "./ControlPanel";
 function VehicleModel() {
+  const [price, setPrice] = useState(true);
+
+  const changePrice = (event) => {
+    event.target.value === "ascending" ? setPrice(true) : setPrice(false);
+  };
+
   return (
     <div>
       <Header />
-      <ControlPanel />
+      <ControlPanel price={changePrice} />
       <div className="carAlbum">
         {cars.cars
-          .filter((elmn) => elmn.luggage_capacity > 2)
+          .filter((elmn) => elmn.luggage_capacity >= 2)
+          .sort((a, b) =>
+            price
+              ? a.starting_price - b.starting_price
+              : b.starting_price - a.starting_price
+          )
           .map((car) => (
             <CarCard
               key={car.id}
@@ -34,9 +45,7 @@ function VehicleModel() {
               gps={car.features.gps}
               img={car.image_url}
             />
-          ))
-          .sort((a, b) => a.starting_price - b.starting_price)
-          .reverse()}
+          ))}
       </div>
       <BlackDivider
         text="Book a car by getting in touch with us"
