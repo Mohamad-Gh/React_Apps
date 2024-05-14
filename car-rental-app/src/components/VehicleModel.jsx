@@ -17,6 +17,16 @@ function VehicleModel() {
     fuelEfficiency: "ascending",
   });
 
+  // .sort((a, b) =>
+  //   change.sortPrice === "ascending"
+  //     ? a.starting_price - b.starting_price
+  //     : b.starting_price - a.starting_price
+  // )
+  // .sort((a, b) =>
+  //   change.fuelEfficiency === "ascending"
+  //     ? a.fuel_efficiency.city - b.fuel_efficiency.city
+  //     : b.fuel_efficiency.city - a.fuel_efficiency.city
+  // )
   function handleChange(event) {
     const { name, value } = event.target;
     setChange((prvs) => {
@@ -35,24 +45,25 @@ function VehicleModel() {
       />
       <div className="carAlbum">
         {cars.cars
-          .sort((a, b) =>
-            change.sortPrice === "ascending"
-              ? a.starting_price - b.starting_price
-              : b.starting_price - a.starting_price
-          )
-          .sort((a, b) =>
-            change.fuelEfficiency === "ascending"
-              ? a.starting_price - b.starting_price
-              : b.starting_price - a.starting_price
-          )
+          .sort((a, b) => {
+            let sortPrice = change.sortPrice === "ascending" ? 1 : -1;
+            let sortFuelEfficiency =
+              change.fuelEfficiency === "ascending" ? 1 : -1;
+
+            return (
+              sortPrice * (a.starting_price - b.starting_price) +
+              sortFuelEfficiency *
+                (a.fuel_efficiency.city - b.fuel_efficiency.city)
+            );
+          })
           .filter((elmn) => elmn.luggage_capacity >= change.luggageCapacity)
-          .filter((elmn) => elmn.luggage_capacity >= change.passengerCapacity)
+          .filter((elmn) => elmn.passenger_capacity >= change.passengerCapacity)
           .map((car) => (
             <CarCard
               key={car.id}
               model={car.car_model}
-              city={car.fuel_efficiency.city}
-              highway={car.fuel_efficiency.highway}
+              city={`${car.fuel_efficiency.city} MPG`}
+              highway={`${car.fuel_efficiency.highway} MPG`}
               // description={car.car_description}
               price={`$${car.starting_price} per day`}
               luggage={car.luggage_capacity}

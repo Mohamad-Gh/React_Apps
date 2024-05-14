@@ -5,8 +5,8 @@
       "car_model": "Toyota Corolla",
       "car_description": "Compact sedan perfect for city driving",
       "fuel_efficiency": {
-        "city": "29 MPG",
-        "highway": "37 MPG"
+        "city": 29,
+        "highway": 37
       },
       "starting_price": 35,
       "passenger_capacity": 5,
@@ -25,8 +25,8 @@
       "car_model": "Ford Fusion",
       "car_description": "Mid-size sedan with comfortable interior",
       "fuel_efficiency": {
-        "city": "23 MPG",
-        "highway": "34 MPG"
+        "city": 23,
+        "highway": 34
       },
       "starting_price": 40,
       "passenger_capacity": 5,
@@ -45,8 +45,8 @@
       "car_model": "Honda Civic",
       "car_description": "Compact sedan known for reliability",
       "fuel_efficiency": {
-        "city": "32 MPG",
-        "highway": "42 MPG"
+        "city": 32,
+        "highway": 42
       },
       "starting_price": 38,
       "passenger_capacity": 5,
@@ -65,8 +65,8 @@
       "car_model": "Chevrolet Cruze",
       "car_description": "Compact sedan with modern styling",
       "fuel_efficiency": {
-        "city": "28 MPG",
-        "highway": "38 MPG"
+        "city": 28,
+        "highway": 38
       },
       "starting_price": 36,
       "passenger_capacity": 5,
@@ -85,8 +85,8 @@
       "car_model": "Nissan Altima",
       "car_description": "Mid-size sedan with spacious interior",
       "fuel_efficiency": {
-        "city": "27 MPG",
-        "highway": "37 MPG"
+        "city": 27,
+        "highway": 37
       },
       "starting_price": 42,
       "passenger_capacity": 5,
@@ -105,8 +105,8 @@
       "car_model": "Hyundai Elantra",
       "car_description": "Compact sedan with excellent fuel efficiency",
       "fuel_efficiency": {
-        "city": "30 MPG",
-        "highway": "40 MPG"
+        "city": 30,
+        "highway": 40
       },
       "starting_price": 34,
       "passenger_capacity": 5,
@@ -125,8 +125,8 @@
       "car_model": "Volkswagen Jetta",
       "car_description": "Compact sedan with a refined interior",
       "fuel_efficiency": {
-        "city": "27 MPG",
-        "highway": "37 MPG"
+        "city": 27,
+        "highway": 37
       },
       "starting_price": 37,
       "passenger_capacity": 5,
@@ -145,8 +145,8 @@
       "car_model": "Subaru Impreza",
       "car_description": "Versatile compact sedan with all-wheel drive",
       "fuel_efficiency": {
-        "city": "28 MPG",
-        "highway": "36 MPG"
+        "city": 28,
+        "highway": 36
       },
       "starting_price": 42,
       "passenger_capacity": 5,
@@ -165,8 +165,8 @@
       "car_model": "Audi A4",
       "car_description": "Luxurious mid-size sedan with premium features",
       "fuel_efficiency": {
-        "city": "24 MPG",
-        "highway": "34 MPG"
+        "city": 24,
+        "highway": 34
       },
       "starting_price": 55,
       "passenger_capacity": 5,
@@ -185,8 +185,8 @@
       "car_model": "BMW 3 Series",
       "car_description": "Iconic luxury sedan with sporty performance",
       "fuel_efficiency": {
-        "city": "26 MPG",
-        "highway": "36 MPG"
+        "city": 26,
+        "highway": 36
       },
       "starting_price": 60,
       "passenger_capacity": 5,
@@ -205,8 +205,8 @@
       "car_model": "Mercedes-Benz C-Class",
       "car_description": "Elegant and refined luxury sedan",
       "fuel_efficiency": {
-        "city": "25 MPG",
-        "highway": "35 MPG"
+        "city": 25,
+        "highway": 35
       },
       "starting_price": 65,
       "passenger_capacity": 5,
@@ -225,8 +225,8 @@
       "car_model": "Lexus ES",
       "car_description": "Luxury sedan with a spacious and comfortable interior",
       "fuel_efficiency": {
-        "city": "22 MPG",
-        "highway": "33 MPG"
+        "city": 22,
+        "highway": 33
       },
       "starting_price": 70,
       "passenger_capacity": 5,
@@ -245,8 +245,8 @@
       "car_model": "Volvo S60",
       "car_description": "Premium sedan with advanced safety features",
       "fuel_efficiency": {
-        "city": "24 MPG",
-        "highway": "34 MPG"
+        "city": 24,
+        "highway": 34
       },
       "starting_price": 55,
       "passenger_capacity": 5,
@@ -265,8 +265,8 @@
       "car_model": "Tesla Model 3",
       "car_description": "Electric sedan with cutting-edge technology and performance",
       "fuel_efficiency": {
-        "city": "126 MPGe",
-        "highway": "116 MPGe"
+        "city": 126,
+        "highway": 116
       },
       "starting_price": 80,
       "passenger_capacity": 5,
@@ -285,8 +285,8 @@
       "car_model": "Porsche Panamera",
       "car_description": "Luxury sports sedan with exhilarating performance",
       "fuel_efficiency": {
-        "city": "21 MPG",
-        "highway": "28 MPG"
+        "city": 21,
+        "highway": 28
       },
       "starting_price": 150,
       "passenger_capacity": 4,
@@ -305,8 +305,8 @@
       "car_model": "Ferrari Roma",
       "car_description": "Exotic luxury sports coupe with stunning design and performance",
       "fuel_efficiency": {
-        "city": "15 MPG",
-        "highway": "19 MPG"
+        "city": 15,
+        "highway": 19
       },
       "starting_price": 2000,
       "passenger_capacity": 2,
@@ -325,8 +325,8 @@
       "car_model": "Aston Martin DB11",
       "car_description": "Luxurious grand tourer with a powerful engine",
       "fuel_efficiency": {
-        "city": "18 MPG",
-        "highway": "24 MPG"
+        "city": 18,
+        "highway": 24
       },
       "starting_price": 800,
       "passenger_capacity": 4,
@@ -345,8 +345,8 @@
       "car_model": "Rolls-Royce Ghost",
       "car_description": "Ultra-luxurious sedan with handcrafted interior",
       "fuel_efficiency": {
-        "city": "12 MPG",
-        "highway": "18 MPG"
+        "city": 12,
+        "highway": 18
       },
       "starting_price": 1500,
       "passenger_capacity": 5,
@@ -365,8 +365,8 @@
       "car_model": "Bentley Continental GT",
       "car_description": "Luxurious grand tourer with a blend of performance and comfort",
       "fuel_efficiency": {
-        "city": "15 MPG",
-        "highway": "25 MPG"
+        "city": 15,
+        "highway": 25
       },
       "starting_price": 1200,
       "passenger_capacity": 4,
