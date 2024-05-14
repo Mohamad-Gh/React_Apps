@@ -8,7 +8,7 @@
         "city": "29 MPG",
         "highway": "37 MPG"
       },
-      "starting_price": "$35 per day",
+      "starting_price": 35,
       "passenger_capacity": 5,
       "luggage_capacity": 2,
       "features": {
@@ -28,7 +28,7 @@
         "city": "23 MPG",
         "highway": "34 MPG"
       },
-      "starting_price": "$40 per day",
+      "starting_price": 40,
       "passenger_capacity": 5,
       "luggage_capacity": 3,
       "features": {
@@ -48,7 +48,7 @@
         "city": "32 MPG",
         "highway": "42 MPG"
       },
-      "starting_price": "$38 per day",
+      "starting_price": 38,
       "passenger_capacity": 5,
       "luggage_capacity": 2,
       "features": {
@@ -68,7 +68,7 @@
         "city": "28 MPG",
         "highway": "38 MPG"
       },
-      "starting_price": "$36 per day",
+      "starting_price": 36,
       "passenger_capacity": 5,
       "luggage_capacity": 2,
       "features": {
@@ -88,7 +88,7 @@
         "city": "27 MPG",
         "highway": "37 MPG"
       },
-      "starting_price": "$42 per day",
+      "starting_price": 42,
       "passenger_capacity": 5,
       "luggage_capacity": 3,
       "features": {
@@ -108,7 +108,7 @@
         "city": "30 MPG",
         "highway": "40 MPG"
       },
-      "starting_price": "$34 per day",
+      "starting_price": 34,
       "passenger_capacity": 5,
       "luggage_capacity": 2,
       "features": {
@@ -128,7 +128,7 @@
         "city": "27 MPG",
         "highway": "37 MPG"
       },
-      "starting_price": "$37 per day",
+      "starting_price": 37,
       "passenger_capacity": 5,
       "luggage_capacity": 3,
       "features": {
@@ -148,7 +148,7 @@
         "city": "28 MPG",
         "highway": "36 MPG"
       },
-      "starting_price": "$42 per day",
+      "starting_price": 42,
       "passenger_capacity": 5,
       "luggage_capacity": 3,
       "features": {
@@ -168,7 +168,7 @@
         "city": "24 MPG",
         "highway": "34 MPG"
       },
-      "starting_price": "$55 per day",
+      "starting_price": 55,
       "passenger_capacity": 5,
       "luggage_capacity": 3,
       "features": {
@@ -188,7 +188,7 @@
         "city": "26 MPG",
         "highway": "36 MPG"
       },
-      "starting_price": "$60 per day",
+      "starting_price": 60,
       "passenger_capacity": 5,
       "luggage_capacity": 3,
       "features": {
@@ -208,7 +208,7 @@
         "city": "25 MPG",
         "highway": "35 MPG"
       },
-      "starting_price": "$65 per day",
+      "starting_price": 65,
       "passenger_capacity": 5,
       "luggage_capacity": 3,
       "features": {
@@ -228,7 +228,7 @@
         "city": "22 MPG",
         "highway": "33 MPG"
       },
-      "starting_price": "$70 per day",
+      "starting_price": 70,
       "passenger_capacity": 5,
       "luggage_capacity": 3,
       "features": {
@@ -248,7 +248,7 @@
         "city": "24 MPG",
         "highway": "34 MPG"
       },
-      "starting_price": "$55 per day",
+      "starting_price": 55,
       "passenger_capacity": 5,
       "luggage_capacity": 3,
       "features": {
@@ -268,7 +268,7 @@
         "city": "126 MPGe",
         "highway": "116 MPGe"
       },
-      "starting_price": "$80 per day",
+      "starting_price": 80,
       "passenger_capacity": 5,
       "luggage_capacity": 2,
       "features": {
@@ -288,7 +288,7 @@
         "city": "21 MPG",
         "highway": "28 MPG"
       },
-      "starting_price": "$150 per day",
+      "starting_price": 150,
       "passenger_capacity": 4,
       "luggage_capacity": 2,
       "features": {
@@ -308,7 +308,7 @@
         "city": "15 MPG",
         "highway": "19 MPG"
       },
-      "starting_price": "$2000 per day",
+      "starting_price": 2000,
       "passenger_capacity": 2,
       "luggage_capacity": 1,
       "features": {
@@ -328,7 +328,7 @@
         "city": "18 MPG",
         "highway": "24 MPG"
       },
-      "starting_price": "$800 per day",
+      "starting_price": 800,
       "passenger_capacity": 4,
       "luggage_capacity": 2,
       "features": {
@@ -348,7 +348,7 @@
         "city": "12 MPG",
         "highway": "18 MPG"
       },
-      "starting_price": "$1500 per day",
+      "starting_price": 1500,
       "passenger_capacity": 5,
       "luggage_capacity": 2,
       "features": {
@@ -368,7 +368,7 @@
         "city": "15 MPG",
         "highway": "25 MPG"
       },
-      "starting_price": "$1200 per day",
+      "starting_price": 1200,
       "passenger_capacity": 4,
       "luggage_capacity": 2,
       "features": {
