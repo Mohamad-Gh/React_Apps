@@ -155,6 +155,9 @@ header {
   display: flex;
   gap: 20px;
 }
+.buttons a {
+  text-decoration: none;
+}
 .back-img {
   position: absolute;
   right: 0;
