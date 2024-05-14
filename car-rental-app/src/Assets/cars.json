@@ -370,7 +370,7 @@
       },
       "starting_price": 1200,
       "passenger_capacity": 4,
-      "luggage_capacity": 2,
+      "luggage_capacity": 3,
       "features": {
         "transmission": "Automatic",
         "AC": "yes",
