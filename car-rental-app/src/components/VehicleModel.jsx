@@ -11,10 +11,10 @@ import "./vehicleModel.css";
 import ControlPanel from "./ControlPanel";
 function VehicleModel() {
   const [change, setChange] = useState({
-    sortPrice: "ascending",
+    sortPrice: "none",
     luggageCapacity: 2,
     passengerCapacity: 2,
-    fuelEfficiency: "ascending",
+    fuelEfficiency: "none",
   });
 
   // .sort((a, b) =>
@@ -46,9 +46,18 @@ function VehicleModel() {
       <div className="carAlbum">
         {cars.cars
           .sort((a, b) => {
-            let sortPrice = change.sortPrice === "ascending" ? 1 : -1;
+            let sortPrice =
+              change.sortPrice === "ascending"
+                ? 1
+                : change.sortPrice === "descending"
+                ? -1
+                : null;
             let sortFuelEfficiency =
-              change.fuelEfficiency === "ascending" ? 1 : -1;
+              change.fuelEfficiency === "ascending"
+                ? 1
+                : change.fuelEfficiency === "descending"
+                ? -1
+                : null;
 
             return (
               sortPrice * (a.starting_price - b.starting_price) +

@@ -12,6 +12,9 @@ function ControlPanel(props) {
             name="sortPrice"
             onChange={(event) => props.price(event)}
           >
+            <option value="none" selected>
+              Select
+            </option>
             <option value="ascending">Ascending</option>
             <option value="descending">Descending</option>
           </select>
@@ -44,12 +47,15 @@ function ControlPanel(props) {
         </label>
 
         <label htmlFor="fuelEfficiency">
-          Fuel Efficiency{" "}
+          Fuel Efficiency in City{" "}
           <select
             id="fuelEfficiency"
             name="fuelEfficiency"
             onChange={(event) => props.feul(event)}
           >
+            <option value="none" selected>
+              Select
+            </option>
             <option value="ascending" selected>
               Ascending
             </option>
