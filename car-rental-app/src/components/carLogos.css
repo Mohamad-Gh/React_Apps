@@ -22,7 +22,7 @@
   height: 180px;
   display: flex;
   align-items: center;
-  animation: 30s slide linear infinite;
+  animation: 5s slide linear infinite;
 }
 .sides {
   width: max-content;
@@ -44,6 +44,6 @@
     transform: translateX(0);
   }
   to {
-    transform: translateX(calc(-100% - 220px));
+    transform: translateX(-1600px);
   }
 }
