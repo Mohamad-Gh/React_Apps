@@ -10,24 +10,43 @@ import cars from "../Assets/cars.json";
 import "./vehicleModel.css";
 import ControlPanel from "./ControlPanel";
 function VehicleModel() {
-  const [price, setPrice] = useState(true);
+  const [change, setChange] = useState({
+    sortPrice: "ascending",
+    luggageCapacity: 2,
+    passengerCapacity: 2,
+    fuelEfficiency: "ascending",
+  });
 
-  const changePrice = (event) => {
-    event.target.value === "ascending" ? setPrice(true) : setPrice(false);
-  };
+  function handleChange(event) {
+    const { name, value } = event.target;
+    setChange((prvs) => {
+      return { ...prvs, [name]: value };
+    });
+  }
 
   return (
     <div>
       <Header />
-      <ControlPanel price={changePrice} />
+      <ControlPanel
+        price={handleChange}
+        luggage={handleChange}
+        passenger={handleChange}
+        feul={handleChange}
+      />
       <div className="carAlbum">
         {cars.cars
-          .filter((elmn) => elmn.luggage_capacity >= 2)
           .sort((a, b) =>
-            price
+            change.sortPrice === "ascending"
               ? a.starting_price - b.starting_price
               : b.starting_price - a.starting_price
           )
+          .sort((a, b) =>
+            change.fuelEfficiency === "ascending"
+              ? a.starting_price - b.starting_price
+              : b.starting_price - a.starting_price
+          )
+          .filter((elmn) => elmn.luggage_capacity >= change.luggageCapacity)
+          .filter((elmn) => elmn.luggage_capacity >= change.passengerCapacity)
           .map((car) => (
             <CarCard
               key={car.id}
