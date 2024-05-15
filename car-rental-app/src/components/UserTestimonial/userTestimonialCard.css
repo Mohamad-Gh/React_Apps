@@ -1,6 +1,6 @@
 .user-testimonials-box {
   background-color: #fff;
-  padding: 50px;
+  padding: 30px 50px;
   text-align: left;
   display: flex;
   flex-direction: column;
@@ -18,14 +18,38 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  gap: 10px;
+  gap: 5px;
+}
+.user-testimonials-person input {
+  width: 50%;
+  height: 2.5rem;
+  padding: 0 10px;
+}
+.user-testimonials-person textarea {
+  padding: 0 10px;
 }
 .user-testimonials-person p {
   font-size: 16px;
+}
+.userTestimonialRating {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 50px;
 }
 .user-testimonial-btn {
   background-color: tomato;
   border: none;
   border-radius: 5%;
   width: 50%;
+  height: 2.5rem;
+  font-size: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.user-testimonial-btn:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }

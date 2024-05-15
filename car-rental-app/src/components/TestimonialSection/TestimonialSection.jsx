@@ -31,7 +31,9 @@ function TestimonialSection(props) {
             ))}
             <TestimonialCard
               key={"user"}
-              comment={"something here"}
+              comment={
+                "During my visit to Prince George, I rented a car from this company, and I must say, it was a fantastic experience. The car was in great condition, and the service was top-notch."
+              }
               img={
                 "https://i3.wp.com/www.iprcenter.gov/image-repository/blank-profile-picture.png/@@images/image.png?resize=768%2C768&ssl=1"
               }

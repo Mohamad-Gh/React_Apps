@@ -20,6 +20,7 @@ function UserTestimonial(props) {
         />
         <label htmlFor="city">City:</label>
         <input
+          placeholder={"e.g., Torronto"}
           id="city"
           name="city"
           value={props.city}
@@ -27,19 +28,26 @@ function UserTestimonial(props) {
             /* Update props.city based on input */
           }}
         />
+        <label htmlFor="comment">Comment:</label>
+        <textarea
+          rows={4}
+          id="comment"
+          name="comment"
+          placeholder="Write your experience with our fleet"
+        >
+          {props.comment}
+        </textarea>
+        <div className="userTestimonialRating">
+          <h4>Rate Your Experience</h4>
+          <Rating
+            name="read-only"
+            value={props.rate}
+            precision={0.5}
+            size="large"
+            readOnly
+          />
+        </div>
       </div>
-      <label htmlFor="comment">Comment:</label>
-      <textarea id="comment" name="comment">
-        {props.comment}
-      </textarea>
-      <Rating
-        name="read-only"
-        value={props.rate}
-        precision={0.5}
-        size="large"
-        readOnly
-      />
-
       <button
         className="user-testimonial-btn"
         type="submit"
