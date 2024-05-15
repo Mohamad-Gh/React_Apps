@@ -3,7 +3,7 @@ import "./controlPanel.css";
 function ControlPanel(props) {
   return (
     <div className="container-control">
-      <h2 className="title-control">Control Panel</h2>
+      <h2 className="title-control">Find Your Car</h2>
       <fieldset>
         <label htmlFor="sortPrice">
           Price{" "}
