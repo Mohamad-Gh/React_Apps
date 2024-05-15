@@ -3,10 +3,10 @@ import GoogleMapReact from "google-map-react";
 import LocationOnSharpIcon from "@mui/icons-material/LocationOnSharp";
 
 import location from "../../Assets/location.json";
-import "./myGoogleMap.css";
+import "../MyGoogleMap/myGoogleMap.css";
 
 const apiKey = "";
-
+const center = { lat: 49.915161, lng: -97.252417 };
 const GoogleMap = () => {
   const [userLocation, setUserLocation] = useState(null);
 
@@ -67,8 +67,8 @@ const GoogleMap = () => {
             key: apiKey,
             ...getLanguageAndRegion(userLocation.countryCode),
           }}
-          defaultCenter={userLocation}
-          defaultZoom={6}
+          defaultCenter={center}
+          defaultZoom={3}
           yesIWantToUseGoogleMapApiInternals={true}
           // hoverDistance={20}
         >
