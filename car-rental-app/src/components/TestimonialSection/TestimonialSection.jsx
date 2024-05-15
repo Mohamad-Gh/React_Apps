@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import TestimonialCard from "../TestimonialCard/TestimonialCard";
 import testimonies from "../../Assets/comments.json";
 import UserTestimonial from "../UserTestimonial/UserTestimonial";
 
 function TestimonialSection(props) {
+  const [userInfo, setUserInfo] = useState({
+    name: "",
+    city: "",
+    comment: "",
+    rate: "",
+  });
+
   return (
     <section className="testimonials">
       <div className="full-container">
@@ -29,20 +36,20 @@ function TestimonialSection(props) {
                 // rate={Array.from({ length: client.rating })}
               />
             ))}
-            <TestimonialCard
-              key={"user"}
-              comment={
-                "During my visit to Prince George, I rented a car from this company, and I must say, it was a fantastic experience. The car was in great condition, and the service was top-notch."
-              }
-              img={
-                "https://i3.wp.com/www.iprcenter.gov/image-repository/blank-profile-picture.png/@@images/image.png?resize=768%2C768&ssl=1"
-              }
-              name={"name"}
-              city={"city"}
-              rate={5}
-              // rate={Array.from({ length: client.rating })}
-            />
-            <UserTestimonial />
+            {userInfo.rate && (
+              <TestimonialCard
+                key={"user"}
+                comment={userInfo.comment}
+                img={
+                  "https://i3.wp.com/www.iprcenter.gov/image-repository/blank-profile-picture.png/@@images/image.png?resize=768%2C768&ssl=1"
+                }
+                name={userInfo.name}
+                city={userInfo.city}
+                rate={userInfo.rate}
+                // rate={Array.from({ length: client.rating })}
+              />
+            )}
+            <UserTestimonial info={setUserInfo} />
           </div>
         </div>
       </div>
