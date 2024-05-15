@@ -1,10 +1,9 @@
 import { Routes, Route } from "react-router-dom";
-import HomePage from "./HomePage";
-import VehicleModel from "./VehicleModel";
-import OurTeam from "./OurTeam";
-import About from "./About";
-import Registration from "./Registration";
-import TestimonialsPage from "./TestimonialsPage";
+import HomePage from "./pages/HomePage/HomePage";
+import VehicleModel from "./pages/VehicleModel/VehicleModel";
+import OurTeam from "./pages/OurTeam/OurTeam";
+import About from "./pages/About/About";
+import TestimonialsPage from "./pages/TestimonialsPage/TestimonialsPage";
 
 function App() {
   return (
@@ -15,7 +14,6 @@ function App() {
         <Route path="/Testimonials" element={<TestimonialsPage />} />
         <Route path="/Our Team" element={<OurTeam />} />
         <Route path="/About" element={<About />} />
-        <Route path="/Registration" element={<Registration />} />
       </Routes>
     </>
   );

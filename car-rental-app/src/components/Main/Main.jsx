@@ -1,16 +1,16 @@
-import carHeroImage from "../Assets/images/Audi-front-page.png";
-import backGroundDesign from "../Assets/images/background_desing.png";
-import googlePlay from "../Assets/images/google_play.png";
-import appStore from "../Assets/images/App_store.png";
+import carHeroImage from "../../Assets/images/Audi-front-page.png";
+import backGroundDesign from "../../Assets/images/background_desing.png";
+import googlePlay from "../../Assets/images/google_play.png";
+import appStore from "../../Assets/images/App_store.png";
 import { Link } from "react-router-dom";
 
-import SmallCarAlbum from "./SmallCarAlbum";
-import BlackDivider from "./BlackDivider";
-import HeroSection from "./HeroSection";
-import ContentCard from "./ContentCard";
-import Booking from "./Booking";
-import Faq from "./Faq";
-import CarLogos from "./CarLogos";
+import SmallCarAlbum from "../SmallCarAlbum/SmallCarAlbum";
+import BlackDivider from "../BlackDivider/BlackDivider";
+import HeroSection from "../HeroSection/HeroSection";
+import ContentCard from "../ContentCard/ContentCard";
+import Booking from "../Booking/Booking";
+import Faq from "../Faq/Faq";
+import CarLogos from "../CarLogos/CarLogos";
 
 function Main() {
   return (

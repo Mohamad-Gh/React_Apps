@@ -1,6 +1,6 @@
 import React from "react";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
-import reasons from "../Assets/reasons.json";
+import reasons from "../../Assets/reasons.json";
 
 function Why() {
   return (

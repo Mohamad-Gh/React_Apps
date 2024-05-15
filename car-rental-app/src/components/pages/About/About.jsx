@@ -1,18 +1,18 @@
-import Header from "./Header";
-import Footer from "./Footer";
-import BlackDivider from "./BlackDivider";
-import HeroSection from "./HeroSection";
-import ContentCard from "./ContentCard";
-import LogoText from "./LogoText";
-import Form from "./Form";
-import ContactDetails from "./ContactDetails";
+import Header from "../../Header/Header";
+import Footer from "../../Footer/Footer";
+import BlackDivider from "../../BlackDivider/BlackDivider";
+import HeroSection from "../../HeroSection/HeroSection";
+import ContentCard from "../../ContentCard/ContentCard";
+import LogoText from "../../LogoText/LogoText";
+import Form from "../../Form/Form";
+import ContactDetails from "../../ContactDetails/ContactDetails";
 // import GoogleMap from "./GoogleMap";
-import MyGoogleMap from "./MyGoogleMap";
+import MyGoogleMap from "../../MyGoogleMap/MyGoogleMap";
 
 import "./about.css";
-import carLogo from "../Assets/images/car-logo.png";
-import garageLogo from "../Assets/images/garage-logo.png";
-import carGarageLogo from "../Assets/images/car-garage-logo.png";
+import carLogo from "../../../Assets/images/car-logo.png";
+import garageLogo from "../../../Assets/images/garage-logo.png";
+import carGarageLogo from "../../../Assets/images/car-garage-logo.png";
 
 function About() {
   return (

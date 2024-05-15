@@ -5,7 +5,7 @@ import InputAdornment from "@mui/material/InputAdornment";
 import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
 import Input from "@mui/material/Input";
 
-import "./registration.css"; // Importing CSS file
+import "../Registration/registration.css"; // Importing CSS file
 
 function SignIn(props) {
   const [formData, setFormData] = useState({

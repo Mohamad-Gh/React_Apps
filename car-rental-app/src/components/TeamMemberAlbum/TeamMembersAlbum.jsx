@@ -1,7 +1,7 @@
 import React from "react";
-import TeamCard from "./TeamCard";
+import TeamCard from "../TeamCard/TeamCard";
 
-import members from "../Assets/staff.json";
+import members from "../../Assets/staff.json";
 import "./teamMembersAlbum.css";
 
 function TeamMembersAlbum() {

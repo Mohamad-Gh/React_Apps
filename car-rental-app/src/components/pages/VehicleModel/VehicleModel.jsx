@@ -1,14 +1,15 @@
 import React, { useState } from "react";
 
-import Header from "./Header";
-import Footer from "./Footer";
-import BlackDivider from "./BlackDivider";
-import Booking from "./Booking";
-import CarCard from "./CarCard";
+import Header from "../../Header/Header";
+import Footer from "../../Footer/Footer";
+import BlackDivider from "../../BlackDivider/BlackDivider";
+import Booking from "../../Booking/Booking";
+import CarCard from "../../CarCard/CarCard";
+import ControlPanel from "../../ControlPanel/ControlPanel";
 
-import cars from "../Assets/cars.json";
 import "./vehicleModel.css";
-import ControlPanel from "./ControlPanel";
+import cars from "../../../Assets/cars.json";
+
 function VehicleModel() {
   const [change, setChange] = useState({
     sortPrice: "none",

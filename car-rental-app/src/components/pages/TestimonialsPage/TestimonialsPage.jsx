@@ -1,10 +1,10 @@
 import React from "react";
-import Header from "./Header";
-import Footer from "./Footer";
-import TestimonialSection from "./TestimonialSection";
-import RentCar from "./RentCar";
-import Why from "./Why";
-import BlackDivider from "./BlackDivider";
+import Header from "../../Header/Header";
+import Footer from "../../Footer/Footer";
+import TestimonialSection from "../../TestimonialSection/TestimonialSection";
+import RentCar from "../../RentCar/RentCar";
+import Why from "../../Why/Why";
+import BlackDivider from "../../BlackDivider/BlackDivider";
 
 function TestimonialsPage() {
   return (

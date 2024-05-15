@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 
-import HyundaiIoniq6 from "../Assets/images/Hyundai.png";
-import ChevroletCorvetteZ06 from "../Assets/images/chevrolet.png";
-import KiaEV6 from "../Assets/images/Kia.png";
-import AudiA6 from "../Assets/images/Audi_A6.png";
-import AudiA6Allroad from "../Assets/images/Audi_All.png";
-import BMWM4CSL from "../Assets/images/BMW.png";
+import HyundaiIoniq6 from "../../Assets/images/Hyundai.png";
+import ChevroletCorvetteZ06 from "../../Assets/images/chevrolet.png";
+import KiaEV6 from "../../Assets/images/Kia.png";
+import AudiA6 from "../../Assets/images/Audi_A6.png";
+import AudiA6Allroad from "../../Assets/images/Audi_All.png";
+import BMWM4CSL from "../../Assets/images/BMW.png";
 
-import samples from "../Assets/sampleCars.json";
+import samples from "../../Assets/sampleCars.json";
 
 function SmallCarAlbum() {
   const [car, setCar] = useState({

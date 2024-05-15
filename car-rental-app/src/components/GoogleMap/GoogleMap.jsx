@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import GoogleMapReact from "google-map-react";
 import LocationOnSharpIcon from "@mui/icons-material/LocationOnSharp";
 
-import location from "../Assets/location.json";
+import location from "../../Assets/location.json";
 import "./myGoogleMap.css";
 
 const apiKey = "";

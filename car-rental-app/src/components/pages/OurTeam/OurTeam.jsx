@@ -1,10 +1,10 @@
 import React from "react";
-import Header from "./Header";
-import Footer from "./Footer";
-import BlackDivider from "./BlackDivider";
-import CCarousel from "./CCarousel";
-import TeamMembersAlbum from "./TeamMembersAlbum";
-import RentCar from "./RentCar";
+import Header from "../../Header/Header";
+import Footer from "../../Footer/Footer";
+import BlackDivider from "../../BlackDivider/BlackDivider";
+import CCarousel from "../../CCarousel/CCarousel";
+import TeamMembersAlbum from "../../TeamMemberAlbum/TeamMembersAlbum";
+import RentCar from "../../RentCar/RentCar";
 
 function OurTeam() {
   return (

@@ -1,8 +1,8 @@
-import Card from "./Card";
+import Card from "../Card/Card";
 
-import carCard from "../Assets/images/car-card.png";
-import personCard from "../Assets/images/person-card.png";
-import travelCard from "../Assets/images/travel-card.png";
+import carCard from "../../Assets/images/car-card.png";
+import personCard from "../../Assets/images/person-card.png";
+import travelCard from "../../Assets/images/travel-card.png";
 
 function HeroSection(props) {
   return (

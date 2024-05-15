@@ -1,8 +1,8 @@
-import logo from "../Assets/images/logo.png";
+import logo from "../../Assets/images/logo.png";
 import { Link } from "react-router-dom";
-import { useState, useEffect } from "react";
-import Registration from "./Registration";
-import SignIn from "./SignIn";
+import { useState } from "react";
+import Registration from "../Registration/Registration";
+import SignIn from "../SignIn/SignIn";
 
 function Header() {
   const [popup, setPopup] = useState(false);

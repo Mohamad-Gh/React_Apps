@@ -7,7 +7,7 @@ import {
 } from "@react-google-maps/api";
 
 import "./myGoogleMap.css";
-import brancehs from "../Assets/location.json";
+import brancehs from "../../Assets/location.json";
 
 const containerStyle = {
   width: "400px",

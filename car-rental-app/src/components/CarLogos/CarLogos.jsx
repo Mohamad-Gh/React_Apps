@@ -1,13 +1,13 @@
 import "./carLogos.css"; // You can define your CSS styles in a separate file
 
-import Porsche from "../Assets/images/Logos/Porsche_Logo.png";
-import rolls_royce from "../Assets/images/Logos/rolls_royce_Logo.png";
-import Mercedes from "../Assets/images/Logos/Mercedes_Logo.png";
-import tesla from "../Assets/images/Logos/tesla_Logo.png";
-import Lexus from "../Assets/images/Logos/Lexus_Logo.png";
-import Chevrolet from "../Assets/images/Logos/Chevrolet_Logo.png";
-import Bentley from "../Assets/images/Logos/Bentley_Logo.png";
-import Ferrari from "../Assets/images/Logos/Ferrari-Logo.png";
+import Porsche from "../../Assets/images/Logos/Porsche_Logo.png";
+import rolls_royce from "../../Assets/images/Logos/rolls_royce_Logo.png";
+import Mercedes from "../../Assets/images/Logos/Mercedes_Logo.png";
+import tesla from "../../Assets/images/Logos/tesla_Logo.png";
+import Lexus from "../../Assets/images/Logos/Lexus_Logo.png";
+import Chevrolet from "../../Assets/images/Logos/Chevrolet_Logo.png";
+import Bentley from "../../Assets/images/Logos/Bentley_Logo.png";
+import Ferrari from "../../Assets/images/Logos/Ferrari-Logo.png";
 
 const CarLogos = () => {
   // const [currentIndex, setCurrentIndex] = useState(0);

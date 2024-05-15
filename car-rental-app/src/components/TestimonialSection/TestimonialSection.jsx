@@ -1,6 +1,6 @@
 import React from "react";
-import TestimonialCard from "./TestimonialCard";
-import testimonies from "../Assets/comments.json";
+import TestimonialCard from "../TestimonialCard/TestimonialCard";
+import testimonies from "../../Assets/comments.json";
 
 function TestimonialSection(props) {
   return (

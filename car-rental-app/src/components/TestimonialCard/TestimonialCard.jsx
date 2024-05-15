@@ -2,7 +2,7 @@ import React from "react";
 // import GradeIcon from "@mui/icons-material/Grade";
 import Rating from "@mui/material/Rating";
 
-import "./testimonialStyle.css";
+import "./testimonialCard.css";
 
 function TestimonialCard(props) {
   return (

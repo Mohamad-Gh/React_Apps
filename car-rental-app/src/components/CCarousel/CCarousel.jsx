@@ -1,12 +1,12 @@
 import { useState } from "react";
 
-import TeamCard from "./TeamCard";
+import TeamCard from "../TeamCard/TeamCard";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import CircleIcon from "@mui/icons-material/Circle";
 
 import "./CCarousel.css";
-import leaders from "../Assets/leadMembers.json";
+import leaders from "../../Assets/leadMembers.json";
 
 function CCarousel() {
   const [index, setIndex] = useState(1);
