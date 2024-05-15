@@ -31,7 +31,7 @@ function UserTestimonial(props) {
 
   return (
     <form className="user-testimonials-box" onSubmit={handleSubmit}>
-      <h3>Express Your Time With Us</h3>
+      <h3>How Was Your Time With Us</h3>
       <div className="user-testimonials-person">
         <label htmlFor="name">Name:</label>
         <input
