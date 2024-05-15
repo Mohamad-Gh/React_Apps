@@ -1,6 +1,7 @@
 import React from "react";
 import TestimonialCard from "../TestimonialCard/TestimonialCard";
 import testimonies from "../../Assets/comments.json";
+import UserTestimonial from "../UserTestimonial/UserTestimonial";
 
 function TestimonialSection(props) {
   return (
@@ -17,8 +18,9 @@ function TestimonialSection(props) {
             <p>{props.text}</p>
           </div>
           <div className="testimonials-album">
-            {testimonies.comments.map((client) => (
+            {testimonies.comments.map((client, indx) => (
               <TestimonialCard
+                key={indx}
                 comment={client.comment}
                 img={client.image_url}
                 name={client.name}
@@ -27,6 +29,18 @@ function TestimonialSection(props) {
                 // rate={Array.from({ length: client.rating })}
               />
             ))}
+            <TestimonialCard
+              key={"user"}
+              comment={"something here"}
+              img={
+                "https://i3.wp.com/www.iprcenter.gov/image-repository/blank-profile-picture.png/@@images/image.png?resize=768%2C768&ssl=1"
+              }
+              name={"name"}
+              city={"city"}
+              rate={5}
+              // rate={Array.from({ length: client.rating })}
+            />
+            <UserTestimonial />
           </div>
         </div>
       </div>
