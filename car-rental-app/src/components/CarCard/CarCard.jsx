@@ -27,8 +27,6 @@ function CarCard(props) {
       </div>
       <div className="middleCard">
         <img
-          width="400"
-          height="270"
           src={props.img}
           className="attachment-medium size-medium wp-post-image lazy loaded"
           alt="ccar"
