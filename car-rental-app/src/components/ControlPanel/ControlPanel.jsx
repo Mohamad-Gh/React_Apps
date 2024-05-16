@@ -1,10 +1,28 @@
+import { useState } from "react";
 import "./controlPanel.css";
 
 function ControlPanel(props) {
+  const [queryValue, setQueryValue] = useState(null);
+
   return (
     <div className="container-control">
       <h2 className="title-control">Find Your Car</h2>
       <fieldset>
+        <label htmlFor="Search Your Car">
+          {" "}
+          Search Your Car:{" "}
+          <input
+            name="title"
+            onChange={(event) => {
+              // seting input value for the input
+              setQueryValue(event.target.value);
+              // returing the query value to the parent to be used as filter
+              return props.query(event);
+            }}
+            value={queryValue}
+            placeholder="Search Your Car"
+          />
+        </label>
         <label htmlFor="sortPrice">
           Price{" "}
           <select
@@ -51,7 +69,7 @@ function ControlPanel(props) {
           <select
             id="fuelEfficiency"
             name="fuelEfficiency"
-            onChange={(event) => props.feul(event)}
+            onChange={(event) => props.fuel(event)}
           >
             <option value="none" selected>
               Select

@@ -16,6 +16,8 @@ function VehicleModel() {
     luggageCapacity: 2,
     passengerCapacity: 2,
     fuelEfficiency: "none",
+    // for car_model or name
+    title: "",
   });
 
   // .sort((a, b) =>
@@ -39,10 +41,13 @@ function VehicleModel() {
     <div>
       <Header />
       <ControlPanel
+        // user query to search the car
+        query={handleChange}
+        // --- these ones are selective based on the options
         price={handleChange}
         luggage={handleChange}
         passenger={handleChange}
-        feul={handleChange}
+        fuel={handleChange}
       />
       <div className="carAlbum">
         {cars.cars
@@ -66,10 +71,14 @@ function VehicleModel() {
                 (a.fuel_efficiency.city - b.fuel_efficiency.city)
             );
           })
+          // filtering based on the toggles and user query
           .filter(
             (elmn) =>
               elmn.luggage_capacity >= change.luggageCapacity &&
-              elmn.passenger_capacity >= change.passengerCapacity
+              elmn.passenger_capacity >= change.passengerCapacity &&
+              elmn.car_model
+                .toLowerCase()
+                .indexOf(change.title.toLowerCase()) !== -1
           )
           .map((car) => (
             <CarCard
