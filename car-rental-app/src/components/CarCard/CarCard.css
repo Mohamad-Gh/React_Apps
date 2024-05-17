@@ -18,6 +18,7 @@
 .modelCard {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .modelCard h2 {
   font-size: 1.3rem;
@@ -28,7 +29,9 @@
   align-items: center;
   gap: 5px;
 }
-
+.modelCard-p p {
+  margin: 0;
+}
 .middleCard {
   display: flex;
   justify-content: center;
