@@ -13,7 +13,7 @@ import cars from "../../../Assets/cars.json";
 function VehicleModel() {
   const [change, setChange] = useState({
     sortPrice: "none",
-    luggageCapacity: 2,
+    luggageCapacity: 1,
     passengerCapacity: 2,
     fuelEfficiency: "none",
     title: "",

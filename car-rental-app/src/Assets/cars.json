@@ -379,6 +379,126 @@
         "gps": "yes"
       },
       "image_url": "https://th.bing.com/th/id/R.cc5290714a3d3825a29a0ef37e9dc192?rik=5bVQerO9MlNnhg&pid=ImgRaw&r=0"
+    },
+    {
+      "id": 20,
+      "car_model": "Hyundai Ioniq 6",
+      "car_description": "Compact SUV with advanced technology features",
+      "fuel_efficiency": {
+        "city": 30,
+        "highway": 40
+      },
+      "starting_price": 450,
+      "passenger_capacity": 5,
+      "luggage_capacity": 2,
+      "features": {
+        "transmission": "Automatic",
+        "AC": "Yes",
+        "road_assistant": "No",
+        "smoke_free": "Yes",
+        "gps": "Yes"
+      },
+      "image_url": "https://bluesky-cogcms-prodb.cdn.imgeng.in/media/3qplfuqj/website-new-car-model-update-ioniq-6-thumbnail-721x383.png"
+    },
+    {
+      "id": 21,
+      "car_model": "Chevrolet Corvette Z06",
+      "car_description": "High-performance sports car with a powerful engine",
+      "fuel_efficiency": {
+        "city": 18,
+        "highway": 26
+      },
+      "starting_price": 3000,
+      "passenger_capacity": 2,
+      "luggage_capacity": 1,
+      "features": {
+        "transmission": "Manual",
+        "AC": "Yes",
+        "road_assistant": "No",
+        "smoke_free": "Yes",
+        "gps": "Yes"
+      },
+      "image_url": "https://purepng.com/public/uploads/large/purepng.com-red-chevrolet-corvette-z06-spice-carcarvehicletransportchevroletchevy-961524652742u438t.png"
+    },
+    {
+      "id": 22,
+      "car_model": "Kia EV6",
+      "car_description": "Electric crossover SUV with impressive range",
+      "fuel_efficiency": {
+        "city": 100,
+        "highway": 90
+      },
+      "starting_price": 700,
+      "passenger_capacity": 4,
+      "luggage_capacity": 2,
+      "features": {
+        "transmission": "Automatic",
+        "AC": "Yes",
+        "road_assistant": "No",
+        "smoke_free": "Yes",
+        "gps": "Yes"
+      },
+      "image_url": "https://65e81151f52e248c552b-fe74cd567ea2f1228f846834bd67571e.ssl.cf1.rackcdn.com/Kia/2022EV6/kia_EV6_2022_list-text_urban-yel.png"
+    },
+    {
+      "id": 23,
+      "car_model": "Audi A6",
+      "car_description": "Luxury sedan with high-end features",
+      "fuel_efficiency": {
+        "city": 24,
+        "highway": 32
+      },
+      "starting_price": 500,
+      "passenger_capacity": 4,
+      "luggage_capacity": 2,
+      "features": {
+        "transmission": "Automatic",
+        "AC": "Yes",
+        "road_assistant": "No",
+        "smoke_free": "Yes",
+        "gps": "Yes"
+      },
+      "image_url": "https://www.pngarts.com/files/3/Audi-A6-PNG-Pic.png"
+    },
+    {
+      "id": 24,
+      "car_model": "Audi A6 Allroad",
+      "car_description": "Versatile wagon with off-road capabilities",
+      "fuel_efficiency": {
+        "city": 22,
+        "highway": 28
+      },
+      "starting_price": 120,
+      "passenger_capacity": 5,
+      "luggage_capacity": 3,
+      "features": {
+        "transmission": "Automatic",
+        "AC": "Yes",
+        "road_assistant": "No",
+        "smoke_free": "Yes",
+        "gps": "Yes"
+      },
+      "image_url": "https://www.pngplay.com/wp-content/uploads/13/Audi-A6-Allroad-PNG-Pic-Background.png"
+    },
+    {
+      "id": 25,
+      "car_model": "BMW M4 CSL",
+      "car_description": "High-performance coupe with track-ready features",
+      "fuel_efficiency": {
+        "city": 16,
+        "highway": 24
+      },
+      "starting_price": 1800,
+      "passenger_capacity": 2,
+      "luggage_capacity": 1,
+      "features": {
+        "transmission": "Automatic",
+        "AC": "Yes",
+        "road_assistant": "No",
+        "smoke_free": "Yes",
+        "gps": "Yes"
+      },
+      "image_url": "https://th.bing.com/th/id/R.54060ef8a4a42ecdd5212e3673361368?rik=%2bx%2fpFhI4qOIjkg&pid=ImgRaw&r=0"
     }
   ]
 }

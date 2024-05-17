@@ -45,6 +45,7 @@ function ControlPanel(props) {
             name="luggageCapacity"
             onChange={(event) => props.luggage(event)}
           >
+            <option value="1">1&gt;</option>
             <option value="2">2&gt;</option>
             <option value="3">3&gt;</option>
           </select>
