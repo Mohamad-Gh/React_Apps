@@ -138,6 +138,18 @@ function Registration(props) {
             Register
           </button>
         </form>
+        <p>
+          Already have an Account,
+          <span
+            onClick={() => {
+              props.triger(false);
+              return props.trigerSign(true);
+            }}
+          >
+            {" "}
+            Here
+          </span>
+        </p>
       </div>
     </div>
   );

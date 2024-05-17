@@ -98,7 +98,7 @@ function Header() {
           </div>
         </div>
       </div>
-      {popup && <Registration triger={setPopup} />}
+      {popup && <Registration triger={setPopup} trigerSign={setSign} />}
       {sign && <SignIn triger={setSign} />}
     </header>
   );
