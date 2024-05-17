@@ -70,15 +70,16 @@ label {
   font-weight: bold;
   scale: 1.05;
 }
-p {
-  margin: 20px 0 0 10px;
+.form-p {
+  margin: 10px 5px;
+  margin-bottom: 0;
 }
-span {
+.form-p span {
   color: #ff4d30;
   cursor: pointer;
 }
 /* Apply the flash animation on hover */
-span:hover {
+.form-p span:hover {
   animation: flash 0.5s; /* Duration of the animation */
 }
 /* Define the flash animation */
