@@ -143,11 +143,11 @@ function Registration(props) {
           <span
             onClick={() => {
               props.triger(false);
-              return props.trigerSign(true);
+              props.trigerSign(true);
             }}
           >
             {" "}
-            Here
+            Sign In
           </span>
         </p>
       </div>
