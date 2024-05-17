@@ -4,3 +4,21 @@
   column-gap: 5px;
   row-gap: 20px;
 }
+.pagination {
+  margin: 20px auto;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+}
+.pagination button {
+  font-size: 16px;
+  color: tomato;
+  cursor: pointer;
+  background-color: white;
+  border: 0;
+}
+.pagination span {
+  color: black;
+  cursor: unset;
+}

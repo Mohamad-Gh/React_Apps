@@ -171,7 +171,7 @@ function Registration(props) {
             Register
           </button>
         </form>
-        <p>
+        <p className="form-p">
           Already have an Account,
           <span
             onClick={() => {

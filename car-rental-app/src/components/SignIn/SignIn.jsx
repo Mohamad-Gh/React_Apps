@@ -92,6 +92,7 @@ function SignIn(props) {
           </button>
         </form>
         <p
+          className="form-p"
           onClick={() => {
             props.triger(false);
             props.trigerRegister(true);
