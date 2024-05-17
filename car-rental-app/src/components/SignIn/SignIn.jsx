@@ -91,6 +91,14 @@ function SignIn(props) {
             Sign in
           </button>
         </form>
+        <p
+          onClick={() => {
+            props.triger(false);
+            props.trigerRegister(true);
+          }}
+        >
+          Don't Have an Account, <span> Register</span>
+        </p>
       </div>
     </div>
   );
