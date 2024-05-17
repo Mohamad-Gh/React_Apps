@@ -17,6 +17,7 @@ function Registration(props) {
     lastName: "",
     email: "",
     password: "",
+    passwordConfirmation: "",
     showPassword: false,
   });
 
@@ -38,19 +39,24 @@ function Registration(props) {
   }
 
   const handleSubmit = (event) => {
+    if (formData.password !== formData.passwordConfirmation) {
+      alert("Passwords Do not match");
+    } else {
+      // Here you can handle form submission, such as sending data to a server
+      // console.log("Form submitted:", formData);
+      // Reset the form after submission
+      setFormData({
+        firstName: "",
+        lastName: "",
+        email: "",
+        password: "",
+        passwordConfirmation: "",
+        showPassword: false,
+      });
+      // to show that the process was successful.
+      setDone(!done);
+    }
     event.preventDefault();
-    // Here you can handle form submission, such as sending data to a server
-    // console.log("Form submitted:", formData);
-    // Reset the form after submission
-    setFormData({
-      firstName: "",
-      lastName: "",
-      email: "",
-      password: "",
-      showPassword: false,
-    });
-    // to show that the process was successful.
-    setDone(!done);
   };
 
   return (
@@ -118,6 +124,33 @@ function Registration(props) {
               pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
               title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
               value={formData.password}
+              onChange={handleChange}
+              required
+              endAdornment={
+                <InputAdornment position="end">
+                  <IconButton onClick={showPassword}>
+                    {formData.showPassword ? (
+                      // changing the icon based on showPassword value
+                      <VisibilityIcon />
+                    ) : (
+                      <VisibilityOffIcon />
+                    )}
+                  </IconButton>
+                </InputAdornment>
+              }
+            />
+            <label htmlFor="passwordConfirmation">Confirm Password:</label>
+            <Input
+              className="form-control"
+              // password visibility based on showPassword value
+              type={formData.showPassword ? "text" : "password"}
+              id="passwordConfirmation"
+              name="passwordConfirmation"
+              minLength={8}
+              maxLength={15}
+              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+              title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+              value={formData.passwordConfirmation}
               onChange={handleChange}
               required
               endAdornment={
