@@ -10,11 +10,17 @@
   margin: 2rem 0;
 }
 .search input {
+  padding: 0 5px;
   height: 30px;
+  border-radius: 5%;
 }
 .title-control {
   display: flex;
   justify-content: center;
+}
+.container-control select {
+  border-radius: 5%;
+  height: 30px;
 }
 fieldset {
   flex-basis: 25%;
