@@ -353,7 +353,6 @@ label span {
   background-color: #ff4d30;
   color: #ffffff;
 }
-
 .testimonials {
   background-color: #f8f8f8;
   padding: 50px 0;
@@ -377,39 +376,9 @@ label span {
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   column-gap: 50px;
   row-gap: 50px;
+  justify-items: center;
 }
-.testimonials-box {
-  background-color: #fff;
-  padding: 50px;
-  text-align: left;
-  flex-basis: 40%;
-}
-.testimonials-box p {
-  font-size: 24px;
-}
-.testimonials-box img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-}
-.testimonials-person {
-  margin: 20px 0;
-  display: flex;
-  justify-content: flex-start;
-  gap: 10px;
-  position: relative;
-  align-items: center;
-}
-.testimonials-person p {
-  font-size: 16px;
-}
-.testimonials-person svg {
-  color: #ff4d30;
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translate(0, -50%);
-}
+
 .faq {
   margin: 50px auto;
   background-image: url(./Assets/images/car_faq_section.png);
@@ -701,11 +670,12 @@ footer {
   }
 
   .testimonials-album {
-    flex-direction: column;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
-  .testimonials-person h3 {
-    font-size: 18px;
+  .container-testimonials {
+    margin: 0 10px;
   }
+
   .app {
     padding: 50px 50px;
   }

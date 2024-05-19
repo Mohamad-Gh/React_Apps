@@ -1,8 +1,36 @@
-/* .stars {
+.testimonials-box {
+  background-color: #fff;
+  padding: 50px;
+  text-align: left;
+  flex-basis: 40%;
+}
+.testimonials-box p {
+  font-size: 24px;
+}
+.testimonials-box img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.testimonials-person {
+  margin: 20px 0;
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  position: relative;
+  align-items: center;
+}
+.testimonials-person p {
+  font-size: 16px;
+}
+.testimonials-person svg {
+  width: 3rem;
   color: #ff4d30;
-  font-size: 36px;
-  margin: 0 5px;
-} */
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+}
 .testimonials-title h3 {
   margin: 10px 0;
 }
@@ -52,4 +80,20 @@
 }
 .check {
   color: #ff4d30;
+}
+
+@media screen and (max-width: 600px) {
+  .BookWithUs {
+    width: 95%;
+  }
+  .testimonials-box {
+    padding: 2rem;
+  }
+  .testimonials-box p {
+    font-size: 18px;
+  }
+
+  .testimonials-person h3 {
+    font-size: 18px;
+  }
 }
