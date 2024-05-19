@@ -1,18 +1,17 @@
 .user-testimonials-box {
+  width: 100%;
   background-color: #fff;
   padding: 30px 50px;
   text-align: left;
-  display: flex;
-  flex-direction: column;
 }
 .user-testimonials-box p {
   font-size: 24px;
 }
-/* .user-testimonials-box img {
+.user-testimonials-box img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-} */
+}
 .user-testimonials-person {
   margin: 20px 0;
   display: flex;

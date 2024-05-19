@@ -668,10 +668,6 @@ footer {
   .car-details {
     flex-basis: 100%;
   }
-
-  .testimonials-album {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  }
   .container-testimonials {
     margin: 0 10px;
   }
@@ -690,5 +686,10 @@ footer {
   .footer {
     flex-direction: column;
     gap: 10px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .testimonials-album {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 }
