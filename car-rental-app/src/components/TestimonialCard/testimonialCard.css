@@ -3,10 +3,10 @@
   background-color: #fff;
   padding: 50px;
   text-align: left;
-  /* flex-basis: 40%; */
 }
 .testimonials-box p {
   font-size: 24px;
+  word-break: break-all;
 }
 .testimonials-box img {
   width: 100px;
