@@ -1,8 +1,9 @@
 import logo from "../../Assets/images/logo.png";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Registration from "../Registration/Registration";
 import SignIn from "../SignIn/SignIn";
+import MenuBarMobile from "../MenuBarMobile/MenuBarMobile";
 
 function Header() {
   const [popup, setPopup] = useState(false);
@@ -19,29 +20,28 @@ function Header() {
     document.body.classList.remove("scroll");
   }
 
-  document.addEventListener("click", (event) => {
-    if (bar === true && event.target.id !== "menu-bar") {
-      setBar(false);
-    }
-  });
-  document.addEventListener("scroll", (event) => {
-    if (bar === true && event.target.id !== "menu-bar") {
-      setBar(false);
-    }
-  });
+  bar === true &&
+    document.addEventListener("click", (event) => {
+      event.target.id !== "menu-bar" && setBar(false);
+    });
+  bar === true &&
+    document.addEventListener("scroll", (event) => {
+      event.target.id !== "menu-bar" && setBar(false);
+    });
+
   const showBar = () => {
     setBar(!bar);
   };
 
   return (
     <header>
-      <div class="full-container">
-        <div class="container-header">
+      <div className="full-container">
+        <div className="container-header">
           <Link to="/">
-            <img class="company_logo" src={logo} alt="Company Logo" />
+            <img className="company_logo" src={logo} alt="Company Logo" />
           </Link>
           <nav>
-            <ul class={`navigator ${bar && "show-bar"}`}>
+            <ul className={`navigator ${bar && "show-bar"}`}>
               <li>
                 {/* <a href="">Home</a> */}
                 {/* <Route path="/" element={<HomePage}> */}
@@ -65,19 +65,20 @@ function Header() {
               </li>
             </ul>
           </nav>
-          <div class="sign-in">
+          <MenuBarMobile />
+          <div className="sign-in">
             <div>
-              <button class="btn" onClick={setSign}>
+              <button className="btn" onClick={setSign}>
                 Sign in{" "}
               </button>
-              <button class="btn btn-nav" onClick={setRigesterPopup}>
+              <button className="btn btn-nav" onClick={setRigesterPopup}>
                 {/* <Link className="link" to="/Registration"> */}
                 Register
                 {/* </Link> */}
               </button>
             </div>
           </div>
-          <div onClick={showBar} class="mobile-hamb">
+          <div onClick={showBar} className="mobile-hamb">
             <svg
               id="menu-bar"
               xmlns="http://www.w3.org/2000/svg"
@@ -89,7 +90,7 @@ function Header() {
               stroke-width="2"
               stroke-linecap="round"
               stroke-linejoin="round"
-              class="tabler-icon tabler-icon-menu-2"
+              className="tabler-icon tabler-icon-menu-2"
             >
               <path d="M4 6l16 0"></path>
               <path d="M4 12l16 0"></path>
