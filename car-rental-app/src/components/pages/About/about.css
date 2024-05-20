@@ -6,16 +6,13 @@
 }
 
 .center-card {
-  margin: 50px 0;
+  margin: 70px 0;
   display: flex;
   justify-content: center;
   gap: 30px;
 }
-.center-card img {
+.center-card-img {
   object-fit: cover;
-}
-.center-card h1 {
-  font-size: 46px;
 }
 .contentHero {
   display: flex;
@@ -23,7 +20,9 @@
   height: 70vh;
   gap: 30px;
   width: 500px;
-  justify-content: space-around;
+}
+.contentHero h1 {
+  font-size: 46px;
 }
 .container-detail-form {
   margin: 0 auto;
@@ -31,21 +30,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.logo-text-container {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.logo-text-container img {
-  object-fit: contain;
-}
-.text-box {
-  font-size: large;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 30px;
 }
 
 .contact-details {
@@ -121,8 +105,37 @@
     width: 450px;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
+  .contentHero {
+    width: 100%;
+    gap: 30px;
+  }
+  .contentHero h2 {
+    font-size: 28px;
+  }
+  .contentHero h1 {
+    font-size: 36px;
+  }
+  .contentHero p {
+    font-size: 16px;
+  }
+  .center-card-img {
+    width: 300px;
+  }
+  .content-logo-box {
+    justify-content: space-between;
+    gap: 0;
+  }
   .formAbout {
     width: 350px;
+  }
+  .logo-text-container img {
+    height: 35px;
+  }
+  .text-box h2 {
+    font-size: 16px;
+  }
+  .text-box h3 {
+    font-size: 16px;
   }
 }

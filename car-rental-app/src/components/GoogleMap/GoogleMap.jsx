@@ -4,6 +4,7 @@ import LocationOnSharpIcon from "@mui/icons-material/LocationOnSharp";
 
 import location from "../../Assets/location.json";
 import "../MyGoogleMap/myGoogleMap.css";
+import "./googleMap.css";
 
 const apiKey = "";
 const center = { lat: 49.915161, lng: -97.252417 };
@@ -60,7 +61,7 @@ const GoogleMap = () => {
   // }
 
   return (
-    <div style={{ height: "400px", width: "400px" }}>
+    <div className="map">
       {userLocation && (
         <GoogleMapReact
           bootstrapURLKeys={{

@@ -23,7 +23,10 @@ function About() {
           <div className="container">
             <div className="center-card">
               <div>
-                <img src="https://car-rental-ten.vercel.app/static/media/about-main.ed0137841dc67d61ec95.jpg" />
+                <img
+                  className="center-card-img"
+                  src="https://car-rental-ten.vercel.app/static/media/about-main.ed0137841dc67d61ec95.jpg"
+                />
               </div>
               <div className="contentHero">
                 <ContentCard
