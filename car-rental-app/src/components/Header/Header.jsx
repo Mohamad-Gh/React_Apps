@@ -1,6 +1,6 @@
 import logo from "../../Assets/images/logo.png";
 import { Link } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Registration from "../Registration/Registration";
 import SignIn from "../SignIn/SignIn";
 import MenuBarMobile from "../MenuBarMobile/MenuBarMobile";
@@ -20,15 +20,6 @@ function Header() {
     document.body.classList.remove("scroll");
   }
 
-  bar === true &&
-    document.addEventListener("click", (event) => {
-      event.target.id !== "menu-bar" && setBar(false);
-    });
-  bar === true &&
-    document.addEventListener("scroll", (event) => {
-      event.target.id !== "menu-bar" && setBar(false);
-    });
-
   const showBar = () => {
     setBar(!bar);
   };
@@ -41,7 +32,7 @@ function Header() {
             <img className="company_logo" src={logo} alt="Company Logo" />
           </Link>
           <nav>
-            <ul className={`navigator ${bar && "show-bar"}`}>
+            <ul className="navigator">
               <li>
                 {/* <a href="">Home</a> */}
                 {/* <Route path="/" element={<HomePage}> */}
@@ -65,7 +56,7 @@ function Header() {
               </li>
             </ul>
           </nav>
-          <MenuBarMobile />
+          {bar && <MenuBarMobile menu={setBar} />}
           <div className="sign-in">
             <div>
               <button className="btn" onClick={setSign}>

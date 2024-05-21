@@ -1,7 +1,27 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-function MenuBarMobile() {
+function MenuBarMobile(props) {
+  useEffect(() => {
+    const handleClick = (event) => {
+      if (event.target.id !== "menu-bar") {
+        props.menu(false);
+      }
+    };
+    window.addEventListener("click", handleClick);
+    return () => window.removeEventListener("click", handleClick);
+  }, []);
+
+  useEffect(() => {
+    const handleScroll = (event) => {
+      if (event) {
+        props.menu(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <div className="full-container">
       <div className="container-header">
