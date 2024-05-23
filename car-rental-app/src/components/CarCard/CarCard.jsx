@@ -1,4 +1,4 @@
-import React from "react";
+import { Link } from "react-router-dom";
 import LocalGasStationIcon from "@mui/icons-material/LocalGasStation";
 import LuggageIcon from "@mui/icons-material/Luggage";
 import PeopleIcon from "@mui/icons-material/People";
@@ -84,12 +84,22 @@ function CarCard(props) {
             </ul>
           </div>
           <div className="actions">
-            <a className="moreButton" itemprop="url" href="">
+            <Link
+              to="/Vehicle Model/Book Now"
+              className="moreButton"
+              itemprop="url"
+              href=""
+            >
               More
-            </a>
-            <a className="bookButton" itemprop="url" href="">
+            </Link>
+            <Link
+              to="/Vehicle Model/Book Now"
+              className="bookButton"
+              itemprop="url"
+              href=""
+            >
               Book now
-            </a>
+            </Link>
           </div>
         </div>
       </div>
