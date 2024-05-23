@@ -53,10 +53,11 @@ function VehicleModel() {
       );
     })
     .filter(
-      (elmn) =>
-        elmn.luggage_capacity >= change.luggageCapacity &&
-        elmn.passenger_capacity >= change.passengerCapacity &&
-        elmn.car_model.toLowerCase().indexOf(change.title.toLowerCase()) !== -1
+      (element) =>
+        element.luggage_capacity >= change.luggageCapacity &&
+        element.passenger_capacity >= change.passengerCapacity &&
+        element.car_model.toLowerCase().indexOf(change.title.toLowerCase()) !==
+          -1
     );
 
   const indexOfLastCar = currentPage * carsPerPage;
