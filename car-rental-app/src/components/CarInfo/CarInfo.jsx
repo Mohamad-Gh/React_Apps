@@ -23,6 +23,7 @@ function CarInfo({
   RA,
   smoke,
   transmission,
+  description,
 }) {
   return (
     <div>
@@ -31,21 +32,24 @@ function CarInfo({
           <h2>{model}</h2>
           <p>Company name or any other detail</p>
         </div>
+        <h3>
+          Starting at <strong>{price}</strong>
+        </h3>
         <img
           src={img}
           className="attachment-medium size-medium wp-post-image lazy loaded"
-          alt="ccar"
+          alt="car-image"
           itemProp="image"
           decoding="async"
-          fetchpriority="high"
-          data-sizes="(max-width: 400px) 100vw, 400px"
+          fetchPriority="high"
+          dataSizes="(max-width: 400px) 100vw, 400px"
           sizes="(max-width: 400px) 100vw, 400px"
           data-was-processed="true"
-        />{" "}
+        />
       </div>
       <div>
         <div>
-          <p>Description</p>
+          <p>{description}</p>
           <button>Book this </button>
         </div>
         <div className="flexCarCards">
@@ -64,9 +68,7 @@ function CarInfo({
             <div className="carFeatures">
               <div className="carModel">
                 {/* <h3 itemProp="model">{description}</h3> */}
-                <p>
-                  Starting at <strong>{price}</strong>
-                </p>
+
                 <ul className="featureDetails">
                   <li>
                     <ul className="capacity">

@@ -13,10 +13,6 @@ function MoreInfo() {
     <>
       <div>MoreInfo</div>
       <Header />
-      <BlackDivider
-        text="Book a car by getting in touch with us"
-        span="(123) 456-7869"
-      />
       <CarInfo
         img={currentCars[0].image_url}
         model={currentCars[0].car_model}
@@ -30,12 +26,12 @@ function MoreInfo() {
         RA={currentCars[0].features.road_assistant}
         smoke={currentCars[0].features.smoke_free}
         gps={currentCars[0].features.gps}
+        description={currentCars[0].car_description}
       />
-      {/* <CarCard
-        key={currentCars[0].id}
-        id={currentCars[0].id}
-      /> */}
-      ;
+      <BlackDivider
+        text="Book a car by getting in touch with us"
+        span="(123) 456-7869"
+      />
       <Footer />
     </>
   );
