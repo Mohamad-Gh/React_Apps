@@ -13,9 +13,9 @@ import "./CarCard.css";
 
 function CarCard(props) {
   return (
-    <div className="flexCarCards">
+    <div id={props.id} className="flexCarCards">
       <div className="modelCard">
-        <h2 itemprop="catagory">{props.model}</h2>
+        <h2 itemProp="catagory">{props.model}</h2>
         <div className="modelCard-p">
           <p>
             <strong>City:</strong> {props.city}
@@ -30,7 +30,7 @@ function CarCard(props) {
           src={props.img}
           className="attachment-medium size-medium wp-post-image lazy loaded"
           alt="ccar"
-          itemprop="image"
+          itemProp="image"
           decoding="async"
           fetchpriority="high"
           data-sizes="(max-width: 400px) 100vw, 400px"
@@ -41,27 +41,27 @@ function CarCard(props) {
       <div className="bottomCard">
         <div className="carFeatures">
           <div className="carModel">
-            {/* <h3 itemprop="model">{props.description}</h3> */}
+            {/* <h3 itemProp="model">{props.description}</h3> */}
             <p>
               Starting at <strong>{props.price}</strong>
             </p>
             <ul className="featureDetails">
               <li>
                 <ul className="capacity">
-                  <li className="luggages" itemprop="cargoVolume">
+                  <li className="luggages" itemProp="cargoVolume">
                     <LuggageIcon />
                     {props.luggage}
                   </li>
-                  <li className="passengers" itemprop="seatingCapacity">
+                  <li className="passengers" itemProp="seatingCapacity">
                     <PeopleIcon />
                     {props.passenger}
                   </li>
                 </ul>
               </li>
-              <li className="transmission" itemprop="vehicleTransmission">
+              <li className="transmission" itemProp="vehicleTransmission">
                 <MemoryIcon /> {props.transmission}
               </li>
-              <li className="ac" itemprop="additionalProperty">
+              <li className="ac" itemProp="additionalProperty">
                 <AcUnitIcon />
                 {props.AC}
               </li>
@@ -85,9 +85,9 @@ function CarCard(props) {
           </div>
           <div className="actions">
             <Link
-              to="/Vehicle Model/Book Now"
+              to="/Vehicle Model/More Info"
               className="moreButton"
-              itemprop="url"
+              itemProp="url"
               href=""
             >
               More
@@ -95,7 +95,7 @@ function CarCard(props) {
             <Link
               to="/Vehicle Model/Book Now"
               className="bookButton"
-              itemprop="url"
+              itemProp="url"
               href=""
             >
               Book now

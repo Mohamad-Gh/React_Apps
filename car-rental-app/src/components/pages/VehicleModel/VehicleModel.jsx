@@ -24,8 +24,8 @@ function VehicleModel() {
 
   function handleChange(event) {
     const { name, value } = event.target;
-    setChange((prvs) => {
-      return { ...prvs, [name]: value };
+    setChange((previousValue) => {
+      return { ...previousValue, [name]: value };
     });
   }
 
@@ -88,6 +88,7 @@ function VehicleModel() {
         {currentCars.map((car) => (
           <CarCard
             key={car.id}
+            id={car.id}
             model={car.car_model}
             city={`${car.fuel_efficiency.city} MPG`}
             highway={`${car.fuel_efficiency.highway} MPG`}
