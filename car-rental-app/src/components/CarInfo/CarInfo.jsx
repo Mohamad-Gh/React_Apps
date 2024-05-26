@@ -67,9 +67,6 @@ function CarInfo({
                 </div>
               </div>
               <div className="carInfoCard">
-                <div className="carInfoTitle">
-                  <h2>Car Details</h2>
-                </div>
                 <div>
                   <div className="carInfoFeatures">
                     <div className="carInfoModel">
