@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.carInfoHero {
+  position: relative;
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+.carInfoTitle {
+  font-size: 20px;
+  padding: 20px;
+}
+.carInfoImage {
+  position: absolute;
+  width: 500px;
+  right: 0;
+  top: 20%;
+}
+
+.carInfoPrice {
+  background-color: grey;
+  font-size: 30px;
+  margin-top: 180px;
+  height: 180px;
+}
+.divide {
+  display: flex;
+  background-color: grey;
+}
+.carInfoDescription {
+  flex-basis: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.carInfoActions {
+  display: flex;
+}
+.bookButton {
+  padding: 10px;
+  font-size: 22px;
+  width: 90%;
+  text-align: center;
+  color: #ffffff;
+  background-color: #ff4d30;
+  text-decoration: none;
+}
+.carInfoCard {
+  flex-basis: 25%;
+  display: flex;
+  flex-direction: column;
+  color: #000;
+}
+.carInfoTitle {
+  font-size: 18px;
+}
+.carInfoFeatures {
+}
+.carInfoModel {
+}
+.carInfoFeatureDetails {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 10px;
+}
+.gas,
+.luggages,
+.passengers,
+.smokeFree,
+.road,
+.ac,
+.transmission,
+.gps,
+.age {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: black;
+}
+.carInfoCapacity {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.carInfoPictures {
+  padding: 20px;
+  flex-basis: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.carInfoAlbum {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style: none;
+}
+.carPictures {
+  width: 70px;
+  height: 70px;
+}
+
+@media screen and (max-width: 950px) {
+  .middleCard img {
+    width: 350px;
+  }
+  .carModel p {
+    font-size: 18px;
+  }
+  .bookButton {
+    font-size: 18px;
+  }
+}

@@ -1,5 +1,4 @@
 import BlackDivider from "../../BlackDivider/BlackDivider";
-import CarCard from "../../CarCard/CarCard";
 import Footer from "../../Footer/Footer";
 import Header from "../../Header/Header";
 import cars from "../../../Assets/cars.json";

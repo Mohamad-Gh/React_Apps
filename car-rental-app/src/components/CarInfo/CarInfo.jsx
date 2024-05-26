@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "../CarCard/CarCard.css";
+import "./carInfo.css";
 import LocalGasStationIcon from "@mui/icons-material/LocalGasStation";
 import LuggageIcon from "@mui/icons-material/Luggage";
 import PeopleIcon from "@mui/icons-material/People";
@@ -27,95 +27,128 @@ function CarInfo({
 }) {
   return (
     <div>
-      <div>
-        <div>
-          <h2>{model}</h2>
-          <p>Company name or any other detail</p>
-        </div>
-        <h3>
-          Starting at <strong>{price}</strong>
-        </h3>
-        <img
-          src={img}
-          className="attachment-medium size-medium wp-post-image lazy loaded"
-          alt="car-image"
-          itemProp="image"
-          decoding="async"
-          fetchPriority="high"
-          dataSizes="(max-width: 400px) 100vw, 400px"
-          sizes="(max-width: 400px) 100vw, 400px"
-          data-was-processed="true"
-        />
-      </div>
-      <div>
-        <div>
-          <p>{description}</p>
-          <button>Book this </button>
-        </div>
-        <div className="flexCarCards">
-          <div className="modelCard">
-            <h2 itemProp="catagory">{model}</h2>
-            <div className="modelCard-p">
-              <p>
-                <strong>City:</strong> {city}
-                <br></br>
-                <strong>Highway:</strong> {highway}
-              </p>
-              <LocalGasStationIcon className="gas" />
+      <div className="full-container">
+        <div className="container">
+          <div className="carInfoHero">
+            <div className="carInfoTitle">
+              <h2>{model}</h2>
+              <p>Company name or any other detail</p>
+            </div>
+            <img
+              className="carInfoImage"
+              src={img}
+              alt="car-image"
+              itemProp="image"
+              decoding="async"
+              fetchPriority="high"
+              dataSizes="(max-width: 400px) 100vw, 400px"
+              sizes="(max-width: 400px) 100vw, 400px"
+              data-was-processed="true"
+            />
+            <div className="carInfoPrice">
+              <h3>
+                Starting at <strong>{price}</strong>
+              </h3>
             </div>
           </div>
-          <div className="bottomCard">
-            <div className="carFeatures">
-              <div className="carModel">
-                {/* <h3 itemProp="model">{description}</h3> */}
-
-                <ul className="featureDetails">
+          <div className="carInfoHero">
+            <div className="divide">
+              <div className="carInfoDescription">
+                <p>{description}</p>
+                <div className="carInfoActions">
+                  <Link
+                    to="/Vehicle Model/Book Now"
+                    className="bookButton"
+                    itemProp="url"
+                    href=""
+                  >
+                    Book now
+                  </Link>
+                </div>
+              </div>
+              <div className="carInfoCard">
+                <div className="carInfoTitle">
+                  <h2>Car Details</h2>
+                </div>
+                <div>
+                  <div className="carInfoFeatures">
+                    <div className="carInfoModel">
+                      <ul className="carInfoFeatureDetails">
+                        <li>
+                          <div className="gas">
+                            <LocalGasStationIcon />
+                            <p>
+                              <strong>City:</strong> {city}
+                              <br></br>
+                              <strong>Highway:</strong> {highway}
+                            </p>
+                          </div>
+                        </li>
+                        <li>
+                          <ul className="carInfoCapacity">
+                            <li className="luggages" itemProp="cargoVolume">
+                              <LuggageIcon />
+                              {luggage}
+                            </li>
+                            <li
+                              className="passengers"
+                              itemProp="seatingCapacity"
+                            >
+                              <PeopleIcon />
+                              {passenger}
+                            </li>
+                          </ul>
+                        </li>
+                        <li
+                          className="transmission"
+                          itemProp="vehicleTransmission"
+                        >
+                          <MemoryIcon /> {transmission}
+                        </li>
+                        <li className="ac" itemProp="additionalProperty">
+                          <AcUnitIcon />
+                          {AC}
+                        </li>
+                        <li className="road">
+                          <SupportIcon />
+                          Road Assistant: {RA}
+                        </li>
+                        <li className="smokeFree">
+                          <SmokeFreeIcon />
+                          Smoke Free Vehicle:{smoke}
+                        </li>
+                        <li className="gps">
+                          <GpsFixedIcon />
+                          Free GPS: {gps}
+                        </li>
+                        <li className="age">
+                          <CreditCardIcon />
+                          20 years +
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="carInfoPictures">
+                <h2> More Pictures</h2>
+                <ul className="carInfoAlbum">
                   <li>
-                    <ul className="capacity">
-                      <li className="luggages" itemProp="cargoVolume">
-                        <LuggageIcon />
-                        {luggage}
-                      </li>
-                      <li className="passengers" itemProp="seatingCapacity">
-                        <PeopleIcon />
-                        {passenger}
-                      </li>
-                    </ul>
+                    <img className="carPictures" src="" />
                   </li>
-                  <li className="transmission" itemProp="vehicleTransmission">
-                    <MemoryIcon /> {transmission}
+                  <li>
+                    <img className="carPictures" src="" />
                   </li>
-                  <li className="ac" itemProp="additionalProperty">
-                    <AcUnitIcon />
-                    {AC}
+                  <li>
+                    <img className="carPictures" src="" />
                   </li>
-                  <li className="road">
-                    <SupportIcon />
-                    Road Assistant: {RA}
+                  <li>
+                    <img className="carPictures" src="" />
                   </li>
-                  <li className="smokefree">
-                    <SmokeFreeIcon />
-                    Smoke Free Vehicle:{smoke}
-                  </li>
-                  <li className="gps">
-                    <GpsFixedIcon />
-                    Free GPS: {gps}
-                  </li>
-                  <li className="age">
-                    <CreditCardIcon />
-                    20 years +
+                  <li>
+                    <img className="carPictures" src="" />
                   </li>
                 </ul>
-              </div>
-              <div className="actions">
-                <Link
-                  to="/Vehicle Model/Book Now"
-                  className="bookButton"
-                  itemProp="url"
-                  href=""
-                >
-                  Book now
-                </Link>
               </div>
             </div>
           </div>
