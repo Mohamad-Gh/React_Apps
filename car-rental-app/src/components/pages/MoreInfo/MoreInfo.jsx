@@ -3,10 +3,13 @@ import Footer from "../../Footer/Footer";
 import Header from "../../Header/Header";
 import cars from "../../../Assets/cars.json";
 import CarInfo from "../../CarInfo/CarInfo";
+import { useContext } from "react";
+import { GlobalContext } from "../../App";
 
 function MoreInfo() {
-  const currentCars = cars.cars.filter((car) => car.id == 1);
-  console.log(currentCars);
+  const value = useContext(GlobalContext);
+
+  const currentCars = cars.cars.filter((car) => car.id == value.carId);
 
   return (
     <>

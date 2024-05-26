@@ -13,7 +13,7 @@ import "./CarCard.css";
 
 function CarCard(props) {
   return (
-    <div id={props.id} className="flexCarCards">
+    <div id={props.id} onClick={props.onClick} className="flexCarCards">
       <div className="modelCard">
         <h2 itemProp="catagory">{props.model}</h2>
         <div className="modelCard-p">

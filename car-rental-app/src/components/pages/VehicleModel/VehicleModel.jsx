@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { createContext, useEffect, useState } from "react";
 
 import Header from "../../Header/Header";
 import Footer from "../../Footer/Footer";
@@ -10,7 +10,7 @@ import ControlPanel from "../../ControlPanel/ControlPanel";
 import "./vehicleModel.css";
 import cars from "../../../Assets/cars.json";
 
-function VehicleModel() {
+function VehicleModel(props) {
   const [change, setChange] = useState({
     sortPrice: "none",
     luggageCapacity: 1,
@@ -101,6 +101,9 @@ function VehicleModel() {
             smoke={car.features.smoke_free}
             gps={car.features.gps}
             img={car.image_url}
+            onClick={(event) => {
+              props.id(event.currentTarget.id);
+            }}
           />
         ))}
       </div>
