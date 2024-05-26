@@ -58,7 +58,7 @@ function CarInfo({
                 <div className="carInfoActions">
                   <Link
                     to="/Vehicle Model/Book Now"
-                    className="bookButton"
+                    className="carInfoBookButton"
                     itemProp="url"
                     href=""
                   >
@@ -134,7 +134,10 @@ function CarInfo({
                 <h2> More Pictures</h2>
                 <ul className="carInfoAlbum">
                   <li>
-                    <img className="carPictures" src="" />
+                    <img
+                      className="carPictures"
+                      src="https://th.bing.com/th/id/OIP.JBfQl51z11LPdunGQpGGxwAAAA?rs=1&pid=ImgDetMain"
+                    />
                   </li>
                   <li>
                     <img className="carPictures" src="" />

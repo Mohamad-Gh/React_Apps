@@ -31,7 +31,7 @@
   background-color: grey;
 }
 .carInfoDescription {
-  flex-basis: 45%;
+  flex-basis: 44%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -40,7 +40,7 @@
 .carInfoActions {
   display: flex;
 }
-.bookButton {
+.carInfoBookButton {
   padding: 10px;
   font-size: 22px;
   width: 90%;
@@ -50,7 +50,7 @@
   text-decoration: none;
 }
 .carInfoCard {
-  flex-basis: 25%;
+  flex-basis: 28%;
   display: flex;
   flex-direction: column;
   color: #000;
@@ -91,7 +91,7 @@
 }
 .carInfoPictures {
   padding: 20px;
-  flex-basis: 25%;
+  flex-basis: 28%;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -103,18 +103,12 @@
   list-style: none;
 }
 .carPictures {
-  width: 70px;
-  height: 70px;
+  width: 80px;
+  height: 80px;
 }
 
 @media screen and (max-width: 950px) {
-  .middleCard img {
-    width: 350px;
-  }
-  .carModel p {
-    font-size: 18px;
-  }
-  .bookButton {
+  .carInfoBookButton {
     font-size: 18px;
   }
 }
