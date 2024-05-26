@@ -11,7 +11,7 @@ function Footer() {
             have the perfect car to meet your needs.
           </p>
           <di>
-            <i class="fa-solid fa-phone"></i> (123) -456-789
+            <i class="fa-solid fa-phone"></i> (123) 456-789
           </di>
           <div>
             <i class="fa-regular fa-envelope"></i>
@@ -45,8 +45,8 @@ function Footer() {
         </div>
         <div class="footer-box">
           <h3>WORKING HOURS</h3>
-          <div>Mon - Fri: 9:00AM - 9:00PM</div>
-          <div>Sat: 9:00AM - 19:00PM</div>
+          <div>Mon - Fri: 9:00 AM - 9:00 PM</div>
+          <div>Sat: 9:00 AM - 19:00 PM</div>
           <div>Sun: Closed</div>
         </div>
       </div>

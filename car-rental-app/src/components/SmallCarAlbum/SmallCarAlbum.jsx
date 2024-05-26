@@ -113,9 +113,9 @@ function SmallCarAlbum() {
             <div className="car-details">
               <div className="car-details-header">
                 <span id="price" className="car-price">
-                  {car.price} $
+                  ${car.price}
                 </span>
-                / rent per day
+                / day rent
               </div>
               <div className="details-table">
                 <div>
