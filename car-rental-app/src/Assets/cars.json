@@ -3,7 +3,7 @@
     {
       "id": 1,
       "car_model": "Toyota Corolla",
-      "car_description": "Compact sedan perfect for city driving",
+      "car_description": "The Toyota Corolla is celebrated for its reliability and efficiency, making it an excellent choice for city driving. Its compact size ensures ease of maneuverability in urban environments, while its spacious interior offers comfort for longer journeys. Advanced safety features, including driver-assist technologies, enhance safety on the road. Additionally, the Corolla's fuel-efficient engine and aerodynamic design contribute to reduced fuel consumption and emissions, aligning with environmental concerns.",
       "fuel_efficiency": {
         "city": 29,
         "highway": 37

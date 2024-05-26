@@ -13,7 +13,6 @@ function MoreInfo() {
 
   return (
     <>
-      <div>MoreInfo</div>
       <Header />
       <CarInfo
         img={currentCars[0].image_url}
