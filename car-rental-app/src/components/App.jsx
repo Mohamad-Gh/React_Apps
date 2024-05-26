@@ -6,13 +6,16 @@ import About from "./pages/About/About";
 import TestimonialsPage from "./pages/TestimonialsPage/TestimonialsPage";
 import BookNow from "./pages/BookNow/BookNow";
 import MoreInfo from "./pages/MoreInfo/MoreInfo";
+// creating a context and put it here to act as global context
 import { createContext, useState } from "react";
 
 export const GlobalContext = createContext();
 
 function App() {
+  // use id and set id to pass the selected id on vehicle model page as global context to use in moreInfo and Booking car components
   const [id, setId] = useState(1);
   return (
+    // here is how i used this
     <GlobalContext.Provider value={{ carId: id }}>
       <Routes>
         <Route path="/" element={<HomePage />} />

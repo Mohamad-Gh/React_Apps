@@ -1,4 +1,4 @@
-import React, { createContext, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import Header from "../../Header/Header";
 import Footer from "../../Footer/Footer";
@@ -101,6 +101,7 @@ function VehicleModel(props) {
             smoke={car.features.smoke_free}
             gps={car.features.gps}
             img={car.image_url}
+            // setting onlick to check the event and pass the currentTarget id to the parent
             onClick={(event) => {
               props.id(event.currentTarget.id);
             }}

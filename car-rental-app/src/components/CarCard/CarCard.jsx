@@ -13,6 +13,7 @@ import "./CarCard.css";
 
 function CarCard(props) {
   return (
+    // passing onClick props so can be used in parrent component
     <div id={props.id} onClick={props.onClick} className="flexCarCards">
       <div className="modelCard">
         <h2 itemProp="catagory">{props.model}</h2>
