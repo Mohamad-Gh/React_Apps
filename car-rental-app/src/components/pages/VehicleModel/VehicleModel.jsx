@@ -77,6 +77,19 @@ function VehicleModel(props) {
   return (
     <div>
       <Header />
+      <div className="full-container">
+        <div className="container">
+          <div className="titleText">
+            <h2>DISCOVER OUR RENTAL VEHICLES</h2>
+            <p>
+              Our fleet of rental cars and trucks are always carefully chosen
+              based on client’s need and previous satisfaction reports. From
+              Compact to SUVs and Trucks, we got the newest features you would
+              expect from current year model cars for hire.
+            </p>
+          </div>
+        </div>
+      </div>
       <ControlPanel
         query={handleChange}
         price={handleChange}
