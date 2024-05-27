@@ -24,6 +24,7 @@ function CarInfo({
   smoke,
   transmission,
   description,
+  album,
 }) {
   return (
     <div>
@@ -32,7 +33,6 @@ function CarInfo({
           <div className="carInfoHero">
             <div className="carInfoTitle">
               <h2>{model}</h2>
-              <p>Company name or any other detail</p>
             </div>
             <img
               className="carInfoImage"
@@ -75,9 +75,9 @@ function CarInfo({
                           <div className="gas">
                             <LocalGasStationIcon />
                             <p>
-                              <strong>City:</strong> {city}
+                              City: {city}
                               <br></br>
-                              <strong>Highway:</strong> {highway}
+                              Highway: {highway}
                             </p>
                           </div>
                         </li>
@@ -130,24 +130,11 @@ function CarInfo({
               <div className="carInfoPictures">
                 <h2> More Pictures</h2>
                 <ul className="carInfoAlbum">
-                  <li>
-                    <img
-                      className="carPictures"
-                      src="https://th.bing.com/th/id/OIP.JBfQl51z11LPdunGQpGGxwAAAA?rs=1&pid=ImgDetMain"
-                    />
-                  </li>
-                  <li>
-                    <img className="carPictures" src="" />
-                  </li>
-                  <li>
-                    <img className="carPictures" src="" />
-                  </li>
-                  <li>
-                    <img className="carPictures" src="" />
-                  </li>
-                  <li>
-                    <img className="carPictures" src="" />
-                  </li>
+                  {album.map((img) => (
+                    <li>
+                      <img className="carPictures" src={img} />
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>

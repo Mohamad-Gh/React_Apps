@@ -10,6 +10,7 @@
   flex-direction: column;
 }
 .carInfoTitle {
+  color: #ff4d30;
   font-size: 20px;
   padding: 20px;
 }
@@ -17,7 +18,7 @@
   position: absolute;
   width: 500px;
   right: 0;
-  top: 20%;
+  top: 30%;
 }
 
 .carInfoPrice {
@@ -105,8 +106,10 @@
   list-style: none;
 }
 .carPictures {
-  width: 80px;
-  height: 80px;
+  height: 70px;
+}
+.carPictures:hover {
+  scale: 1.75;
 }
 
 @media screen and (max-width: 950px) {

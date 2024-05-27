@@ -28,6 +28,7 @@ function MoreInfo() {
         smoke={currentCars[0].features.smoke_free}
         gps={currentCars[0].features.gps}
         description={currentCars[0].car_description}
+        album={currentCars[0].album}
       />
       <BlackDivider
         text="Book a car by getting in touch with us"
