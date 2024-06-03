@@ -128,7 +128,6 @@ function CarInfo({
                 </div>
               </div>
               <div className="carInfoPictures">
-                <h2> More Pictures</h2>
                 <ul className="carInfoAlbum">
                   {album.map((img) => (
                     <li>
