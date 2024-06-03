@@ -9,7 +9,7 @@ import BMWM4CSL from "../../Assets/images/BMW.png";
 
 import samples from "../../Assets/sampleCars.json";
 
-function SmallCarAlbum() {
+function SmallCarAlbum(props) {
   const [car, setCar] = useState({
     activeId: "HyundaiIoniq6",
     price: samples.HyundaiIoniq6.price,
@@ -26,29 +26,35 @@ function SmallCarAlbum() {
 
   function handleClick(event) {
     let image = null;
+    // const id = null;
     switch (event.target.id) {
       case "HyundaiIoniq6":
         image = HyundaiIoniq6;
+        // ip = 20;
         break;
       case "ChevroletCorvetteZ06":
         image = ChevroletCorvetteZ06;
+        // id = 21;
         break;
       case "KiaEV6":
         image = KiaEV6;
+        // id = 22;
         break;
       case "AudiA6":
         image = AudiA6;
+        // id = 23;
         break;
       case "AudiA6Allroad":
         image = AudiA6Allroad;
+        // id = 24;
         break;
       case "BMWM4CSL":
         image = BMWM4CSL;
+        // id = 25;
         break;
       default:
         image = HyundaiIoniq6;
     }
-
     setCar({
       price: samples[event.target.id].price,
       img: image,
@@ -63,7 +69,7 @@ function SmallCarAlbum() {
     setActive(event.target.id);
   }
   return (
-    <section className="car-album">
+    <section className="car-album" onClick={props.onClick}>
       <div className="full-container">
         <div className="container-album">
           <div className="title-header">
@@ -77,33 +83,30 @@ function SmallCarAlbum() {
           <div className="album">
             <div onClick={handleClick} className="cars">
               <div
-                id="HyundaiIoniq6"
+                id={20}
                 className={activeId == "HyundaiIoniq6" && "selected"}
               >
                 Hyundai Ioniq 6
               </div>
               <div
-                id="ChevroletCorvetteZ06"
+                id={21}
                 className={activeId == "ChevroletCorvetteZ06" && "selected"}
               >
                 Chevrolet Corvette Z06
               </div>
-              <div id="KiaEV6" className={activeId == "KiaEV6" && "selected"}>
+              <div id={22} className={activeId == "KiaEV6" && "selected"}>
                 Kia EV6
               </div>
-              <div id="AudiA6" className={activeId == "AudiA6" && "selected"}>
+              <div id={23} className={activeId == "AudiA6" && "selected"}>
                 Audi A6
               </div>
               <div
-                id="AudiA6Allroad"
+                id={24}
                 className={activeId == "AudiA6Allroad" && "selected"}
               >
                 Audi A6 Allroad
               </div>
-              <div
-                id="BMWM4CSL"
-                className={activeId == "BMWM4CSL" && "selected"}
-              >
+              <div id={25} className={activeId == "BMWM4CSL" && "selected"}>
                 BMW M4 CSL
               </div>
             </div>

@@ -5,6 +5,7 @@ import cars from "../../../Assets/cars.json";
 import CarInfo from "../../CarInfo/CarInfo";
 import { useContext } from "react";
 import { GlobalContext } from "../../App";
+import CarSuggestion from "../../CarSuggestion/CarSuggestion";
 
 function MoreInfo() {
   const value = useContext(GlobalContext);
@@ -34,6 +35,7 @@ function MoreInfo() {
         text="Book a car by getting in touch with us"
         span="(123) 456-7869"
       />
+      <CarSuggestion />
       <Footer />
     </>
   );

@@ -12,7 +12,7 @@ import Booking from "../Booking/Booking";
 import Faq from "../Faq/Faq";
 import CarLogos from "../CarLogos/CarLogos";
 
-function Main() {
+function Main(props) {
   return (
     <main>
       <section className="first">
@@ -83,7 +83,7 @@ function Main() {
       <Booking />
       <CarLogos />
       <HeroSection h3="Plan your trip now" h2="Quick & easy car rental" />
-      <SmallCarAlbum />
+      <SmallCarAlbum onClick={props.onClick} />
       <BlackDivider
         title="Save big with our cheap car rental!"
         text="Top Airports. Local Suppliers."

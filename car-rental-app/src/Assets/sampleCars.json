@@ -1,5 +1,6 @@
 {
   "HyundaiIoniq6": {
+    "id": "20",
     "price": "45",
     "img": "../Assets/images/Hyundai.png",
     "model": "A1",
@@ -11,6 +12,7 @@
     "fuel": "Gasoline"
   },
   "ChevroletCorvetteZ06": {
+    "id": "21",
     "price": "80",
     "img": "../Assets/images/chevrolet.png",
     "model": "Corvette Z06",
@@ -22,6 +24,7 @@
     "fuel": "Gasoline"
   },
   "KiaEV6": {
+    "id": "22",
     "price": "35",
     "img": "../Assets/images/Kia.png",
     "model": "Kia EV6",
@@ -33,6 +36,7 @@
     "fuel": "Electric"
   },
   "AudiA6": {
+    "id": "23",
     "price": "50",
     "img": "../Assets/images/Audi_A6.png",
     "model": "A6",
@@ -44,6 +48,7 @@
     "fuel": "Gasoline"
   },
   "AudiA6Allroad": {
+    "id": "24",
     "price": "65",
     "img": "../Assets/images/Audi_All.png",
     "model": "A6 Allroad",
@@ -55,6 +60,7 @@
     "fuel": "Gasoline"
   },
   "BMWM4CSL": {
+    "id": "25",
     "price": "85",
     "img": "../Assets/images/BMW.png",
     "model": "M4 CSL",

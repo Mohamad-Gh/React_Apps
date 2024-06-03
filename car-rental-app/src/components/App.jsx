@@ -18,7 +18,7 @@ function App() {
     // here is how i used this
     <GlobalContext.Provider value={{ carId: id }}>
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route path="/" element={<HomePage id={setId} />} />
         <Route path="/Vehicle Model" element={<VehicleModel id={setId} />} />
         <Route path="/Testimonials" element={<TestimonialsPage />} />
         <Route path="/Our Team" element={<OurTeam />} />
