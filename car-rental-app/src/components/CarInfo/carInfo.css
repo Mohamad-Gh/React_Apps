@@ -18,11 +18,11 @@
   position: absolute;
   width: 500px;
   right: 0;
-  top: 30%;
+  top: 28%;
 }
 
 .carInfoPrice {
-  background-color: grey;
+  background-color: rgb(184, 181, 181);
   font-size: 30px;
   margin-top: 180px;
   height: 150px;
@@ -30,7 +30,7 @@
 }
 .divide {
   display: flex;
-  background-color: grey;
+  background-color: rgb(184, 181, 181);
 }
 .carInfoDescription {
   flex-basis: 44%;
