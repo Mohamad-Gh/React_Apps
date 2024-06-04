@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+.carSuggestion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* margin: auto; */
+}
+
+/* .carSuggestionCarousel {
+  display: flex;
+} */
+.carSuggested {
+  position: relative;
+  width: 90vw;
+  margin: 50px 20px;
+  scale: 0.8;
+}
+.arrows {
+  position: absolute;
+  top: 50%;
+  color: tomato;
+}
+
+.arrows:hover {
+  animation: flash 0.5s forwards;
+  cursor: pointer;
+}
+
+.right {
+  right: 0;
+  transform: translateX(0);
+  z-index: 100;
+}
+.left {
+  left: 0;
+}
+.slick-prev:before,
+.slick-next:before {
+  font-size: 24px;
+  color: tomato; /* Change this to your desired color */
+}
+@keyframes flash {
+  0% {
+    opacity: 1;
+  } /* Start fully visible */
+  50% {
+    opacity: 0;
+  } /* Halfway through, become invisible */
+  100% {
+    opacity: 1;
+  } /* End fully visible */
+}
