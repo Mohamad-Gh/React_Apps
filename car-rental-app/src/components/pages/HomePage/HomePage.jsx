@@ -7,8 +7,10 @@ function HomePage(props) {
     <div>
       <Header />
       <Main
-        onClick={(event) => {
-          props.id(event.currentTarget.id);
+        id={(event) => {
+          props.id(event.target.id);
+          console.log("id", event.target.id);
+          console.log("current_id", event.currentTarget.id);
         }}
       />
       <Footer />

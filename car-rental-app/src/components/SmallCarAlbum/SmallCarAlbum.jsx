@@ -68,7 +68,7 @@ function SmallCarAlbum(props) {
     setActive(event.target.id);
   }
   return (
-    <section className="car-album" onClick={props.onClick}>
+    <section className="car-album">
       <div className="full-container">
         <div className="container-album">
           <div className="title-header">
@@ -79,7 +79,7 @@ function SmallCarAlbum(props) {
               next adventure or business trip
             </p>
           </div>
-          <div className="album">
+          <div className="album" onClick={props.onClick}>
             <div onClick={handleClick} className="cars">
               <div id={"20"} className={activeId == "20" && "selected"}>
                 Hyundai Ioniq 6

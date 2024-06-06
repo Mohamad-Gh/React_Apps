@@ -83,7 +83,7 @@ function Main(props) {
       {/* <Booking /> */}
       <HeroSection h3="Plan your trip now" h2="Quick & easy car rental" />
       <CarLogos />
-      <SmallCarAlbum onClick={props.onClick} />
+      <SmallCarAlbum onClick={props.id} />
       <BlackDivider
         title="Save big with our cheap car rental!"
         text="Top Airports. Local Suppliers."

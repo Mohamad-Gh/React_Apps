@@ -14,6 +14,7 @@ export const GlobalContext = createContext();
 function App() {
   // use id and set id to pass the selected id on vehicle model page as global context to use in moreInfo and Booking car components
   const [id, setId] = useState(1);
+
   return (
     // here is how i used this
     <GlobalContext.Provider value={{ carId: id }}>
