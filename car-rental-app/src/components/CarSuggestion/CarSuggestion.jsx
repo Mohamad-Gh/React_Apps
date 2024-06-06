@@ -24,7 +24,7 @@ function CarSuggestion() {
     if (car.id == value.carId) {
       const valueType = car.type;
       return (suggestedCars = cars.cars.filter(
-        (element) => element.type == valueType
+        (element) => element.type == valueType && element.id != value.carId
       ));
     }
   });
