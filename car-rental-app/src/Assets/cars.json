@@ -2,6 +2,7 @@
   "cars": [
     {
       "id": 1,
+      "type": "economy",
       "car_model": "Toyota Corolla",
       "car_description": "The Toyota Corolla is celebrated for its reliability and efficiency, making it an excellent choice for city driving. Its compact size ensures ease of maneuverability in urban environments, while its spacious interior offers comfort for longer journeys. Advanced safety features, including driver-assist technologies, enhance safety on the road. Additionally, the Corolla's fuel-efficient engine and aerodynamic design contribute to reduced fuel consumption and emissions, aligning with environmental concerns.",
       "fuel_efficiency": {
@@ -31,6 +32,7 @@
     },
     {
       "id": 2,
+      "type": "economy",
       "car_model": "Ford Fusion",
       "car_description": "Mid-size sedan with comfortable interior",
       "fuel_efficiency": {
@@ -51,6 +53,7 @@
     },
     {
       "id": 3,
+      "type": "economy",
       "car_model": "Honda Civic",
       "car_description": "Compact sedan known for reliability",
       "fuel_efficiency": {
@@ -71,6 +74,7 @@
     },
     {
       "id": 4,
+      "type": "economy",
       "car_model": "Chevrolet Cruze",
       "car_description": "Compact sedan with modern styling",
       "fuel_efficiency": {
@@ -91,6 +95,7 @@
     },
     {
       "id": 5,
+      "type": "economy",
       "car_model": "Nissan Altima",
       "car_description": "Mid-size sedan with spacious interior",
       "fuel_efficiency": {
@@ -111,6 +116,7 @@
     },
     {
       "id": 6,
+      "type": "economy",
       "car_model": "Hyundai Elantra",
       "car_description": "Compact sedan with excellent fuel efficiency",
       "fuel_efficiency": {
@@ -131,6 +137,7 @@
     },
     {
       "id": 7,
+      "type": "economy",
       "car_model": "Volkswagen Jetta",
       "car_description": "Compact sedan with a refined interior",
       "fuel_efficiency": {
@@ -151,6 +158,7 @@
     },
     {
       "id": 8,
+      "type": "economy",
       "car_model": "Subaru Impreza",
       "car_description": "Versatile compact sedan with all-wheel drive",
       "fuel_efficiency": {
@@ -171,6 +179,7 @@
     },
     {
       "id": 9,
+      "type": "economy",
       "car_model": "Audi A4",
       "car_description": "Luxurious mid-size sedan with premium features",
       "fuel_efficiency": {
@@ -191,6 +200,8 @@
     },
     {
       "id": 10,
+      "type": "economy",
+
       "car_model": "BMW 3 Series",
       "car_description": "Iconic luxury sedan with sporty performance",
       "fuel_efficiency": {
@@ -211,6 +222,8 @@
     },
     {
       "id": 11,
+      "type": "economy",
+
       "car_model": "Mercedes-Benz C-Class",
       "car_description": "Elegant and refined luxury sedan",
       "fuel_efficiency": {
@@ -231,6 +244,7 @@
     },
     {
       "id": 12,
+      "type": "business",
       "car_model": "Lexus ES",
       "car_description": "Luxury sedan with a spacious and comfortable interior",
       "fuel_efficiency": {
@@ -251,6 +265,7 @@
     },
     {
       "id": 13,
+      "type": "economy",
       "car_model": "Volvo S60",
       "car_description": "Premium sedan with advanced safety features",
       "fuel_efficiency": {
@@ -271,6 +286,8 @@
     },
     {
       "id": 14,
+      "type": "business",
+
       "car_model": "Tesla Model 3",
       "car_description": "Electric sedan with cutting-edge technology and performance",
       "fuel_efficiency": {
@@ -291,6 +308,8 @@
     },
     {
       "id": 15,
+      "type": "business",
+
       "car_model": "Porsche Panamera",
       "car_description": "Luxury sports sedan with exhilarating performance",
       "fuel_efficiency": {
@@ -311,6 +330,8 @@
     },
     {
       "id": 16,
+      "type": "luxury",
+
       "car_model": "Ferrari Roma",
       "car_description": "Exotic luxury sports coupe with stunning design and performance",
       "fuel_efficiency": {
@@ -331,6 +352,8 @@
     },
     {
       "id": 17,
+      "type": "luxury",
+
       "car_model": "Aston Martin DB11",
       "car_description": "Luxurious grand tourer with a powerful engine",
       "fuel_efficiency": {
@@ -351,6 +374,8 @@
     },
     {
       "id": 18,
+      "type": "luxury",
+
       "car_model": "Rolls-Royce Ghost",
       "car_description": "Ultra-luxurious sedan with handcrafted interior",
       "fuel_efficiency": {
@@ -371,6 +396,8 @@
     },
     {
       "id": 19,
+      "type": "luxury",
+
       "car_model": "Bentley Continental GT",
       "car_description": "Luxurious grand tourer with a blend of performance and comfort",
       "fuel_efficiency": {
@@ -391,6 +418,8 @@
     },
     {
       "id": 20,
+      "type": "luxury",
+
       "car_model": "Hyundai Ioniq 6",
       "car_description": "Compact SUV with advanced technology features",
       "fuel_efficiency": {
@@ -411,6 +440,7 @@
     },
     {
       "id": 21,
+      "type": "luxury",
       "car_model": "Chevrolet Corvette Z06",
       "car_description": "High-performance sports car with a powerful engine",
       "fuel_efficiency": {
@@ -431,6 +461,8 @@
     },
     {
       "id": 22,
+      "type": "luxury",
+
       "car_model": "Kia EV6",
       "car_description": "Electric crossover SUV with impressive range",
       "fuel_efficiency": {
@@ -451,6 +483,8 @@
     },
     {
       "id": 23,
+      "type": "business",
+
       "car_model": "Audi A6",
       "car_description": "Luxury sedan with high-end features",
       "fuel_efficiency": {
@@ -471,6 +505,8 @@
     },
     {
       "id": 24,
+      "type": "business",
+
       "car_model": "Audi A6 Allroad",
       "car_description": "Versatile wagon with off-road capabilities",
       "fuel_efficiency": {
@@ -491,6 +527,7 @@
     },
     {
       "id": 25,
+      "type": "luxury",
       "car_model": "BMW M4 CSL",
       "car_description": "High-performance coupe with track-ready features",
       "fuel_efficiency": {

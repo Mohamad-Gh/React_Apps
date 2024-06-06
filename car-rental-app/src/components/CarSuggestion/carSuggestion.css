@@ -10,9 +10,16 @@
   overflow-x: hidden;
 }
 
-/* .carSuggestionCarousel {
+.carSuggestionCarousel {
   display: flex;
-} */
+  flex-direction: column;
+  align-items: center;
+}
+.carSuggestionCarousel h3 {
+  color: tomato;
+  font-size: 36px;
+  margin-top: 20px;
+}
 .carSuggested {
   position: relative;
   width: 100vw;

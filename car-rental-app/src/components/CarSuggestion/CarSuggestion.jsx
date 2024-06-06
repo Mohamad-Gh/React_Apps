@@ -1,13 +1,12 @@
 import CarCard from "../CarCard/CarCard";
 
 import Slider from "react-slick";
-
+import { useContext } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./carSuggestion.css";
 import cars from "../../Assets/cars.json";
-import { colors } from "@mui/material";
-import { red } from "@mui/material/colors";
+import { GlobalContext } from "../App";
 
 const settings = {
   dots: true,
@@ -19,12 +18,24 @@ const settings = {
 };
 
 function CarSuggestion() {
+  const value = useContext(GlobalContext);
+  var suggestedCars = cars.cars;
+  cars.cars.map((car) => {
+    if (car.id == value.carId) {
+      const valueType = car.type;
+      return (suggestedCars = cars.cars.filter(
+        (element) => element.type == valueType
+      ));
+    }
+  });
+
   return (
     <div className="carSuggestion">
       <div className="carSuggestionCarousel">
+        <h3>More Cars</h3>
         <div>
           <Slider className="carSuggested" {...settings}>
-            {cars.cars.map((car) => (
+            {suggestedCars.map((car) => (
               <CarCard
                 className="smalls"
                 key={car.id}
