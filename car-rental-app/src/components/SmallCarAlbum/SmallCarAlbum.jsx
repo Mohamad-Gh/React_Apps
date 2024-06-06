@@ -117,7 +117,7 @@ function SmallCarAlbum(props) {
                   <span id="model">{car.model}</span>
                 </div>
                 <div>
-                  <span>Mark</span>
+                  <span>Company</span>
                   <span>|</span>
                   <span id="mark">{car.mark}</span>
                 </div>

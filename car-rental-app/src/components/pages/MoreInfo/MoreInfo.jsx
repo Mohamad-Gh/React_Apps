@@ -3,7 +3,7 @@ import Footer from "../../Footer/Footer";
 import Header from "../../Header/Header";
 import cars from "../../../Assets/cars.json";
 import CarInfo from "../../CarInfo/CarInfo";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { GlobalContext } from "../../App";
 import CarSuggestion from "../../CarSuggestion/CarSuggestion";
 
@@ -11,6 +11,9 @@ function MoreInfo(props) {
   const value = useContext(GlobalContext);
 
   const currentCars = cars.cars.filter((car) => car.id == value.carId);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
 
   return (
     <>
