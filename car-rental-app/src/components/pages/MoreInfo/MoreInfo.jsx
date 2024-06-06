@@ -7,7 +7,7 @@ import { useContext } from "react";
 import { GlobalContext } from "../../App";
 import CarSuggestion from "../../CarSuggestion/CarSuggestion";
 
-function MoreInfo() {
+function MoreInfo(props) {
   const value = useContext(GlobalContext);
 
   const currentCars = cars.cars.filter((car) => car.id == value.carId);
@@ -35,7 +35,7 @@ function MoreInfo() {
         text="Book a car by getting in touch with us"
         span="(123) 456-7869"
       />
-      <CarSuggestion />
+      <CarSuggestion id={props.id} />
       <Footer />
     </>
   );

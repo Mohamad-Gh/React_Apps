@@ -24,7 +24,10 @@ function App() {
         <Route path="/Our Team" element={<OurTeam />} />
         <Route path="/About" element={<About />} />
         <Route path="/Vehicle Model/Book Now" element={<BookNow />} />
-        <Route path="/Vehicle Model/More Info" element={<MoreInfo />} />
+        <Route
+          path="/Vehicle Model/More Info"
+          element={<MoreInfo id={setId} />}
+        />
       </Routes>
     </GlobalContext.Provider>
   );

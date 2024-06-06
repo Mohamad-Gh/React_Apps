@@ -17,7 +17,7 @@ const settings = {
   dotsClass: "slick-dots",
 };
 
-function CarSuggestion() {
+function CarSuggestion(props) {
   const value = useContext(GlobalContext);
   var suggestedCars = cars.cars;
   cars.cars.map((car) => {
@@ -54,6 +54,9 @@ function CarSuggestion() {
                 smoke={car.features.smoke_free}
                 gps={car.features.gps}
                 img={car.image_url}
+                onClick={(event) => {
+                  props.id(event.currentTarget.id);
+                }}
               />
             ))}
           </Slider>
