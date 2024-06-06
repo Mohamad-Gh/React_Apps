@@ -26,7 +26,7 @@ function SmallCarAlbum(props) {
 
   function handleClick(event) {
     let image = null;
-    // const id = null;
+    console.log("id", event.target.id);
     switch (event.target.id) {
       case "HyundaiIoniq6":
         image = HyundaiIoniq6;
@@ -83,30 +83,33 @@ function SmallCarAlbum(props) {
           <div className="album">
             <div onClick={handleClick} className="cars">
               <div
-                id={20}
+                id={"HyundaiIoniq6"}
                 className={activeId == "HyundaiIoniq6" && "selected"}
               >
                 Hyundai Ioniq 6
               </div>
               <div
-                id={21}
+                id={"ChevroletCorvetteZ06"}
                 className={activeId == "ChevroletCorvetteZ06" && "selected"}
               >
                 Chevrolet Corvette Z06
               </div>
-              <div id={22} className={activeId == "KiaEV6" && "selected"}>
+              <div id={"KiaEV6"} className={activeId == "KiaEV6" && "selected"}>
                 Kia EV6
               </div>
-              <div id={23} className={activeId == "AudiA6" && "selected"}>
+              <div id={"AudiA6"} className={activeId == "AudiA6" && "selected"}>
                 Audi A6
               </div>
               <div
-                id={24}
+                id={"AudiA6Allroad"}
                 className={activeId == "AudiA6Allroad" && "selected"}
               >
                 Audi A6 Allroad
               </div>
-              <div id={25} className={activeId == "BMWM4CSL" && "selected"}>
+              <div
+                id={"BMWM4CSL"}
+                className={activeId == "BMWM4CSL" && "selected"}
+              >
                 BMW M4 CSL
               </div>
             </div>

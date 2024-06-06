@@ -8,7 +8,7 @@ import SmallCarAlbum from "../SmallCarAlbum/SmallCarAlbum";
 import BlackDivider from "../BlackDivider/BlackDivider";
 import HeroSection from "../HeroSection/HeroSection";
 import ContentCard from "../ContentCard/ContentCard";
-import Booking from "../Booking/Booking";
+// import Booking from "../Booking/Booking";
 import Faq from "../Faq/Faq";
 import CarLogos from "../CarLogos/CarLogos";
 
@@ -80,9 +80,9 @@ function Main(props) {
         </div>
         <img className="back-img" src={backGroundDesign} />
       </section>
-      <Booking />
-      <CarLogos />
+      {/* <Booking /> */}
       <HeroSection h3="Plan your trip now" h2="Quick & easy car rental" />
+      <CarLogos />
       <SmallCarAlbum onClick={props.onClick} />
       <BlackDivider
         title="Save big with our cheap car rental!"
