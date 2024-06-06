@@ -23,9 +23,11 @@ function CarSuggestion() {
   cars.cars.map((car) => {
     if (car.id == value.carId) {
       const valueType = car.type;
-      return (suggestedCars = cars.cars.filter(
-        (element) => element.type == valueType && element.id != value.carId
-      ));
+      return (suggestedCars = cars.cars
+        .filter(
+          (element) => element.type == valueType && element.id != value.carId
+        )
+        .slice(0, 6));
     }
   });
 
