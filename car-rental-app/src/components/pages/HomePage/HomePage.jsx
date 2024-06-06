@@ -9,7 +9,6 @@ function HomePage(props) {
       <Main
         onClick={(event) => {
           props.id(event.currentTarget.id);
-          console.log(event.target.id);
         }}
       />
       <Footer />
