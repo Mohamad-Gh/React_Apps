@@ -27,7 +27,7 @@ function BookCard(props) {
           sizes="(max-width: 400px) 100vw, 400px"
           data-was-processed="true"
         />
-        <div>
+        <div className="bookCardInfo">
           <h2 itemProp="catagory">{props.model}</h2>
           <ul>
             <li>Free roadside assistance included</li>
@@ -37,14 +37,18 @@ function BookCard(props) {
             </li>
           </ul>
         </div>
-        <div>
-          <div>
-            <h2>price: </h2>
-            <p>
-              <strong>{props.price}</strong>
+        <div className="price">
+          <div className="priceTag">
+            <h2>Price: </h2>
+            <div className="priceInTotal">
+              <p>
+                Base: <strong>{props.price}/day</strong>
+              </p>
+              <div className="narrowDivider"></div>
+              <strong>Total Price:{props.price}</strong>
               <br></br>
               <small>+ Taxes and fees</small>
-            </p>
+            </div>
           </div>
         </div>
       </div>
