@@ -6,13 +6,7 @@ function HomePage(props) {
   return (
     <div>
       <Header />
-      <Main
-        id={(event) => {
-          props.id(event.target.id);
-          console.log("id", event.target.id);
-          console.log("current_id", event.currentTarget.id);
-        }}
-      />
+      <Main id={props.id} />
       <Footer />
     </div>
   );

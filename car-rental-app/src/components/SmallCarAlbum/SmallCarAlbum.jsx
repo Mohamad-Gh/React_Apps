@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 import HyundaiIoniq6 from "../../Assets/images/Hyundai.png";
 import ChevroletCorvetteZ06 from "../../Assets/images/chevrolet.png";
@@ -79,7 +80,12 @@ function SmallCarAlbum(props) {
               next adventure or business trip
             </p>
           </div>
-          <div className="album" onClick={props.onClick}>
+          <div
+            className="album"
+            onClick={(event) => {
+              props.onClick(activeId);
+            }}
+          >
             <div onClick={handleClick} className="cars">
               <div id={"20"} className={activeId == "20" && "selected"}>
                 Hyundai Ioniq 6
@@ -148,9 +154,9 @@ function SmallCarAlbum(props) {
                 </div>
               </div>
               <div>
-                <a>
+                <Link to="/Vehicle Model/Book Now">
                   <button className="reserve-btn">Reserve NOW</button>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
