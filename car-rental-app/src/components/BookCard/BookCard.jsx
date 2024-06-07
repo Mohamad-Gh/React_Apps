@@ -1,4 +1,4 @@
-import { Link } from "@mui/material";
+import { Link } from "react-router-dom";
 import LocalGasStationIcon from "@mui/icons-material/LocalGasStation";
 import LuggageIcon from "@mui/icons-material/Luggage";
 import PeopleIcon from "@mui/icons-material/People";
@@ -33,7 +33,7 @@ function BookCard(props) {
             <li>Free roadside assistance included</li>
             <li>Unlimited Kms available</li>
             <li>
-              <Link>See more features</Link>
+              <Link to="/Vehicle Model/More Info">See more features</Link>
             </li>
           </ul>
         </div>
