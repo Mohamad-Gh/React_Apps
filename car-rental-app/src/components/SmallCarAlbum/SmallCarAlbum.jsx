@@ -82,7 +82,7 @@ function SmallCarAlbum(props) {
           </div>
           <div
             className="album"
-            onClick={(event) => {
+            onClick={() => {
               props.onClick(activeId);
             }}
           >

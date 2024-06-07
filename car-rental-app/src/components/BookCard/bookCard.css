@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flexCarCards {
+  font-size: 0.8rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  /* width: 450px; */
+  background-color: rgb(244, 242, 242);
+  border: 2px solid #ff4d30;
+  border-radius: 5%;
+}
+.modelCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.modelCard h2 {
+  font-size: 1.3rem;
+}
+.modelCard-p {
+  color: grey;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.modelCard-p p {
+  margin: 0;
+}
+.middleCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.middleCard img {
+  object-fit: scale-down;
+  overflow: hidden;
+  width: 400px;
+  height: 270px;
+}
+
+.carFeatures {
+  display: flex;
+}
+.carModel {
+  flex-basis: 59%;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
+.carModel p {
+  font-size: 20px;
+}
+.featureDetails {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 10px;
+}
+.capacity {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.luggages,
+.passengers,
+.smokefree,
+.road,
+.ac,
+.transmission,
+.gps,
+.age {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: grey;
+}
+.actions {
+  flex-basis: 39%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 50px;
+  align-items: center;
+}
+.moreButton,
+.bookButton {
+  padding: 10px;
+  font-size: 22px;
+  width: 90%;
+  text-align: center;
+  color: #ffffff;
+  background-color: #ff4d30;
+  text-decoration: none;
+}
+@media screen and (max-width: 950px) {
+  .middleCard img {
+    width: 350px;
+  }
+  .carModel p {
+    font-size: 18px;
+  }
+  .moreButton,
+  .bookButton {
+    font-size: 18px;
+  }
+}
