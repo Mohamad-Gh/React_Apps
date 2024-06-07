@@ -42,10 +42,10 @@ function BookCard(props) {
             <h2>Price: </h2>
             <div className="priceInTotal">
               <p>
-                Base: <strong>{props.price}/day</strong>
+                Base: <strong>$ {props.price}/day</strong>
               </p>
               <div className="narrowDivider"></div>
-              <strong>Total Price:{props.price}</strong>
+              <strong>Total Price: $ {props.price + 10}</strong>
               <br></br>
               <small>+ Taxes and fees</small>
             </div>
