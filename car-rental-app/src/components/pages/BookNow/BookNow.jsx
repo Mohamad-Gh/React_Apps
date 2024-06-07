@@ -7,6 +7,7 @@ import { useContext } from "react";
 import { GlobalContext } from "../../App";
 import CarCard from "../../CarCard/CarCard";
 import cars from "../../../Assets/cars.json";
+import BookCard from "../../BookCard/BookCard";
 
 function BookNow() {
   const value = useContext(GlobalContext);
@@ -18,7 +19,7 @@ function BookNow() {
       <Header />
       <div>
         {bookedCar.map((car) => (
-          <CarCard
+          <BookCard
             key={car.id}
             id={car.id}
             model={car.car_model}

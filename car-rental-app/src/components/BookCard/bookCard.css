@@ -4,64 +4,79 @@
   box-sizing: border-box;
 }
 
-.flexCarCards {
-  font-size: 0.8rem;
-  margin: 0 auto;
+.flexBookCards {
   display: flex;
   flex-direction: column;
+  font-size: 0.8rem;
+  margin: 0 25px;
   padding: 20px;
-  /* width: 450px; */
   background-color: rgb(244, 242, 242);
   border: 2px solid #ff4d30;
-  border-radius: 5%;
 }
-.modelCard {
+.modelBookCard {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.modelCard h2 {
-  font-size: 1.3rem;
+.modelBookCard a {
+  text-decoration: none;
+  color: #ff4d30;
 }
-.modelCard-p {
-  color: grey;
+.modelBookCard div {
+  flex-basis: 33%;
+}
+.modelBookCard h2 {
+  font-size: 1.5rem;
+}
+.modelBookCard ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 1.1rem;
+  padding: 10px 25px;
+}
+.modelBookCard p {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  justify-self: end;
+}
+.modelBookCard-p {
   display: flex;
   align-items: center;
   gap: 5px;
 }
-.modelCard-p p {
+.modelBookCard-p p {
   margin: 0;
 }
-.middleCard {
+.imageBookCard {
+  object-fit: scale-down;
+  overflow: hidden;
+  width: 300px;
+}
+.middleBookCard {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.middleCard img {
-  object-fit: scale-down;
-  overflow: hidden;
-  width: 400px;
-  height: 270px;
-}
 
-.carFeatures {
+.bookFeatures {
   display: flex;
 }
-.carModel {
+.carBookModel {
   flex-basis: 59%;
   display: flex;
   flex-direction: column;
   font-size: 14px;
 }
-.carModel p {
-  font-size: 20px;
-}
-.featureDetails {
-  margin-top: 10px;
+
+.featureBookDetails {
+  margin: 10px 0;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
   list-style: none;
-  gap: 10px;
+  justify-content: space-around;
 }
 .capacity {
   list-style: none;
@@ -69,9 +84,9 @@
   flex-direction: row;
   gap: 20px;
 }
-.luggages,
+/* .luggages,
 .passengers,
-.smokefree,
+.smokeFree,
 .road,
 .ac,
 .transmission,
@@ -80,8 +95,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  color: grey;
-}
+} */
 .actions {
   flex-basis: 39%;
   display: flex;
@@ -90,8 +104,7 @@
   gap: 50px;
   align-items: center;
 }
-.moreButton,
-.bookButton {
+.moreButton {
   padding: 10px;
   font-size: 22px;
   width: 90%;
