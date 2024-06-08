@@ -176,18 +176,6 @@ header {
 .container-form h3 {
   font-size: 26px;
 }
-.form-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  /* grid-template-rows: repeat(2, 1fr); */
-  column-gap: 50px;
-  row-gap: 50px;
-}
-.form-grid-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
 .submit {
   cursor: pointer;
 }

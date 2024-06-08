@@ -1,15 +1,16 @@
 import React from "react";
+import "./booking.css";
 
 function Booking() {
   return (
-    <section className="booking-form">
+    <section>
       <div className="full-container">
         <div className="container-form">
           <div>
-            <h3>Book a car</h3>
+            <h3>Select Date, Location, and Additional Services:</h3>
           </div>
           <form className="form-grid">
-            <div className="form-grid-item">
+            {/* <div className="form-grid-item">
               <label className="label">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -39,7 +40,7 @@ function Booking() {
                 <option>Audi A6 Allroad</option>
                 <option>BMW M4 CSL</option>
               </select>
-            </div>
+            </div> */}
             <div className="form-grid-item">
               <label className="label">
                 <svg
@@ -156,10 +157,10 @@ function Booking() {
               </label>
               <input className="Date" type="date" />
             </div>
-            <div className="form-grid-item">
+            {/* <div className="form-grid-item">
               <label className="label"></label>
               <input className="submit" type="submit" value="Search" />
-            </div>
+            </div> */}
           </form>
         </div>
       </div>

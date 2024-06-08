@@ -1,0 +1,13 @@
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  /* grid-template-rows: repeat(2, 1fr); */
+  column-gap: 50px;
+  row-gap: 50px;
+  margin-top: 20px;
+}
+.form-grid-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

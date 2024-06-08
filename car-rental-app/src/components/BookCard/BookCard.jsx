@@ -28,10 +28,14 @@ function BookCard(props) {
           data-was-processed="true"
         />
         <div className="bookCardInfo">
-          <h2 itemProp="catagory">{props.model}</h2>
+          <div style={{ display: "flex", alignItems: "center", gap: "50px" }}>
+            <h2 itemProp="catagory">{props.model}</h2>
+            <h3>Customer Rate:</h3>
+          </div>
           <ul>
             <li>Free roadside assistance included</li>
             <li>Unlimited Kms available</li>
+            <li>Free cancellation up to 48 hours before pick-up</li>
             <li>
               <Link to="/Vehicle Model/More Info">See more features</Link>
             </li>
