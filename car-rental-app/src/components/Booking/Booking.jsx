@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./booking.css";
 
 function Booking() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
+
   return (
     <section>
       <div className="full-container">
