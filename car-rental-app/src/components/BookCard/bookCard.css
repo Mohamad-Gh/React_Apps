@@ -25,8 +25,13 @@
 .bookCardInfo {
   flex-basis: 50%;
 }
+.nameReview {
+  display: flex;
+  align-items: flex-start;
+  gap: 100px;
+}
 .modelBookCard h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 .modelBookCard ul {
   display: flex;

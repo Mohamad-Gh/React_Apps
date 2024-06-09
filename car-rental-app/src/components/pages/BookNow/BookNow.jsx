@@ -32,6 +32,8 @@ function BookNow() {
           smoke={car.features.smoke_free}
           gps={car.features.gps}
           img={car.image_url}
+          number={car.rate}
+          color={car.rate >= 8 ? "green" : car.rate >= 5 ? "purple" : "red"}
         />
       ))}
       <BlackDivider

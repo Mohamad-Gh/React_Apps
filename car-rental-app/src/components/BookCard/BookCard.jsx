@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import ReviewButton from "../ReviewButton/ReviewButton";
+
 import LocalGasStationIcon from "@mui/icons-material/LocalGasStation";
 import LuggageIcon from "@mui/icons-material/Luggage";
 import PeopleIcon from "@mui/icons-material/People";
@@ -28,9 +30,9 @@ function BookCard(props) {
           data-was-processed="true"
         />
         <div className="bookCardInfo">
-          <div style={{ display: "flex", alignItems: "center", gap: "50px" }}>
+          <div className="nameReview">
             <h2 itemProp="catagory">{props.model}</h2>
-            <h3>Customer Rate:</h3>
+            <ReviewButton color={props.color} number={props.number} />
           </div>
           <ul>
             <li>Free roadside assistance included</li>

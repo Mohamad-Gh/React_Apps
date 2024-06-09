@@ -1,0 +1,19 @@
+.reviewNumber {
+  font-size: 30px;
+  height: 40px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5%;
+  color: white;
+}
+.green {
+  background-color: green;
+}
+.red {
+  background-color: red;
+}
+.purple {
+  background-color: purple;
+}

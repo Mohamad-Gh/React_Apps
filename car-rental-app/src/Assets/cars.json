@@ -2,6 +2,7 @@
   "cars": [
     {
       "id": 1,
+      "rate": 7.5,
       "type": "economy",
       "car_model": "Toyota Corolla",
       "car_description": "The Toyota Corolla is celebrated for its reliability and efficiency, making it an excellent choice for city driving. Its compact size ensures ease of maneuverability in urban environments, while its spacious interior offers comfort for longer journeys. Advanced safety features, including driver-assist technologies, enhance safety on the road. Additionally, the Corolla's fuel-efficient engine and aerodynamic design contribute to reduced fuel consumption and emissions, aligning with environmental concerns.",
@@ -32,6 +33,7 @@
     },
     {
       "id": 2,
+      "rate": 6.8,
       "type": "economy",
       "car_model": "Ford Fusion",
       "car_description": "A versatile and stylish sedan perfect for both city commutes and long-distance adventures. Inside, you'll find a comfortable and spacious interior with ample legroom, making it an excellent choice for families or business travelers. The Fusion boasts a 1.6-liter EcoBoost engine, offering a balance of power and efficiency, achieving over 27 mpg overall. With its intuitive SYNC voice activation system and generous storage options, including a trunk capable of fitting three full-size suitcases, the Ford Fusion stands out as a practical and enjoyable rental option. Whether you're planning a weekend getaway or need a reliable daily driver, the Ford Fusion combines style, comfort, and functionality to meet your needs.",
@@ -61,6 +63,7 @@
     },
     {
       "id": 3,
+      "rate": 8.9,
       "type": "economy",
       "car_model": "Honda Civic",
       "car_description": "Compact sedan known for reliability",
@@ -91,6 +94,7 @@
     },
     {
       "id": 4,
+      "rate": 5,
       "type": "economy",
       "car_model": "Chevrolet Cruze",
       "car_description": "Compact sedan with modern styling",
@@ -121,6 +125,7 @@
     },
     {
       "id": 5,
+      "rate": 9,
       "type": "economy",
       "car_model": "Nissan Altima",
       "car_description": "Mid-size sedan with spacious interior",
@@ -151,6 +156,7 @@
     },
     {
       "id": 6,
+      "rate": 8.6,
       "type": "economy",
       "car_model": "Hyundai Elantra",
       "car_description": "Compact sedan with excellent fuel efficiency",
@@ -181,6 +187,7 @@
     },
     {
       "id": 7,
+      "rate": 6.7,
       "type": "economy",
       "car_model": "Volkswagen Jetta",
       "car_description": "Compact sedan with a refined interior",
@@ -211,6 +218,7 @@
     },
     {
       "id": 8,
+      "rate": 3.5,
       "type": "economy",
       "car_model": "Subaru Impreza",
       "car_description": "Versatile compact sedan with all-wheel drive",
@@ -241,6 +249,7 @@
     },
     {
       "id": 9,
+      "rate": 2.9,
       "type": "economy",
       "car_model": "Audi A4",
       "car_description": "Luxurious mid-size sedan with premium features",
@@ -271,6 +280,7 @@
     },
     {
       "id": 10,
+      "rate": 9.5,
       "type": "economy",
 
       "car_model": "BMW 3 Series",
@@ -302,6 +312,7 @@
     },
     {
       "id": 11,
+      "rate": 10,
       "type": "economy",
 
       "car_model": "Mercedes-Benz C-Class",
@@ -333,6 +344,7 @@
     },
     {
       "id": 12,
+      "rate": 8.4,
       "type": "business",
       "car_model": "Lexus ES",
       "car_description": "Luxury sedan with a spacious and comfortable interior",
@@ -363,6 +375,7 @@
     },
     {
       "id": 13,
+      "rate": 6.4,
       "type": "economy",
       "car_model": "Volvo S60",
       "car_description": "Premium sedan with advanced safety features",
@@ -393,6 +406,7 @@
     },
     {
       "id": 14,
+      "rate": 8.5,
       "type": "business",
 
       "car_model": "Tesla Model 3",
@@ -424,6 +438,7 @@
     },
     {
       "id": 15,
+      "rate": 9.2,
       "type": "business",
 
       "car_model": "Porsche Panamera",
@@ -455,6 +470,7 @@
     },
     {
       "id": 16,
+      "rate": 7.5,
       "type": "luxury",
 
       "car_model": "Ferrari Roma",
@@ -485,6 +501,7 @@
     },
     {
       "id": 17,
+      "rate": 3.5,
       "type": "luxury",
 
       "car_model": "Aston Martin DB11",
@@ -516,6 +533,7 @@
     },
     {
       "id": 18,
+      "rate": 6.6,
       "type": "luxury",
 
       "car_model": "Rolls-Royce Ghost",
@@ -547,6 +565,7 @@
     },
     {
       "id": 19,
+      "rate": 9.9,
       "type": "luxury",
 
       "car_model": "Bentley Continental GT",
@@ -578,6 +597,7 @@
     },
     {
       "id": 20,
+      "rate": 8.2,
       "type": "luxury",
 
       "car_model": "Hyundai Ioniq 6",
@@ -609,6 +629,7 @@
     },
     {
       "id": 21,
+      "rate": 6.7,
       "type": "luxury",
       "car_model": "Chevrolet Corvette Z06",
       "car_description": "High-performance sports car with a powerful engine",
@@ -639,6 +660,7 @@
     },
     {
       "id": 22,
+      "rate": 6.5,
       "type": "luxury",
 
       "car_model": "Kia EV6",
@@ -670,6 +692,7 @@
     },
     {
       "id": 23,
+      "rate": 8.3,
       "type": "business",
 
       "car_model": "Audi A6",
@@ -701,6 +724,7 @@
     },
     {
       "id": 24,
+      "rate": 6.5,
       "type": "business",
 
       "car_model": "Audi A6 Allroad",
@@ -732,6 +756,7 @@
     },
     {
       "id": 25,
+      "rate": 8.8,
       "type": "luxury",
       "car_model": "BMW M4 CSL",
       "car_description": "High-performance coupe with track-ready features",
