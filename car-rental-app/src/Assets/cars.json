@@ -533,7 +533,7 @@
     },
     {
       "id": 18,
-      "rate": 6.6,
+      "rate": 7.6,
       "type": "luxury",
 
       "car_model": "Rolls-Royce Ghost",
@@ -629,7 +629,7 @@
     },
     {
       "id": 21,
-      "rate": 6.7,
+      "rate": 9.7,
       "type": "luxury",
       "car_model": "Chevrolet Corvette Z06",
       "car_description": "High-performance sports car with a powerful engine",
@@ -660,7 +660,7 @@
     },
     {
       "id": 22,
-      "rate": 6.5,
+      "rate": 8.5,
       "type": "luxury",
 
       "car_model": "Kia EV6",
@@ -724,7 +724,7 @@
     },
     {
       "id": 24,
-      "rate": 6.5,
+      "rate": 9.5,
       "type": "business",
 
       "car_model": "Audi A6 Allroad",
