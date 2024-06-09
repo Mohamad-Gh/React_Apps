@@ -9,6 +9,7 @@ function Booking() {
           <div>
             <h3>Select Date, Location, and Additional Services:</h3>
           </div>
+          <h5>Date and Location</h5>
           <form className="form-grid">
             {/* <div className="form-grid-item">
               <label className="label">
