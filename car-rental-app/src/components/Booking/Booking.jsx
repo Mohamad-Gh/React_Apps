@@ -167,6 +167,43 @@ function Booking() {
               <input className="submit" type="submit" value="Search" />
             </div> */}
           </form>
+          <h5>Date and Location</h5>
+
+          <form className="form-grid">
+            <div className="form-grid-item">
+              <label className="label"> Add Driver</label>
+              <select id="Add Driver">
+                <option value={0}>0</option>
+                <option value={1}>1</option>
+                <option value={2}>2</option>
+              </select>
+            </div>
+            <div className="form-grid-item">
+              <label className="label">Child Booster</label>
+              <select id="Child Booster">
+                <option value={0}>0</option>
+                <option value={1}>1</option>
+                <option value={2}>2</option>
+              </select>
+            </div>
+            <div className="form-grid-item">
+              <label className="label"> Child Seat</label>
+              <select id="Child Seat">
+                <option value={0}>0</option>
+                <option value={1}>1</option>
+                <option value={2}>2</option>
+              </select>
+            </div>
+            <div className="form-grid-item">
+              <label className="label">Extra Milage</label>
+              <select id="Extra Milage">
+                <option value={0}>0</option>
+                <option value={100}>100</option>
+                <option value={200}>200</option>
+                <option value={500}>500</option>
+              </select>
+            </div>
+          </form>
         </div>
       </div>
     </section>
