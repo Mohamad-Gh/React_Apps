@@ -3,10 +3,17 @@
   height: 40px;
   width: 50px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   border-radius: 5%;
   color: white;
+  padding: 25px;
+}
+.number::after {
+  content: "";
+  display: block;
+  border-top: 2px solid white;
 }
 .green {
   background-color: green;

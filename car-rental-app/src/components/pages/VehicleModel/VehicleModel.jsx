@@ -7,6 +7,9 @@ import Booking from "../../Booking/Booking";
 import CarCard from "../../CarCard/CarCard";
 import ControlPanel from "../../ControlPanel/ControlPanel";
 
+import Pagination from "@mui/material/Pagination";
+import Stack from "@mui/material/Stack";
+
 import "./vehicleModel.css";
 import cars from "../../../Assets/cars.json";
 
@@ -66,13 +69,16 @@ function VehicleModel(props) {
 
   const totalPages = Math.ceil(filteredCars.length / carsPerPage);
 
-  const handlePreviousPage = () => {
-    setCurrentPage((prevPage) => Math.max(prevPage - 1, 1));
-  };
+  // const handlePreviousPage = () => {
+  //   setCurrentPage((prevPage) => Math.max(prevPage - 1, 1));
+  // };
 
-  const handleNextPage = () => {
-    setCurrentPage((prevPage) => Math.min(prevPage + 1, totalPages));
-  };
+  // const handleNextPage = () => {
+  //   setCurrentPage((prevPage) => Math.min(prevPage + 1, totalPages));
+  // };
+
+  // handleing page based on its number using UI material component
+  const handlePage = (page) => setCurrentPage(page);
 
   return (
     <div>
@@ -121,7 +127,17 @@ function VehicleModel(props) {
           />
         ))}
       </div>
-      <div className="pagination">
+      <Stack spacing={2} className="pagination">
+        <Pagination
+          count={totalPages}
+          color="secondary"
+          onChange={(event, page) => {
+            handlePage(page);
+          }}
+        />
+      </Stack>
+      {/* old way of changing page */}
+      {/* <div className="pagination">
         <button onClick={handlePreviousPage} disabled={currentPage === 1}>
           Previous
         </button>
@@ -129,7 +145,7 @@ function VehicleModel(props) {
         <button onClick={handleNextPage} disabled={currentPage === totalPages}>
           Next
         </button>
-      </div>
+      </div> */}
       <BlackDivider
         text="Book a car by getting in touch with us"
         span="(123) 456-7869"
