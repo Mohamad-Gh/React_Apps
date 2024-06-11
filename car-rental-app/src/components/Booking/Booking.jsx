@@ -1,11 +1,20 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./booking.css";
 
 function Booking() {
   useEffect(() => {
     window.scrollTo(0, 0);
   });
-
+  const [price, setPrice] = useState({
+    childBooster: 0,
+    babySeat: 0,
+    extraDriver: 0,
+    extraMileage: 0,
+  });
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setPrice((prvs) => ({ ...prvs, [name]: value }));
+  };
   return (
     <section>
       <div className="full-container">
@@ -14,7 +23,10 @@ function Booking() {
             <h3>Select Date, Location, and Additional Services:</h3>
           </div>
           <h5>Date and Location</h5>
-          <form className="form-grid">
+          <form
+            className="form-grid"
+            onChange={(event) => console.log(event.target)}
+          >
             <div className="form-grid-item">
               <label className="label">
                 <svg
@@ -137,7 +149,12 @@ function Booking() {
             </div> */}
           </form>
           <h5>More Services</h5>
-          <form className="form-grid">
+          <form
+            className="form-grid"
+            onChange={(event) =>
+              console.log(event.target.name, event.target.value)
+            }
+          >
             <div className="form-grid-item">
               <label className="label">
                 {" "}
@@ -153,7 +170,7 @@ function Booking() {
                 </svg>{" "}
                 Add Driver
               </label>
-              <select name="Add Driver" id="Add Driver">
+              <select name="extraDriver" id="extraDriver">
                 <option value={0}>0</option>
                 <option value={1}>1</option>
                 <option value={2}>2</option>
@@ -207,7 +224,7 @@ function Booking() {
                 </svg>{" "}
                 Child Booster
               </label>
-              <select name="Child Booster" id="Child Booster">
+              <select name="ChildBooster" id="ChildBooster">
                 <option value={0}>0</option>
                 <option value={1}>1</option>
                 <option value={2}>2</option>
@@ -247,7 +264,7 @@ function Booking() {
                 </svg>
                 Baby Seat
               </label>
-              <select name="Extra Milage" id="Extra Milage">
+              <select name="babySeat" id="babySeat">
                 <option value={0}>0</option>
                 <option value={1}>1</option>
                 <option value={2}>2</option>
@@ -284,7 +301,7 @@ function Booking() {
                 </svg>{" "}
                 Extra Mileage
               </label>
-              <select name="Extra Mileage" id="Extra Mileage">
+              <select name="extraMileage" id="extraMileage">
                 <option value={0}>0</option>
                 <option value={100}>100</option>
                 <option value={500}>500</option>

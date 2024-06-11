@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "../../Header/Header";
 import Footer from "../../Footer/Footer";
 import BlackDivider from "../../BlackDivider/BlackDivider";
@@ -11,7 +11,6 @@ import BookCard from "../../BookCard/BookCard";
 function BookNow() {
   const value = useContext(GlobalContext);
   const bookedCar = cars.cars.filter((car) => car.id == value.carId);
-
   return (
     <>
       <Header />
