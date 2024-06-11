@@ -23,7 +23,7 @@ function BookNow() {
           model={car.car_model}
           city={`${car.fuel_efficiency.city} MPG`}
           highway={`${car.fuel_efficiency.highway} MPG`}
-          price={car.starting_price}
+          basePrice={car.starting_price}
           luggage={car.luggage_capacity}
           passenger={car.passenger_capacity}
           transmission={car.features.transmission}

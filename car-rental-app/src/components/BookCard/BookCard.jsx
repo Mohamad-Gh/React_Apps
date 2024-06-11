@@ -48,10 +48,25 @@ function BookCard(props) {
             <h2>Price: </h2>
             <div className="priceInTotal">
               <p>
-                Base: <strong>$ {props.price}/day</strong>
+                Base: <strong>$ {props.basePrice}</strong>
+              </p>
+              <p>
+                Booster Seat: <strong>$ {props.boosterPrice}</strong>
+              </p>
+              <p>
+                Baby Seat: <strong>$ {props.babySeatPrice}</strong>
+              </p>{" "}
+              <p>
+                Extra Mileage: <strong>$ {props.extraMileagePrice}</strong>
               </p>
               <div className="narrowDivider"></div>
-              <strong>Total Price: $ {props.price + 10}</strong>
+              <strong>
+                Total Price: ${" "}
+                {props.basePrice +
+                  props.booster +
+                  props.babySeat +
+                  props.extraMileagePrice}
+              </strong>
               <br></br>
               <small>+ Taxes and fees</small>
             </div>

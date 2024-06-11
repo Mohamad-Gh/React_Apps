@@ -16,7 +16,7 @@
       "features": {
         "transmission": "Automatic",
         "AC": "Yes",
-        "road_assistant": "no",
+        "road_assistant": "No",
         "smoke_free": "Yes",
         "gps": "Yes"
       },
@@ -77,7 +77,7 @@
       "features": {
         "transmission": "Automatic",
         "AC": "Yes",
-        "road_assistant": "no",
+        "road_assistant": "No",
         "smoke_free": "Yes",
         "gps": "Yes"
       },
@@ -170,7 +170,7 @@
       "features": {
         "transmission": "Automatic",
         "AC": "Yes",
-        "road_assistant": "no",
+        "road_assistant": "No",
         "smoke_free": "Yes",
         "gps": "Yes"
       },
@@ -201,7 +201,7 @@
       "features": {
         "transmission": "Automatic",
         "AC": "Yes",
-        "road_assistant": "no",
+        "road_assistant": "No",
         "smoke_free": "Yes",
         "gps": "Yes"
       },
