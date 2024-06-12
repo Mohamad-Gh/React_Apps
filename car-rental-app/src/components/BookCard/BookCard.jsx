@@ -60,13 +60,7 @@ function BookCard(props) {
                 Extra Mileage: <strong>$ {props.extraMileagePrice}</strong>
               </p>
               <div className="narrowDivider"></div>
-              <strong>
-                Total Price: ${" "}
-                {props.basePrice +
-                  props.booster +
-                  props.babySeat +
-                  props.extraMileagePrice}
-              </strong>
+              <strong>Total Price: $ {props.totalPrice}</strong>
               <br></br>
               <small>+ Taxes and fees</small>
             </div>

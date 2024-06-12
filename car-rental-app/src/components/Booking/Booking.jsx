@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./booking.css";
 
-function Booking() {
+function Booking(props) {
   useEffect(() => {
     window.scrollTo(0, 0);
   });
@@ -14,6 +14,7 @@ function Booking() {
   const handleChange = (event) => {
     const { name, value } = event.target;
     setPrice((prvs) => ({ ...prvs, [name]: value }));
+    props.prices(price);
   };
   return (
     <section>
@@ -23,10 +24,7 @@ function Booking() {
             <h3>Select Date, Location, and Additional Services:</h3>
           </div>
           <h5>Date and Location</h5>
-          <form
-            className="form-grid"
-            onChange={(event) => console.log(event.target)}
-          >
+          <form className="form-grid" onChange={handleChange}>
             <div className="form-grid-item">
               <label className="label">
                 <svg
@@ -149,12 +147,7 @@ function Booking() {
             </div> */}
           </form>
           <h5>More Services</h5>
-          <form
-            className="form-grid"
-            onChange={(event) =>
-              console.log(event.target.name, event.target.value)
-            }
-          >
+          <form className="form-grid" onChange={handleChange}>
             <div className="form-grid-item">
               <label className="label">
                 {" "}
@@ -224,7 +217,7 @@ function Booking() {
                 </svg>{" "}
                 Child Booster
               </label>
-              <select name="ChildBooster" id="ChildBooster">
+              <select name="childBooster" id="ChildBooster">
                 <option value={0}>0</option>
                 <option value={1}>1</option>
                 <option value={2}>2</option>
