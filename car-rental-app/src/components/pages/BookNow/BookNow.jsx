@@ -11,12 +11,11 @@ import BookCard from "../../BookCard/BookCard";
 function BookNow() {
   const value = useContext(GlobalContext);
   const bookedCar = cars.cars.filter((car) => car.id == value.carId);
-  const [price, setPrice] = useState({
-    childBooster: 0,
-    babySeat: 0,
-    extraDriver: 0,
-    extraMileage: 0,
-  });
+  const [price, setPrice] = useState(0);
+  const driverPrice = price != 0 ? price.extraDriver * 50 : null;
+  const boosterPrice = price != 0 ? price.childBooster * 25 : null;
+  const babySeatPrice = price != 0 ? price.babySeat * 35 : null;
+  const extraMileagePrice = price != 0 ? price.extraMileage * 2 : null;
   return (
     <>
       <Header />
@@ -39,9 +38,10 @@ function BookNow() {
           img={car.image_url}
           number={car.rate}
           color={car.rate >= 8 ? "green" : car.rate >= 5 ? "purple" : "red"}
-          boosterPrice={price.childBooster * 25}
-          babySeatPrice={price.babySeat * 35}
-          extraMileagePrice={price.extraMileage * 5}
+          driverPrice={driverPrice}
+          boosterPrice={boosterPrice}
+          babySeatPrice={babySeatPrice}
+          extraMileagePrice={extraMileagePrice}
           // totalPrice={
           //   car.starting_price +
           //   price.childBooster +

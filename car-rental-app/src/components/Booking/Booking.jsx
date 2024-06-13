@@ -16,6 +16,7 @@ function Booking(props) {
     setPrice((prvs) => ({ ...prvs, [name]: value }));
     props.prices(price);
   };
+
   return (
     <section>
       <div className="full-container">

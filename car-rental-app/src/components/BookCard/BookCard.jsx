@@ -51,6 +51,9 @@ function BookCard(props) {
                 Base: <strong>$ {props.basePrice}</strong>
               </p>
               <p>
+                Additional Driver: <strong>$ {props.driverPrice}</strong>
+              </p>
+              <p>
                 Booster Seat: <strong>$ {props.boosterPrice}</strong>
               </p>
               <p>
