@@ -2,11 +2,14 @@ import React, { useEffect, useState } from "react";
 import "./booking.css";
 
 function Booking(props) {
+  // const [startDate, setStartDate] = useState(0);
   const [price, setPrice] = useState({
     childBooster: 0,
     babySeat: 0,
     extraDriver: 0,
     extraMileage: 0,
+    startDate: 0,
+    endDate: 0,
   });
   useEffect(() => {
     // window.scrollTo(0, 0);
@@ -115,7 +118,12 @@ function Booking(props) {
                 Pick-Up Date
                 <span>*</span>
               </label>
-              <input className="Date" type="date" />
+              <input
+                className="Date"
+                type="date"
+                name="startDate"
+                // value={startDate}
+              />
             </div>
             <div className="form-grid-item">
               <label className="label">
@@ -140,7 +148,12 @@ function Booking(props) {
                 Drop-off Date
                 <span>*</span>
               </label>
-              <input className="Date" type="date" />
+              <input
+                className="Date"
+                type="date"
+                name="endDate"
+                // value={endDate}
+              />
             </div>
             {/* <div className="form-grid-item">
               <label className="label"></label>

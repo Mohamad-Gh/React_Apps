@@ -16,6 +16,20 @@ function BookNow() {
   const boosterPrice = price != 0 ? price.childBooster * 25 : null;
   const babySeatPrice = price != 0 ? price.babySeat * 35 : null;
   const extraMileagePrice = price != 0 ? price.extraMileage * 2 : null;
+  console.log(typeof price.endDate);
+
+  const calculateDaysDifference = (startingDate, endingDate) => {
+    const currentDate = new Date(startingDate);
+    const selectedDate = new Date(endingDate);
+    if (selectedDate <= currentDate) {
+      alert("Please reselect pick up and drop dates");
+      return;
+    }
+    const timeDifference = selectedDate - currentDate; // Difference in milliseconds
+    const dayDifference = Math.ceil(timeDifference / (1000 * 60 * 60 * 24)); // Convert to days and round up
+    return dayDifference;
+  };
+
   return (
     <>
       <Header />
@@ -27,7 +41,10 @@ function BookNow() {
           model={car.car_model}
           city={`${car.fuel_efficiency.city} MPG`}
           highway={`${car.fuel_efficiency.highway} MPG`}
-          basePrice={car.starting_price}
+          basePrice={
+            car.starting_price *
+            calculateDaysDifference(price.startDate, price.endDate)
+          }
           luggage={car.luggage_capacity}
           passenger={car.passenger_capacity}
           transmission={car.features.transmission}
