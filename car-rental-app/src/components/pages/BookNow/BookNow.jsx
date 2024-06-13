@@ -13,9 +13,9 @@ function BookNow() {
   const bookedCar = cars.cars.filter((car) => car.id == value.carId);
   const [price, setPrice] = useState(0);
   const driverPrice = price != 0 ? price.extraDriver * 50 : null;
-  const boosterPrice = price != 0 ? price.childBooster * 25 : null;
+  const boosterPrice = price != 0 ? price.childBooster * 30 : null;
   const babySeatPrice = price != 0 ? price.babySeat * 35 : null;
-  const extraMileagePrice = price != 0 ? price.extraMileage * 2 : null;
+  const extraMileagePrice = price != 0 ? price.extraMileage * 0.1 : null;
 
   const calculateDaysDifference = (startingDate, endingDate) => {
     const currentDate = new Date();
@@ -67,13 +67,14 @@ function BookNow() {
           boosterPrice={boosterPrice}
           babySeatPrice={babySeatPrice}
           extraMileagePrice={extraMileagePrice}
-          totalPrice={
-            car.starting_price * days +
-            driverPrice +
-            boosterPrice +
-            babySeatPrice +
-            extraMileagePrice
-          }
+          totalPrice={Math.floor(
+            (car.starting_price * days +
+              driverPrice +
+              boosterPrice +
+              babySeatPrice +
+              extraMileagePrice) *
+              1.12
+          )}
         />
       ))}
       <BlackDivider
