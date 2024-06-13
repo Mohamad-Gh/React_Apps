@@ -41,6 +41,9 @@ function BookCard(props) {
             <li>
               <Link to="/Vehicle Model/More Info">See more features</Link>
             </li>
+            <li>
+              <Link to="/Vehicle Model">Switch to another vehicle</Link>
+            </li>
           </ul>
         </div>
         <div className="price">
