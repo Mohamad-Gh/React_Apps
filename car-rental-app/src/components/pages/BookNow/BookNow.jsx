@@ -42,12 +42,13 @@ function BookNow() {
           boosterPrice={boosterPrice}
           babySeatPrice={babySeatPrice}
           extraMileagePrice={extraMileagePrice}
-          // totalPrice={
-          //   car.starting_price +
-          //   price.childBooster +
-          //   price.babySeat +
-          //   price.extraMileage
-          // }
+          totalPrice={
+            driverPrice +
+            car.starting_price +
+            boosterPrice +
+            babySeatPrice +
+            extraMileagePrice
+          }
         />
       ))}
       <BlackDivider

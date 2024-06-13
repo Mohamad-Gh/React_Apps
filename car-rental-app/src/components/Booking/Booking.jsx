@@ -2,19 +2,19 @@ import React, { useEffect, useState } from "react";
 import "./booking.css";
 
 function Booking(props) {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  });
   const [price, setPrice] = useState({
     childBooster: 0,
     babySeat: 0,
     extraDriver: 0,
     extraMileage: 0,
   });
+  useEffect(() => {
+    // window.scrollTo(0, 0);
+    props.prices(price);
+  }, [price]);
   const handleChange = (event) => {
     const { name, value } = event.target;
     setPrice((prvs) => ({ ...prvs, [name]: value }));
-    props.prices(price);
   };
 
   return (
