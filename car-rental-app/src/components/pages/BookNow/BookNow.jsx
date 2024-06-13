@@ -19,16 +19,23 @@ function BookNow() {
   console.log(typeof price.endDate);
 
   const calculateDaysDifference = (startingDate, endingDate) => {
-    const currentDate = new Date(startingDate);
-    const selectedDate = new Date(endingDate);
-    if (selectedDate <= currentDate) {
+    const currentDate = new Date();
+    const pickUpDate = new Date(startingDate);
+    const dropDate = new Date(endingDate);
+    console.log(currentDate, pickUpDate, dropDate);
+    if (startingDate != 0 && pickUpDate < currentDate) {
+      alert("Please select a proper Pick Up date");
+      return;
+    }
+    if ((startingDate = !0 && endingDate != 0 && pickUpDate >= dropDate)) {
       alert("Please reselect pick up and drop dates");
       return;
     }
-    const timeDifference = selectedDate - currentDate; // Difference in milliseconds
+    const timeDifference = dropDate - pickUpDate; // Difference in milliseconds
     const dayDifference = Math.ceil(timeDifference / (1000 * 60 * 60 * 24)); // Convert to days and round up
     return dayDifference;
   };
+  const numberofDays = calculateDaysDifference(price.startDate, price.endDate);
 
   return (
     <>
@@ -41,10 +48,7 @@ function BookNow() {
           model={car.car_model}
           city={`${car.fuel_efficiency.city} MPG`}
           highway={`${car.fuel_efficiency.highway} MPG`}
-          basePrice={
-            car.starting_price *
-            calculateDaysDifference(price.startDate, price.endDate)
-          }
+          basePrice={car.starting_price * numberofDays}
           luggage={car.luggage_capacity}
           passenger={car.passenger_capacity}
           transmission={car.features.transmission}
