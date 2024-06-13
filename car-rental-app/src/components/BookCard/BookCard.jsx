@@ -48,7 +48,7 @@ function BookCard(props) {
             <h2>Price: </h2>
             <div className="priceInTotal">
               <p>
-                Base: <strong>$ {props.basePrice}</strong>
+                Base ({props.days} days): <strong>$ {props.basePrice}</strong>
               </p>
               <p>
                 Additional Driver: <strong>$ {props.driverPrice}</strong>

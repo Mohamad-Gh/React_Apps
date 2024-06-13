@@ -16,13 +16,13 @@ function BookNow() {
   const boosterPrice = price != 0 ? price.childBooster * 25 : null;
   const babySeatPrice = price != 0 ? price.babySeat * 35 : null;
   const extraMileagePrice = price != 0 ? price.extraMileage * 2 : null;
-  console.log(typeof price.endDate);
 
   const calculateDaysDifference = (startingDate, endingDate) => {
     const currentDate = new Date();
     const pickUpDate = new Date(startingDate);
     const dropDate = new Date(endingDate);
-    console.log(currentDate, pickUpDate, dropDate);
+    console.log("Current", currentDate, "PickUp", pickUpDate, "Drop", dropDate);
+    console.log("start", startingDate, "end", endingDate);
     if (startingDate != 0 && pickUpDate < currentDate) {
       alert("Please select a proper Pick Up date");
       return;
@@ -35,7 +35,10 @@ function BookNow() {
     const dayDifference = Math.ceil(timeDifference / (1000 * 60 * 60 * 24)); // Convert to days and round up
     return dayDifference;
   };
-  const numberofDays = calculateDaysDifference(price.startDate, price.endDate);
+  const days =
+    calculateDaysDifference(price.startDate, price.endDate) > 0
+      ? calculateDaysDifference(price.startDate, price.endDate)
+      : 0;
 
   return (
     <>
@@ -48,7 +51,7 @@ function BookNow() {
           model={car.car_model}
           city={`${car.fuel_efficiency.city} MPG`}
           highway={`${car.fuel_efficiency.highway} MPG`}
-          basePrice={car.starting_price * numberofDays}
+          basePrice={car.starting_price * days}
           luggage={car.luggage_capacity}
           passenger={car.passenger_capacity}
           transmission={car.features.transmission}
@@ -59,13 +62,14 @@ function BookNow() {
           img={car.image_url}
           number={car.rate}
           color={car.rate >= 8 ? "green" : car.rate >= 5 ? "purple" : "red"}
+          days={days}
           driverPrice={driverPrice}
           boosterPrice={boosterPrice}
           babySeatPrice={babySeatPrice}
           extraMileagePrice={extraMileagePrice}
           totalPrice={
+            car.starting_price * days +
             driverPrice +
-            car.starting_price +
             boosterPrice +
             babySeatPrice +
             extraMileagePrice
