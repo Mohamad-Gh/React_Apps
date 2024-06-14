@@ -21,8 +21,6 @@ function BookNow() {
     const currentDate = new Date();
     const pickUpDate = new Date(startingDate);
     const dropDate = new Date(endingDate);
-    console.log("Current", currentDate, "PickUp", pickUpDate, "Drop", dropDate);
-    console.log("start", startingDate, "end", endingDate);
     if (startingDate != 0 && pickUpDate < currentDate) {
       alert("Please select a proper Pick Up date");
       return;
@@ -77,10 +75,6 @@ function BookNow() {
           )}
         />
       ))}
-      <BlackDivider
-        text="Book a car by getting in touch with us"
-        span="(123) 456-7869"
-      />
       <Footer />
     </>
   );
