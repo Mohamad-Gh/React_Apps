@@ -11,3 +11,22 @@
   flex-direction: column;
   justify-content: center;
 }
+.form-grid-item select,
+.form-grid-item input {
+  width: 100%;
+  margin: 10px 0;
+  height: 50px;
+  border-radius: 5px;
+  color: #878585;
+  border: 1px solid #ccd7e6;
+  padding-left: 10px;
+}
+.date {
+  height: 50px;
+  border-radius: 5px;
+  font-size: 16px;
+  border: 1px solid #ccd7e6;
+  padding: 0 0 0 10px;
+  color: #878585;
+  margin: 10px 0;
+}

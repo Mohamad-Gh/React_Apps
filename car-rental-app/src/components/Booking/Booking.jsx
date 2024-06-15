@@ -1,7 +1,19 @@
 import React, { useEffect, useState } from "react";
+import { useJsApiLoader, Autocomplete } from "@react-google-maps/api";
+
 import "./booking.css";
 
 function Booking(props) {
+  console.log(
+    "Google Maps API Key:",
+    process.env.REACT_APP_GOOGLE_MAPS_API_KEY
+  );
+
+  const { isLoaded } = useJsApiLoader({
+    googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY,
+    libraries: ["places"],
+  });
+
   // const [startDate, setStartDate] = useState(0);
   const [price, setPrice] = useState({
     childBooster: 0,
@@ -19,6 +31,10 @@ function Booking(props) {
     const { name, value } = event.target;
     setPrice((prvs) => ({ ...prvs, [name]: value }));
   };
+
+  if (!isLoaded) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <section>
@@ -52,15 +68,12 @@ function Booking(props) {
                 Pick-Up
                 <span>*</span>
               </label>
-              <select>
-                <option>Select pick up location</option>
-                <option>Vancouver</option>
-                <option>Victoria</option>
-                <option>Kelowna</option>
-                <option>Kamloops</option>
-                <option>Prince George</option>
-                <option>Nanaimo</option>
-              </select>
+              <Autocomplete
+                restrictions={{ country: "ca" }}
+                options={{ types: ["airport"] }}
+              >
+                <input type="text" />
+              </Autocomplete>
             </div>
             <div className="form-grid-item">
               <label className="label">
@@ -85,15 +98,12 @@ function Booking(props) {
                 Drop-off
                 <span>*</span>
               </label>
-              <select>
-                <option>Select drop off location</option>
-                <option>Vancouver</option>
-                <option>Victoria</option>
-                <option>Kelowna</option>
-                <option>Kamloops</option>
-                <option>Prince George</option>
-                <option>Nanaimo</option>
-              </select>
+              <Autocomplete
+                restrictions={{ country: "ca" }}
+                options={{ types: ["airport"] }}
+              >
+                <input type="text" />
+              </Autocomplete>
             </div>
             <div className="form-grid-item">
               <label className="label">
@@ -119,7 +129,7 @@ function Booking(props) {
                 <span>*</span>
               </label>
               <input
-                className="Date"
+                className="date"
                 type="date"
                 name="startDate"
                 // value={startDate}
@@ -149,7 +159,7 @@ function Booking(props) {
                 <span>*</span>
               </label>
               <input
-                className="Date"
+                className="date"
                 type="date"
                 name="endDate"
                 // value={endDate}

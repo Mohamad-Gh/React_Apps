@@ -184,23 +184,7 @@ header {
   align-items: center;
   gap: 5px;
 }
-.form-grid-item select {
-  margin: 10px 0;
-  height: 50px;
-  border-radius: 5px;
-  color: #878585;
-  border: 1px solid #ccd7e6;
-  padding-left: 10px;
-}
-.Date {
-  height: 50px;
-  border-radius: 5px;
-  font-size: 16px;
-  border: 1px solid #ccd7e6;
-  padding: 0 0 0 10px;
-  color: #878585;
-  margin: 10px 0;
-}
+
 .submit {
   margin: 30px 0 10px 0;
   height: 50px;
