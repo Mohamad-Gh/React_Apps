@@ -68,8 +68,8 @@ function CarInfo({
               </div>
               <div className="carInfoCard">
                 <div>
-                  <div className="carInfoFeatures">
-                    <div className="carInfoModel">
+                  <div className="">
+                    <div className="">
                       <ul className="carInfoFeatureDetails">
                         <li>
                           <div className="gas">
