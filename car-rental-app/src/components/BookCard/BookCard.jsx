@@ -18,22 +18,27 @@ function BookCard(props) {
     // passing onClick props so can be used in parrent component
     <div id={props.id} className="flexBookCards">
       <div className="modelBookCard">
-        <img
-          src={props.img}
-          className="imageBookCard"
-          alt="ccar"
-          itemProp="image"
-          decoding="async"
-          fetchpriority="high"
-          data-sizes="(max-width: 400px) 100vw, 400px"
-          sizes="(max-width: 400px) 100vw, 400px"
-          data-was-processed="true"
-        />
-        <div className="bookCardInfo">
+        <div className="nameAndImg">
           <div className="nameReview">
             <h2 itemProp="catagory">{props.model}</h2>
-            <ReviewButton color={props.color} number={props.number} />
+            <div>
+              <ReviewButton color={props.color} number={props.number} />
+            </div>
           </div>
+          <img
+            src={props.img}
+            className="imageBookCard"
+            alt="ccar"
+            itemProp="image"
+            decoding="async"
+            fetchpriority="high"
+            data-sizes="(max-width: 400px) 100vw, 400px"
+            sizes="(max-width: 400px) 100vw, 400px"
+            data-was-processed="true"
+          />
+        </div>
+        <div className="bookCardInfo">
+          <h2>Service Details</h2>
           <ul>
             <li>Free roadside assistance included</li>
             <li>Unlimited Kms available</li>
@@ -73,56 +78,53 @@ function BookCard(props) {
           </div>
         </div>
       </div>
-      <div className="middleBookCard"></div>
-      <div>
-        <div className="carBookModel">
-          {/* <h3 itemProp="model">{props.description}</h3> */}
-          <ul className="featureBookDetails">
-            <li className="modelBookCard-p">
-              <LocalGasStationIcon className="gas" />
-              <p>
-                <strong>City:</strong> {props.city}
-                <br></br>
-                <strong>Highway:</strong> {props.highway}
-              </p>
-            </li>
-            <li>
-              <ul className="capacity">
-                <li className="luggages" itemProp="cargoVolume">
-                  <LuggageIcon />
-                  {props.luggage}
-                </li>
-                <li className="passengers" itemProp="seatingCapacity">
-                  <PeopleIcon />
-                  {props.passenger}
-                </li>
-              </ul>
-            </li>
-            <li className="transmission" itemProp="vehicleTransmission">
-              <MemoryIcon /> {props.transmission}
-            </li>
-            <li className="ac" itemProp="additionalProperty">
-              <AcUnitIcon />
-              {props.AC}
-            </li>
-            <li className="road">
-              <SupportIcon />
-              Road Assistant: {props.RA}
-            </li>
-            <li className="smokeFree">
-              <SmokeFreeIcon />
-              Smoke Free Vehicle:{props.smoke}
-            </li>
-            <li className="gps">
-              <GpsFixedIcon />
-              Free GPS: {props.gps}
-            </li>
-            <li className="age">
-              <CreditCardIcon />
-              20 years +
-            </li>
-          </ul>
-        </div>
+      <div className="carBookModel">
+        {/* <h3 itemProp="model">{props.description}</h3> */}
+        <ul className="featureBookDetails">
+          <li className="modelBookCard-p">
+            <LocalGasStationIcon className="gas" />
+            <p>
+              <strong>City:</strong> {props.city}
+              <br></br>
+              <strong>Highway:</strong> {props.highway}
+            </p>
+          </li>
+          <li>
+            <ul className="capacity">
+              <li className="luggagesBook" itemProp="cargoVolume">
+                <LuggageIcon />
+                {props.luggage}
+              </li>
+              <li className="passengersBook" itemProp="seatingCapacity">
+                <PeopleIcon />
+                {props.passenger}
+              </li>
+            </ul>
+          </li>
+          <li className="transmissionBook" itemProp="vehicleTransmission">
+            <MemoryIcon /> {props.transmission}
+          </li>
+          <li className="acBook" itemProp="additionalProperty">
+            <AcUnitIcon />
+            {props.AC}
+          </li>
+          <li className="roadBook">
+            <SupportIcon />
+            Road Assistant: {props.RA}
+          </li>
+          <li className="smokeFreeBook">
+            <SmokeFreeIcon />
+            Smoke Free Vehicle:{props.smoke}
+          </li>
+          <li className="gps">
+            <GpsFixedIcon />
+            Free GPS: {props.gps}
+          </li>
+          <li className="ageBook">
+            <CreditCardIcon />
+            20 years +
+          </li>
+        </ul>
       </div>
     </div>
   );
