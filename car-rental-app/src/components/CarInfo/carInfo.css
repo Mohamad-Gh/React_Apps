@@ -127,6 +127,9 @@
     margin-top: 80px;
     font-size: 1.2rem;
   }
+  .carInfoCard {
+    padding: 0 30px;
+  }
   .carInfoImage {
     width: 350px;
   }

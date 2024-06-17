@@ -15,6 +15,10 @@ const settings = {
   slidesToScroll: 1,
   arrows: true,
   dotsClass: "slick-dots",
+  responsive: [
+    { breakpoint: 1200, settings: { slidesToShow: 2, slidesToScroll: 1 } },
+    { breakpoint: 800, settings: { slidesToShow: 1, slidesToScroll: 1 } },
+  ],
 };
 
 function CarSuggestion(props) {
