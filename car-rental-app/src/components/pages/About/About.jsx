@@ -1,3 +1,7 @@
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+///
+
 import Header from "../../Header/Header";
 import Footer from "../../Footer/Footer";
 import BlackDivider from "../../BlackDivider/BlackDivider";
@@ -14,7 +18,16 @@ import carLogo from "../../../Assets/images/car-logo.png";
 import garageLogo from "../../../Assets/images/garage-logo.png";
 import carGarageLogo from "../../../Assets/images/car-garage-logo.png";
 
-function About() {
+function About({ state }) {
+  const location = useLocation();
+  const scrollToSection = location.state?.fromClick;
+  useEffect(() => {
+    const element = document.getElementById("contactDetails");
+    if (scrollToSection) {
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  }, []);
+
   return (
     <>
       <Header />
@@ -53,7 +66,7 @@ function About() {
         text="Book a car by getting in touch with us"
         span="(123) 456-7869"
       />
-      <div className="container-detail-form">
+      <div id="contactDetails" className="container-detail-form">
         <div className="center-card">
           <ContactDetails
             h2="Need To Know Where We Are Located?"

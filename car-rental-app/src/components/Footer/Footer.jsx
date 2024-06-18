@@ -1,6 +1,12 @@
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function Footer() {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    // Navigate to the destination page with a prop indicating the navigation method
+    navigate("/About", { state: { fromClick: true } });
+  };
   return (
     <footer>
       <div class="footer">
@@ -28,7 +34,9 @@ function Footer() {
         <div class="footer-box">
           <h3>COMPANY</h3>
           <div>
-            <a href="">Location</a>
+            <a href="" id="location" onClick={handleClick}>
+              Location
+            </a>
           </div>
           <div>
             <a href="">Careers</a>

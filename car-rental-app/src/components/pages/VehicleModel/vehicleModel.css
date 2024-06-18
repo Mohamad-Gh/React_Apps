@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
 .titleText {
   display: flex;
   flex-direction: column;
@@ -41,6 +46,7 @@
 }
 @media screen and (max-width: 800px) {
   .titleText {
+    margin: 0 auto;
     font-size: 14px;
   }
 }
