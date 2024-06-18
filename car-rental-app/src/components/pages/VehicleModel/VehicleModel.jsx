@@ -80,7 +80,7 @@ function VehicleModel(props) {
 
   useEffect(() => {
     window.scroll(0, 350);
-  }, [currentCars, currentPage]);
+  }, [currentPage]);
 
   return (
     <div>
