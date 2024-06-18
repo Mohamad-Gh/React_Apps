@@ -78,6 +78,10 @@ function VehicleModel(props) {
   // handleing page based on its number using UI material component
   const handlePage = (page) => setCurrentPage(page);
 
+  useEffect(() => {
+    window.scroll(0, 350);
+  }, [currentCars, currentPage]);
+
   return (
     <div>
       <Header />
