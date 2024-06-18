@@ -2,8 +2,6 @@ import React, { useEffect, useState } from "react";
 
 import Header from "../../Header/Header";
 import Footer from "../../Footer/Footer";
-import BlackDivider from "../../BlackDivider/BlackDivider";
-import Booking from "../../Booking/Booking";
 import CarCard from "../../CarCard/CarCard";
 import ControlPanel from "../../ControlPanel/ControlPanel";
 

@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   margin: 30px 50px;
   width: 90%;
   font-size: 20px;
@@ -37,4 +38,9 @@
 .pagination span {
   color: black;
   cursor: unset;
+}
+@media screen and (max-width: 800px) {
+  .titleText {
+    font-size: 14px;
+  }
 }

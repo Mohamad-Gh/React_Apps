@@ -37,7 +37,6 @@ function ControlPanel(props) {
             <option value="descending">Descending</option>
           </select>
         </label>
-
         <label htmlFor="luggageCapacity">
           Luggage Capacity{" "}
           <select
