@@ -5,15 +5,25 @@ import BlackDivider from "../../BlackDivider/BlackDivider";
 import CCarousel from "../../CCarousel/CCarousel";
 import TeamMembersAlbum from "../../TeamMemberAlbum/TeamMembersAlbum";
 import RentCar from "../../RentCar/RentCar";
+import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
 
 function OurTeam() {
+  const location = useLocation();
+  const scrollToSection = location.state?.fromClick;
+  useEffect(() => {
+    const element = document.getElementById("ourLeaders");
+    if (scrollToSection) {
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  }, []);
   return (
     <div>
       <Header />
       <div className="full-container">
         <div className="container-album">
           <div className="title-header">
-            <h3>Meet Our Leaders</h3>
+            <h3 id="ourLeaders">Meet Our Leaders</h3>
             {/* <h2>Our rental fleet</h2> */}
             <p>
               At DriveAway Rentals, we pride ourselves on offering a seamless

@@ -90,7 +90,9 @@ function Main(props) {
         span="24/7"
         text2="Support."
       />
-      <Faq />
+      <div id="Q&A">
+        <Faq />
+      </div>
       <section className="app">
         <div className="app-container">
           <h2>Download our app to get most out of it</h2>

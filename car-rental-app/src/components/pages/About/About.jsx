@@ -18,12 +18,12 @@ import carLogo from "../../../Assets/images/car-logo.png";
 import garageLogo from "../../../Assets/images/garage-logo.png";
 import carGarageLogo from "../../../Assets/images/car-garage-logo.png";
 
-function About({ state }) {
+function About() {
   const location = useLocation();
   const scrollToSection = location.state?.fromClick;
   useEffect(() => {
-    const element = document.getElementById("contactDetails");
-    if (scrollToSection) {
+    const element = document.getElementById(scrollToSection);
+    if (element) {
       element.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   }, []);
@@ -61,12 +61,14 @@ function About({ state }) {
           </div>
         </div>
       </section>
-      <HeroSection h3="Plan your trip now" h2="Quick & easy rent your car" />
+      <div id="howWeWork">
+        <HeroSection h3="Plan your trip now" h2="Quick & easy rent your car" />
+      </div>
       <BlackDivider
         text="Book a car by getting in touch with us"
         span="(123) 456-7869"
       />
-      <div id="contactDetails" className="container-detail-form">
+      <div id="location" className="container-detail-form">
         <div className="center-card">
           <ContactDetails
             h2="Need To Know Where We Are Located?"

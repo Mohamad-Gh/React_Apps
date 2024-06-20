@@ -3,9 +3,20 @@ import { useNavigate } from "react-router-dom";
 function Footer() {
   const navigate = useNavigate();
 
-  const handleClick = () => {
-    // Navigate to the destination page with a prop indicating the navigation method
-    navigate("/About", { state: { fromClick: true } });
+  const handleClick = (event) => {
+    if (event.target.id == "location") {
+      // Navigate to the destination page with a prop indicating the navigation method
+      navigate("/About", { state: { fromClick: "location" } });
+    }
+    if (event.target.id == "ourLeaders") {
+      navigate("/Our Team", { state: { fromClick: true } });
+    }
+    if (event.target.id == "Q&A") {
+      navigate("/", { state: { fromClick: "Q&A" } });
+    }
+    if (event.target.id == "howWeWork") {
+      navigate("/About", { state: { fromClick: "howWeWork" } });
+    }
   };
   return (
     <footer>
@@ -39,16 +50,19 @@ function Footer() {
             </a>
           </div>
           <div>
-            <a href="">Careers</a>
+            <a href="" id="ourLeaders" onClick={handleClick}>
+              Leaders
+            </a>
           </div>
           <div>
-            <a href="">Mobile</a>
+            <a id="Q&A" href="" onClick={handleClick}>
+              Q&A
+            </a>
           </div>
           <div>
-            <a href="">Blog</a>
-          </div>
-          <div>
-            <a href="">How We Work</a>
+            <a id="howWeWork" href="" onClick={handleClick}>
+              How We Work
+            </a>
           </div>
         </div>
         <div class="footer-box">
