@@ -25,6 +25,7 @@ function VehicleModel(props) {
 
   function handleChange(event) {
     const { name, value } = event.target;
+    setCurrentPage(1);
     setChange((previousValue) => {
       return { ...previousValue, [name]: value };
     });
