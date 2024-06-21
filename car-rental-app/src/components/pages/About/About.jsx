@@ -25,6 +25,8 @@ function About() {
     const element = document.getElementById(scrollToSection);
     if (element) {
       element.scrollIntoView({ behavior: "smooth", block: "start" });
+    } else {
+      window.scroll(0, 0);
     }
   }, []);
 

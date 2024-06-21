@@ -107,6 +107,7 @@
 }
 @media (max-width: 600px) {
   .contentHero {
+    height: 60vh;
     width: 100%;
     gap: 30px;
   }

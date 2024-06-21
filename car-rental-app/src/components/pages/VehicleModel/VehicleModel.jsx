@@ -24,8 +24,8 @@ function VehicleModel(props) {
   const carsPerPage = 6;
 
   function handleChange(event) {
-    const { name, value } = event.target;
     setCurrentPage(1);
+    const { name, value } = event.target;
     setChange((previousValue) => {
       return { ...previousValue, [name]: value };
     });
@@ -80,8 +80,8 @@ function VehicleModel(props) {
   const handlePage = (page) => setCurrentPage(page);
 
   useEffect(() => {
-    window.scroll(0, 350);
-  }, [currentCars]);
+    window.scroll(0, 0);
+  }, []);
 
   return (
     <div>

@@ -15,6 +15,8 @@ function OurTeam() {
     const element = document.getElementById("ourLeaders");
     if (scrollToSection) {
       element.scrollIntoView({ behavior: "smooth", block: "start" });
+    } else {
+      window.scroll(0, 0);
     }
   }, []);
   return (
