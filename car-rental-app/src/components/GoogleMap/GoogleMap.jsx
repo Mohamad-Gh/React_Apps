@@ -6,7 +6,7 @@ import location from "../../Assets/location.json";
 import "../MyGoogleMap/myGoogleMap.css";
 import "./googleMap.css";
 
-const apiKey = "";
+const apiKey = process.env.REACT_APP_GOOGLE_MAPS_API_KEY;
 const center = { lat: 49.915161, lng: -97.252417 };
 const GoogleMap = () => {
   const [userLocation, setUserLocation] = useState(null);
