@@ -12,7 +12,7 @@ import { useEffect } from "react";
 function BookNow() {
   useEffect(() => {
     window.scrollTo(0, 0);
-  });
+  }, []);
   const value = useContext(GlobalContext);
   const bookedCar = cars.cars.filter((car) => car.id == value.carId);
   const [price, setPrice] = useState(0);
